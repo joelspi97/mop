@@ -1,0 +1,249 @@
+body {
+  font-family: "Encode Sans", sans-serif;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header */
+header .navbar {
+  background-color: #ffffff;
+  box-shadow: 0px 2px 6px #00000029;
+}
+
+header h1 {
+  color: #333;
+  font-size: 1.75rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+header .menu {
+  color: #37bbed;
+  font-weight: 700;
+  font-size: 1.25rem;
+  background: #fff;
+  border: none;
+  border-radius: 2rem;
+  box-shadow: 0px 2px 6px #00000029;
+  padding: 0.5rem 1.8rem;
+}
+
+header button span {
+  color: #333;
+}
+
+header .menu:hover {
+  color: #fff;
+  background-color: #37bbed !important;
+}
+
+header .menu:active {
+  background-color: #fff;
+  color: #37bbed;
+}
+
+header .menu:focus {
+  background-color: #fff;
+  color: #37bbed;
+  box-shadow: 0px 2px 6px #00000029 !important;
+}
+
+header .menu:focus:hover {
+  color: #fff;
+  background-color: #37bbed;
+  box-shadow: 0px 2px 6px #00000029 !important;
+}
+
+/*menu*/
+
+.offcanvas-body a {
+  padding: 0.7rem 0.5rem 0.7rem 0.5rem;
+  text-decoration: none;
+  font-size: 1rem;
+  color: #333;
+  display: block;
+  transition: 0.3s;
+  border-bottom: solid 0.15rem #cccccc;
+  font-weight: 500;
+}
+
+.offcanvas-body i {
+  margin-right: 0.5rem;
+}
+
+.offcanvas-body .container {
+  max-width: 93%;
+}
+
+.offcanvas-body a:hover {
+  background-color: #37bbed;
+  color: #fff;
+  border-bottom: solid 0.15rem #37bbed;
+}
+
+.offcanvas-header {
+  border-bottom: solid 0.15rem #37bbed;
+  margin: 0 1rem;
+}
+
+.offcanvas-header h5 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #333;
+}
+
+/*main*/
+
+/*seccion bienvenida y login*/
+
+.bienvenido-login {
+  background-image: url("../img/bg_bienvenido.png");
+  padding-top: 12rem;
+  padding-bottom: 7rem;
+}
+
+.bienvenido {
+  margin-right: 5rem;
+}
+.bienvenido h1 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.bienvenido p {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 3rem;
+  line-height: 1.65rem;
+}
+
+.login {
+  background-color: #f2f2f2;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 0.938rem;
+  height: 22.813rem;
+  padding: 2rem;
+}
+/*ejes ministerio*/
+.ejes-ministerio {
+  background-color: #f2f2f2;
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+}
+.ejes {
+  justify-content: space-between;
+}
+
+.ejes-ministerio h2 {
+  font-size: 1.563rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 5rem;
+}
+
+/*Cards*/
+.card {
+  border-radius: 0.625rem;
+  border: none;
+  box-shadow: 0px 3px 6px #00000029;
+}
+
+.tarjeta a {
+  text-decoration: none;
+  color: #333;
+}
+.tarjeta i {
+  font-size: 5rem;
+  text-align: center;
+  color: white;
+  border-radius: 0.625rem 0.625rem 0rem 0rem;
+  padding: 1rem 0;
+}
+
+.tarjeta h5 {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.tarjeta p {
+  font-size: 0.938rem;
+  color: #333;
+}
+
+.tarjeta:hover {
+  opacity: 80%;
+  border: #333;
+}
+.tarjeta-transparencia i {
+  background-color: #37bbed;
+}
+
+.tarjeta-participacion i {
+  background-color: #9284be;
+}
+
+.tarjeta-obras i {
+  background-color: #50b7b2;
+}
+/* Footer */
+
+.main-footer {
+  background-color: #f3faff;
+}
+
+.main-footer section {
+  padding: 1.875rem 1rem 1.875rem 0;
+}
+
+.main-footer row {
+  flex-wrap: nowrap;
+}
+
+.main-footer .nav {
+  flex-direction: column;
+}
+
+.main-footer h3 {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.main-footer a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 0.938rem;
+}
+
+.main-footer a:hover {
+  color: #37bbed;
+}
+
+.leaf {
+  margin: 0.3rem 0;
+}
+
+.first {
+  margin-top: 1.5rem;
+}
+
+.region-footer3 {
+  font-weight: 500;
+  color: #333;
+  font-size: 0.938rem;
+}
+
+.sub-footer {
+  background-color: #37bbed;
+  padding: 1.25rem 0 2.5rem 0;
+}
+
+.sub-footer img {
+  margin-bottom: 20px;
+  max-width: 300px;
+  display: block;
+}

@@ -1,23 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-</head>
-<body>
-    <button type="button" class="btn btn-primary">Primary</button>
-<button type="button" class="btn btn-secondary">Secondary</button>
-<button type="button" class="btn btn-success">Success</button>
-<button type="button" class="btn btn-danger">Danger</button>
-<button type="button" class="btn btn-warning">Warning</button>
-<button type="button" class="btn btn-info">Info</button>
-<button type="button" class="btn btn-light">Light</button>
-<button type="button" class="btn btn-dark">Dark</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SGO | Sistema de Gestión de Obras</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
 
-<button type="button" class="btn btn-link">Link done in testing branch</button>
-</body>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://argob.github.io/poncho/node_modules/argob-poncho/dist/icono-arg.css"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <script src="./js/jscript.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="./img/logo/logoEntidad_head.svg"
+              class="d-inline-block align-top"
+              alt="Escudo Ministerio de Obras Públicas"
+            />
+          </a>
+          <a class="navbar-brand" href="index.html">
+           <h1>SGO | Sistema de Gestión de Obras</h1>
+          </a>
+          <div class="menu-sgo">
+            <button
+              class="btn btn-primary menu"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasRight"
+              aria-controls="offcanvasRight"
+            >
+              <span>Menú</span> <i class="fas fa-bars"></i>
+            </button>
+
+            <div
+              class="offcanvas offcanvas-end"
+              tabindex="-1"
+              id="offcanvasRight"
+              aria-labelledby="offcanvasRightLabel"
+            >
+              <div class="offcanvas-header">
+                <h5 id="offcanvasRightLabel">Cerrar menú</h5>
+                <button
+                  type="button"
+                  class="btn-close text-reset"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <a href="#"> <i class="icono-arg-servicios"></i> Planes</a>
+                <a href="#">
+                  <i class="icono-arg-firma-contrato"></i> Convenios</a
+                >
+                <a href="#">
+                  <i class="icono-arg-herramientas-colaborativas"></i>
+                  Proyectos</a
+                >
+                <a href="#">
+                  <i class="icono-arg-camion-construccion"></i> Obras</a
+                >
+                <a href="#">
+                  <i class="icono-arg-presupuesto"></i> Licitaciones</a
+                >
+                <a href="#">
+                  <i class="icono-arg-documento"></i> Estudios de
+                  preinversion</a
+                >
+                <a href="#">
+                  <i class="icono-arg-mapa-argentina"></i> Unidades
+                  territoriales</a
+                >
+                <a href="#">
+                  <i class="icono-arg-factor-pago"></i>Redeterminaciones</a
+                >
+                <a href="#">
+                  <i class="icono-arg-empresas-e-industria"></i>Contratistas</a
+                >
+                <a href="#"> <i class="icono-arg-institucion"></i>Organismos</a>
+                <a href="#">
+                  <i class="icono-arg-acceso-a-especialistas"></i>Monitoreo</a
+                >
+                <a href="#">
+                  <i class="icono-arg-financiamiento"></i> Programas
+                  presupuestarios</a
+                >
+                <a href="#"> <i class="icono-arg-comunidad"></i>Damnificados</a>
+                <a href="#">
+                  <i class="icono-arg-computadora-videojuego"></i> SIMBIM</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main role="main">
+      <section class="bienvenido-login">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7 col-md-7 col-sm-6 col-xs-12 bienvenido">
+              <h1>Bienvenidos a SGO</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+                aliquip ex ea commodo consequat. Duis dolore magna aliquam erat
+                volutpat. Ut wisi enim ad minimlobortis nisl ut aliquip ex ea
+                commodo consequat. nostrud exerci tation ullamcorper suscipit
+                lobortis nisl ut aliquip ex ea commodo consequat. Duis dolore
+                magna aliquam erat volutpat. Ut wisi enim ad minimlobortis nisl
+                ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 login">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="name@example.com"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label"
+                  >Example textarea</label
+                >
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                ></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="ejes-ministerio">
+        <div class="container">
+          <h2>Conocé los ejes principales del Ministerio de Obras Públicas</h2>
+          <div class="row ejes">
+            <div
+              class="col-lg-3 col-md-3 col-sm-12 col-xs-12 tarjeta tarjeta-transparencia"
+            >
+              <a href="https://www.argentina.gob.ar/obras-publicas/transparencia" target="_blank">
+                <div class="card" style="width: 18rem">                
+                  <i class="icono-arg-anticorrupcion" alt="icono transparencia" /></i>
+                  <div class="card-body">
+                    <h5 class="card-title">Transparencia</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and make
+                      up the bulk of the card's content.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-lg-3 col-md-3 col-sm-12 col-xs-12 tarjeta tarjeta-participacion"
+            >
+            <a href="https://www.argentina.gob.ar/participacion-y-control-ciudadano" target="_blank">
+              <div class="card" style="width: 18rem">
+                <i class="icono-arg-comunidad" class="card-img-top" alt="icono Participación ciudadana" /></i>
+                <div class="card-body">
+                  <h5 class="card-title">Participación ciudadana</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </a>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 tarjeta tarjeta-obras">
+              <a href="https://mapainversiones.obraspublicas.gob.ar/" target="_blank">
+              <div class="card" style="width: 18rem">
+                <i class="icono-arg-camion-construccion" class="card-img-top" alt="icono obras"></i>
+                <div class="card-body">
+                  <h5 class="card-title">Obras públicas</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-6">
+            <div class="region region-footer1">
+              <section
+                id="block-menu-menu-footer-1"
+                class="block block-menu clearfix"
+              >
+                <h3 class="block-title h3 section-title h3 section-title">
+                  Gestores
+                </h3>
+                <ul class="menu nav">
+                  <li class="first leaf">
+                    <a href="/planes">Planes</a>
+                  </li>
+                  <li class="leaf">
+                    <a href="/convenios">Convenios</a>
+                  </li>
+                  <li class="leaf">
+                    <a href="/proyectos">Proyectos</a>
+                  </li>
+                  <li class="last leaf">
+                    <a href="/Obras">Obras</a>
+                  </li>
+                  <li class="leaf">
+                    <a href="/licitaciones">Licitaciones</a>
+                  </li>
+                  <li class="leaf">
+                    <a href="/estudiosDePreinversion"
+                      >Estudios de preinversion</a
+                    >
+                  </li>
+                  <li class="last leaf">
+                    <a href="/unidadesTerritoriales">Unidades territoriales</a>
+                  </li>
+                </ul>
+              </section>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="region region-footer1">
+              <section
+                id="block-menu-menu-footer-1"
+                class="block block-menu clearfix"
+              >
+                <h3 class="block-title h3 section-title h3 section-title">
+                  Acerca de SGO
+                </h3>
+                <ul class="menu nav">
+                  <li class="first leaf">
+                    <a href="https://sgo.obraspublicas.gob.ar/Library/Index" target="blanck">Tutoriales</a>
+                  </li>
+                  <li class="leaf">
+                    <a href="https://www.argentina.gob.ar/terminos-y-condiciones" target="blanck"
+                      >Términos de datos abiertos y políticas de privacidad</a
+                    >
+                  </li>
+                  <li class="last leaf">
+                    <a href="mailto:sistemas@obraspublicas.gob.ar" target="blanck">Contacto</a>
+                  </li>
+                </ul>
+              </section>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="region region-footer3">
+              <section
+                id="block-menu-menu-footer-3"
+                class="block block-menu clearfix"
+              >
+                <h3 class="block-title h3 section-title h3 section-title">
+                  Versión 1.1.0.1739
+                </h3>
+                <ul class="menu nav">
+                  <li class="first leaf">
+                    <img src="./img/icon/calendar.svg" alt="año" /> 2021
+                  </li>
+                  <li class="leaf">
+                    <img src="./img/icon/box.svg" alt="ministerio" /> Ministerio
+                    de Obras Públicas
+                  </li>
+                  <li class="leaf">
+                    <img src="./img/icon/place.svg" alt="dirección" /> Hipólito
+                    Yrigoyen 250 | (C1002ABC) CABA
+                  </li>
+                  <li class="last leaf">
+                    <img src="./img/icon/phone.svg" alt="teléfono" /> Tel. +54
+                    (011) 4349-7699
+                  </li>
+                </ul>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sub-footer col-sm-12 m-y-1 p-x-0">
+        <div class="container">
+          <div class="row sub-footer">
+            <img src="./img/logo/logo_argentina_unida-blanco.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
