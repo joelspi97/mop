@@ -104,20 +104,25 @@ header .menu:focus:hover {
   padding-bottom: 7rem;
 }
 
+.bienvenido-login .row {
+  align-items: center;
+}
+
 .bienvenido {
   margin-right: 5rem;
 }
 .bienvenido h1 {
-  font-size: 1.875rem;
+  font-size: 3.125rem;
   font-weight: 700;
   color: #333;
 }
 
-.bienvenido p {
-  font-size: 1rem;
+.bienvenido h2 {
+  font-size: 1.875rem;
   font-weight: 600;
-  margin-top: 3rem;
-  line-height: 1.65rem;
+  margin-top: 1rem;
+  line-height: 2.3rem;
+  letter-spacing: 0.02rem;
 }
 
 .login {
@@ -127,67 +132,7 @@ header .menu:focus:hover {
   height: 22.813rem;
   padding: 2rem;
 }
-/*ejes ministerio*/
-.ejes-ministerio {
-  background-color: #f2f2f2;
-  padding-top: 5rem;
-  padding-bottom: 10rem;
-}
-.ejes {
-  justify-content: space-between;
-}
 
-.ejes-ministerio h2 {
-  font-size: 1.563rem;
-  font-weight: 700;
-  color: #333;
-  margin-bottom: 5rem;
-}
-
-/*Cards*/
-.card {
-  border-radius: 0.625rem;
-  border: none;
-  box-shadow: 0px 3px 6px #00000029;
-}
-
-.tarjeta a {
-  text-decoration: none;
-  color: #333;
-}
-.tarjeta i {
-  font-size: 5rem;
-  text-align: center;
-  color: white;
-  border-radius: 0.625rem 0.625rem 0rem 0rem;
-  padding: 1rem 0;
-}
-
-.tarjeta h5 {
-  font-weight: 700;
-  font-size: 1.25rem;
-}
-
-.tarjeta p {
-  font-size: 0.938rem;
-  color: #333;
-}
-
-.tarjeta:hover {
-  opacity: 80%;
-  border: #333;
-}
-.tarjeta-transparencia i {
-  background-color: #37bbed;
-}
-
-.tarjeta-participacion i {
-  background-color: #9284be;
-}
-
-.tarjeta-obras i {
-  background-color: #50b7b2;
-}
 /* Footer */
 
 .main-footer {
