@@ -149,43 +149,78 @@
               <!-- switch-->
 
               <div class="select-login">
-                <button type="button" class="btn col-6 selec-boton">
+                <button
+                  type="button"
+                  class="btn col-6 no-selec-boton-entidades"
+                >
                   Usuario SGO
                 </button>
-                <button type="button" class="btn col-6 no-selec-boton">
-                  Otras <span class="opciones">opciones</span>
-                </button>
+                <button type="button" class="btn col-6 selec-boton-entidades">
+                  Otras <span class="opciones">opciones</span> 
               </div>
 
-              <!-- form-->
-
-              <form class="login-usuario-sgo">
-                <div class="form-group">
-                  <label for="exampleInputEmail1">Usuario o CUIT</label>
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="exampleInputEmail1"
-                    aria-describedby="emailHelp"
-                    placeholder="Ingresá tu usuario o  CUIT"
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputPassword1">Contraseña</label>
-                  <input
-                    type="password"
-                    class="form-control"
-                    id="exampleInputPassword1"
-                    placeholder="Ingresá tu contraseña"
-                  />
-                </div>
+              <!--ingresar con entidades-->
+              <div class="entidades">
+                <ul>
+                  <li>
+                    <img src="./img/logo/afip.png" alt="logo afip" />
+                    <button
+                      type="button"
+                      class="
+                        btn
+                        ingresar-entidades
+                        col-lg-6 col-md-5 col-sm-6 col-xs-12
+                      "
+                    >
+                      Ingresar
+                    </button>
+                  </li>
+                  <li>
+                    <img src="./img/logo/anses.png" alt="logo anses" />
+                    <button
+                      type="button"
+                      class="
+                        btn
+                        ingresar-entidades
+                        col-lg-6 col-md-5 col-sm-6 col-xs-12
+                      "
+                    >
+                      Ingresar
+                    </button>
+                  </li>
+                  <li>
+                    <img src="./img/logo/renaper.png" alt="logo renaper" />
+                    <button
+                      type="button"
+                      class="
+                        btn
+                        ingresar-entidades
+                        col-lg-6 col-md-5 col-sm-6 col-xs-12
+                      "
+                    >
+                      Ingresar
+                    </button>
+                  </li>
+                  <li>
+                    <img src="./img/logo/gde.png" alt="logo g d e" />
+                    <button
+                      type="button"
+                      class="
+                        btn
+                        ingresar-entidades
+                        col-lg-6 col-md-5 col-sm-6 col-xs-12
+                      "
+                    >
+                      Ingresar
+                    </button>
+                  </li>
+                </ul>
                 <div class="d-grid gap-2">
-                  <button type="submit" class="btn ingresar">Ingresar</button>
                   <button type="button" class="btn registrar">
                     Me quiero registrar
                   </button>
                 </div>
-              </form>
+              </div>
             </div>
           </div>
         </div>

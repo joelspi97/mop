@@ -100,8 +100,8 @@ header .menu:focus:hover {
 
 .bienvenido-login {
   background-image: url("../img/bg_bienvenido.png");
-  padding-top: 12rem;
-  padding-bottom: 7rem;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
 }
 
 .bienvenido-login .row {
@@ -132,7 +132,7 @@ header .menu:focus:hover {
   padding: 2rem;
 }
 
-/*login*/
+/*login usuario SGO*/
 
 .select-login {
   background-color: #fff;
@@ -142,7 +142,7 @@ header .menu:focus:hover {
 .select-login button:focus {
   box-shadow: none;
 }
-.usuario-sgo {
+.selec-boton {
   font-size: 1.2rem;
   font-weight: 600;
   color: #fff;
@@ -151,11 +151,11 @@ header .menu:focus:hover {
   border-radius: 2rem;
 }
 
-.usuario-sgo:hover {
+.selec-boton:hover {
   color: #fff;
 }
 
-.otras-opciones {
+.no-selec-boton {
   font-size: 1.2rem;
   font-weight: 600;
   color: #cccccc;
@@ -164,7 +164,7 @@ header .menu:focus:hover {
   float: right;
 }
 
-.otras-opciones:hover {
+.no-selec-boton:hover {
   border: solid 0.15rem #37bbed;
   color: #37bbed;
 }
@@ -217,6 +217,65 @@ header .menu:focus:hover {
 .registrar:hover {
   color: #37bbed;
   background-color: #fff;
+  border: solid #37bbed;
+}
+
+/*login otras opciones*/
+
+.entidades {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.no-selec-boton-entidades {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #cccccc;
+  padding: 0.7rem 0rem;
+  border-radius: 2rem;
+}
+
+.no-selec-boton-entidades:hover {
+  border: solid 0.15rem #37bbed;
+  color: #37bbed;
+}
+
+.selec-boton-entidades {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #37bbed;
+  padding: 0.7rem 0rem;
+  border-radius: 2rem;
+  float: right;
+}
+
+.selec-boton-entidades:hover {
+  color: #fff;
+}
+.entidades ul {
+  margin-bottom: 2rem;
+  padding-left: 0;
+}
+
+.entidades li {
+  list-style: none;
+  margin: 1rem 0;
+}
+
+.ingresar-entidades {
+  background-color: #fff;
+  color: #37bbed;
+  font-weight: 700;
+  font-size: 1.2rem;
+  border: solid #37bbed;
+  border-radius: 2rem;
+  margin-left: 1.5rem;
+}
+
+.ingresar-entidades:hover {
+  background-color: #37bbed;
+  color: #fff;
   border: solid #37bbed;
 }
 
@@ -279,3 +338,41 @@ header .menu:focus:hover {
   max-width: 300px;
   display: block;
 }
+
+/*responsive*/
+@media screen and (max-width: 990px) {
+  .navbar-brand h1 {
+    display: none;
+  }
+  .bienvenido-login h2 {
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .container {
+    max-width: 85%;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .opciones {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 378px) {
+  .menu-sgo span{
+    display: none;
+  }
+
+@media screen and (max-width: 344px) {
+  .opciones {
+    display:inline-block;
+  }
+  .bienvenido h1 {
+    font-size: 2.5rem ;
+  }
+  .navbar-brand img {
+    width: 80%;
+  }
