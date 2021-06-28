@@ -52,6 +52,9 @@
           <a class="navbar-brand" href="index.html">
             <h1>SGO | Sistema de Gestión de Obras</h1>
           </a>
+
+          <!-- boton menu-->
+
           <div class="menu-sgo">
             <button
               class="btn btn-primary menu"
@@ -62,6 +65,8 @@
             >
               <span>Menú</span> <i class="fas fa-bars"></i>
             </button>
+
+             <!-- menu-->
 
             <div
               class="offcanvas offcanvas-end"
@@ -126,36 +131,45 @@
       </nav>
     </header>
     <main role="main">
+
+       <!-- Texto bienvenido-->
+
       <section class="bienvenido-login">
         <div class="container">
           <div class="row">
-            <div class="col-lg-7 col-md-7 col-sm-6 col-xs-12 bienvenido">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 bienvenido">
               <h1>Bienvenidos</h1>
               <h2>al Sistema de Gestión de Obras </br> 
                 del Ministerio de Obras Públicas</h2>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 login">
-              <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label"
-                  >Email address</label
-                >
-                <input
-                  type="email"
-                  class="form-control"
-                  id="exampleFormControlInput1"
-                  placeholder="name@example.com"
-                />
+
+       <!-- login con usuario SGO -->
+
+            <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12 login">
+              
+              <!-- switch-->
+
+              <div class="select-login">
+                <button type="button" class="btn  col-6 usuario-sgo">Usuario SGO</button>
+                <button type="button" class="btn  col-6 otras-opciones"> Otras opciones</button>
               </div>
-              <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label"
-                  >Example textarea</label
-                >
-                <textarea
-                  class="form-control"
-                  id="exampleFormControlTextarea1"
-                  rows="3"
-                ></textarea>
-              </div>
+
+            <!-- form-->
+
+              <form class="login-usuario-sgo">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Usuario o CUIT</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingresá tu usuario o  CUIT">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Contraseña</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Ingresá tu contraseña">
+                </div>
+                <div class="d-grid gap-2">
+                  <button type="submit" class="btn ingresar">Ingresar</button>
+                  <button type="button" class="btn registrar">Me quiero registrar</button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
@@ -163,6 +177,9 @@
     </main>
 
     <footer class="main-footer">
+
+       <!-- footer con links-->
+
       <div class="container">
         <div class="row">
           <div class="col-md-4 col-sm-6">
@@ -268,6 +285,9 @@
           </div>
         </div>
       </div>
+
+       <!-- footer celeste-->
+
       <div class="sub-footer col-sm-12 m-y-1 p-x-0">
         <div class="container">
           <div class="row sub-footer">

@@ -129,8 +129,95 @@ header .menu:focus:hover {
   background-color: #f2f2f2;
   box-shadow: 0px 3px 6px #00000029;
   border-radius: 0.938rem;
-  height: 22.813rem;
   padding: 2rem;
+}
+
+/*login*/
+
+.select-login {
+  background-color: #fff;
+  border-radius: 2rem;
+}
+
+.select-login button:focus {
+  box-shadow: none;
+}
+.usuario-sgo {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #37bbed;
+  padding: 0.7rem 0rem;
+  border-radius: 2rem;
+}
+
+.usuario-sgo:hover {
+  color: #fff;
+}
+
+.otras-opciones {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #cccccc;
+  padding: 0.7rem 0rem;
+  border-radius: 2rem;
+  float: right;
+}
+
+.otras-opciones:hover {
+  border: solid 0.15rem #37bbed;
+  color: #37bbed;
+}
+
+.login-usuario-sgo {
+  margin-top: 1.5rem;
+}
+
+.login-usuario-sgo label {
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.login-usuario-sgo input {
+  border-radius: 2rem;
+  border: solid #37bbed;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.ingresar {
+  color: #fff;
+  background-color: #ed3d8f;
+  border: solid #ed3d8f;
+  border-radius: 2rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 0.02rem;
+  margin-top: 1rem;
+}
+
+.ingresar:hover {
+  color: #ed3d8f;
+  background-color: #fff;
+  border: solid #ed3d8f;
+}
+
+.registrar {
+  color: #fff;
+  background-color: #37bbed;
+  border: solid #37bbed;
+  border-radius: 2rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 0.02rem;
+}
+
+.registrar:hover {
+  color: #37bbed;
+  background-color: #fff;
+  border: solid #37bbed;
 }
 
 /* Footer */
