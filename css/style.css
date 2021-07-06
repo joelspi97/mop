@@ -389,6 +389,7 @@ header .menu:focus:hover {
   border: none;
   box-shadow: 0rem 0.125rem 0.375rem #00000029;
   width: 100%;
+  position: absolute;
 }
 
 .dropdown-item {
