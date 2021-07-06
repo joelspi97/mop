@@ -9,7 +9,7 @@ img {
 /* Header */
 header .navbar {
   background-color: #ffffff;
-  box-shadow: 0px 2px 6px #00000029;
+  box-shadow: 0rem 0.125rem 0.375rem #00000029;
 }
 
 header h1 {
@@ -26,7 +26,7 @@ header .menu {
   background: #fff;
   border: none;
   border-radius: 2rem;
-  box-shadow: 0px 2px 6px #00000029;
+  box-shadow: 0rem 0.125rem 0.375rem #00000029;
   padding: 0.5rem 1.8rem;
 }
 
@@ -47,13 +47,13 @@ header .menu:active {
 header .menu:focus {
   background-color: #fff;
   color: #37bbed;
-  box-shadow: 0px 2px 6px #00000029 !important;
+  box-shadow: 0rem 0.125rem 0.375rem #00000029 !important;
 }
 
 header .menu:focus:hover {
   color: #fff;
   background-color: #37bbed;
-  box-shadow: 0px 2px 6px #00000029 !important;
+  box-shadow: 0rem 0.125rem 0.375rem #00000029 !important;
 }
 
 /*menu*/
@@ -94,7 +94,43 @@ header .menu:focus:hover {
   color: #333;
 }
 
-/*main*/
+/*sub menu*/
+.sub-menu .navbar {
+  margin-top: 5.375rem;
+  box-shadow: none;
+  background-color: #f2f2f2;
+  padding: 0;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.navbar-nav {
+  flex-direction: row;
+}
+
+.navbar-collapse {
+  display: flex !important;
+  flex-basis: auto;
+  justify-content: flex-end;
+}
+
+#notification_count {
+  padding: 0.1rem 0.4rem;
+  background: #ed3d8f;
+  color: #ffffff;
+  font-weight: bold;
+  margin-left: -1rem;
+  border-radius: 100%;
+  position: absolute;
+  font-size: 0.6rem;
+}
+
+.text-wrap {
+  white-space: normal !important;
+}
 
 /*seccion bienvenida y login*/
 
@@ -127,7 +163,7 @@ header .menu:focus:hover {
 
 .login {
   background-color: #f2f2f2;
-  box-shadow: 0px 3px 6px #00000029;
+  box-shadow: 0rem 0.188rem 0.375rem #00000029;
   border-radius: 0.938rem;
   padding: 2rem;
 }
@@ -279,6 +315,286 @@ header .menu:focus:hover {
   border: solid #37bbed;
 }
 
+/*main*/
+
+/*card gestores*/
+.card-gestores {
+  margin: 7rem 0 5rem 0;
+}
+
+.tarjeta {
+  margin-bottom: 2rem;
+}
+
+.gestores {
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.gestores a {
+  text-decoration: none;
+}
+
+.card {
+  border-radius: 0.625rem;
+  border: none;
+  box-shadow: 0rem 0.188rem 0.375rem #00000029;
+}
+
+.acceso a {
+  text-decoration: none;
+  color: #333;
+}
+.acceso i {
+  font-size: 5rem;
+  text-align: center;
+  color: white;
+  border-radius: 0.625rem 0.625rem 0rem 0rem;
+  padding: 1rem 0;
+  line-height: 0;
+}
+
+.acceso h5 {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.acceso p {
+  font-size: 1rem;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.ar-gestores {
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 0 0 0.625rem 0.625rem;
+}
+
+.ar-gestores h5 {
+  margin-top: 0.3rem;
+}
+
+.ar-gestores ul {
+  margin: 1rem 0 0 0 !important;
+}
+
+.ar-gestores span {
+  color: #fff;
+  margin-right: 0.3rem;
+}
+
+.dropdown-menu {
+  background-color: #f2f2f2;
+  border: none;
+  box-shadow: 0rem 0.125rem 0.375rem #00000029;
+  width: 100%;
+}
+
+.dropdown-item {
+  color: #333;
+  font-weight: 600;
+  padding: 0.8rem;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+  color: #333;
+  background-color: #d5d9dd;
+}
+#navbarNavDarkDropdown .dropdown-menu {
+  min-width: 25rem;
+}
+
+.notificacion {
+  border-bottom: solid #37bbed 0.15rem;
+}
+
+.notificacion img {
+  margin-right: 1rem;
+}
+
+.acceso-1 i {
+  background-color: #37bbed;
+  border: solid #37bbed;
+}
+
+.acceso-1 p {
+  color: #37bbed;
+}
+
+.acceso-1 i:hover {
+  background-color: #fff;
+  border: solid #37bbed;
+  color: #37bbed;
+}
+
+.ar-1 button:hover {
+  background-color: #37bbed;
+  color: #fff;
+}
+
+.ar-1 button:focus {
+  background-color: #37bbed;
+  color: #fff;
+}
+
+.ar-1 .dropdown-item {
+  border-bottom: solid 0.15rem #37bbed;
+}
+
+.acceso-2 i {
+  background-color: #9284be;
+  border: solid #9284be;
+}
+
+.acceso-2 p {
+  color: #9284be;
+}
+
+.acceso-2 i:hover {
+  background-color: #fff;
+  border: solid #9284be;
+  color: #9284be;
+}
+
+.ar-2 button:hover {
+  background-color: #9284be;
+  color: #fff;
+}
+
+.ar-2 button:focus {
+  background-color: #9284be;
+  color: #fff;
+}
+
+.ar-2 .dropdown-item {
+  border-bottom: solid 0.15rem #9284be;
+}
+
+.acceso-3 i {
+  background-color: #50b7b2;
+  border: solid #50b7b2;
+}
+
+.acceso-3 p {
+  color: #50b7b2;
+}
+
+.acceso-3 i:hover {
+  background-color: #fff;
+  border: solid #50b7b2;
+  color: #50b7b2;
+}
+
+.ar-3 button:hover {
+  background-color: #50b7b2;
+  color: #fff;
+}
+
+.ar-3 button:focus {
+  background-color: #50b7b2;
+  color: #fff;
+}
+
+.ar-3 .dropdown-item {
+  border-bottom: solid 0.15rem #50b7b2;
+}
+
+.acceso-4 i {
+  background-color: #ed3d8f;
+  border: solid #ed3d8f;
+}
+
+.acceso-4 p {
+  color: #ed3d8f;
+}
+
+.acceso-4 i:hover {
+  background-color: #fff;
+  border: solid #ed3d8f;
+  color: #ed3d8f;
+}
+
+.ar-4 button:hover {
+  background-color: #ed3d8f;
+  color: #fff;
+}
+
+.ar-4 button:focus {
+  background-color: #ed3d8f;
+  color: #fff;
+}
+
+.ar-4 .dropdown-item {
+  border-bottom: solid 0.15rem #ed3d8f;
+}
+
+.quiero {
+  background-color: #f2f2f2;
+  padding: 1.5rem;
+}
+.quiero h4 {
+  color: #37bbed;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.quiero ul {
+  margin: 0;
+  padding: 0;
+}
+
+.quiero a {
+  color: #333;
+  font-weight: 600;
+  padding-bottom: 1rem;
+}
+
+.quiero li {
+  list-style: none;
+  border-bottom: solid #37bbed;
+  padding: 0.8rem;
+}
+
+.quiero li:hover,
+.quiero a:hover {
+  background-color: #37bbed;
+  color: #fff;
+}
+
+/*Utilidades*/
+
+.utilidades {
+  background-color: #f2f2f2;
+  padding: 5rem;
+}
+
+.iconos {
+  text-align: center;
+  margin-top: 3rem;
+  align-items: center;
+}
+
+.utilidades a {
+  text-decoration: none;
+}
+
+.utilidades i {
+  color: #37bbed;
+  font-size: 5rem;
+}
+
+.utilidades i:hover {
+  color: #0072bb;
+}
+
+.utilidades h6 {
+  color: #333;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
 /* Footer */
 
 .main-footer {
@@ -362,16 +678,17 @@ header .menu:focus:hover {
 }
 
 @media screen and (max-width: 378px) {
-  .menu-sgo span{
+  .menu-sgo span {
     display: none;
   }
+}
 
 @media screen and (max-width: 344px) {
   .opciones {
-    display:inline-block;
+    display: inline-block;
   }
   .bienvenido h1 {
-    font-size: 2.5rem ;
+    font-size: 2.5rem;
   }
   .navbar-brand img {
     width: 80%;
