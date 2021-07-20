@@ -787,6 +787,32 @@ option {
   color: #333;
   font-size: 0.8rem;
 }
+
+/*modal*/
+.modal-header {
+  padding: 1rem 2rem;
+  color: #37bbed;
+  font-weight: 600;
+}
+
+.modal-body {
+  padding: 1rem 2rem 2rem 2rem;
+}
+
+.importante i {
+  color: #37bbed;
+  font-size: 3rem;
+}
+
+.importante h3 {
+  color: #37bbed;
+  font-size: 1.6rem;
+}
+
+.importante p {
+  margin: 0;
+}
+
 /* Footer */
 
 .main-footer {
