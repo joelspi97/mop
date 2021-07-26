@@ -40,9 +40,9 @@
       href="https://argob.github.io/poncho/node_modules/argob-poncho/dist/icono-arg.css"
     />
 
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
 
-    <script src="./js/jscript.js"></script>
+    <script src="../js/jscript.js"></script>
   </head>
   <body>
     <header>
@@ -50,7 +50,7 @@
         <div class="container">
           <a class="navbar-brand" href="index.html">
             <img
-              src="./img/logo/logoEntidad_head.svg"
+              src="../img/logo/logoEntidad_head.svg"
               class="d-inline-block align-top"
               alt="Escudo Ministerio de Obras Públicas"
             />
@@ -142,62 +142,106 @@
       <section class="bienvenido-login">
         <div class="container">
           <div class="row">
-            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 bienvenido">
-              <h1>Bienvenidos</h1>
-              <h2>
-                al Sistema de Gestión de Obras del Ministerio de Obras Públicas
-              </h2>
+            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 solicitar">
+              <h2>Solicitar un nuevo usuario</h2>
+              <h5>
+                El SGO es un sistema abierto al público general, sin embargo la
+                registración de usuarios administrativos queda restringida solo
+                a personas autorizadas. Realizando los siguientes pasos
+                brindarás los datos necesarios para ser registrado como usuario,
+                una vez que el administrador revise la información provista y
+                apruebe la cuenta.
+              </h5>
             </div>
 
-            <!-- login con usuario SGO -->
+            <!-- Paso a paso registro -->
 
-            <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12 login">
-              <!-- switch-->
-
-              <div class="select-login">
-                <a href="index.html"></a>
-                <button type="button" class="btn col-6 selec-boton" >
-                  Usuario SGO
-                </button>
-              </a>
-                <a href="index-login-entidades.html">
-                  <button type="button" class="btn col-6 no-selec-boton >
-                    Otras <span class="opciones"> Otras opciones</span>
-                  </button>
-                </a>
+            <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12 ">
+              <div class="row  paso-a-paso">
+                <div class="col-2 linea-circulo">
+                  <div class=" paso">1</div>
+                  <div class="linea"></div>
+                </div>
+                <div class="col-10">
+                  <p>Ingresar con una entidad (AFIP, ANSES, RENAPER o GDE)</p>
+                </div>  
+                <div class="col-2 linea-circulo">
+                  <div class=" paso">2</div>
+                  <div class="linea"></div>
+                </div>
+                <div class="col-10">
+                  <p>Completar el formulario con tus datos personales y laborales</p>
+                </div>
+                <div class="col-2 linea-circulo">
+                  <div class=" paso">3</div>
+                  <div class="linea linea-4"></div>
+                </div>
+                <div class="col-10 ">
+                  <p>El administrador verifica si la información es correcta para dar de alta la cuenta</p>
+                </div>  
+                 <div class="col-2 linea-circulo">
+                  <div class=" paso">4</div>
+                </div>
+                <div class="col-10">
+                  <p>¡Listo! Recibirás en tu mail las credenciales para ingresar a SGO</p>
+                </div>                                               
               </div>
-
-              <!-- form-->
-
-              <form class="login-usuario-sgo">
-                <div class="form-group">
-                  <label for="exampleInputEmail1">Usuario o CUIT</label>
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="exampleInputEmail1"
-                    aria-describedby="emailHelp"
-                    placeholder="Ingresá tu usuario o  CUIT"
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputPassword1">Contraseña</label>
-                  <input
-                    type="password"
-                    class="form-control"
-                    id="exampleInputPassword1"
-                    placeholder="Ingresá tu contraseña"
-                  />
-                </div>
-                <div class="d-grid gap-2">
-                  
-                    <button type="submit" class="btn ingresar">Ingresar</button>
-                  
-                  <button type="button" class="btn registrar">
-                    Me quiero registrar
+            </div>  
+      </section>
+      <section class="primer-paso">
+        <div class="container">
+          <div class=" row titulo">
+            <div class=" paso">1</div>
+            <h4>Ingresar con una entidad</h4>
+          </div>  
+          <div class="row paso-entidades">
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 ">
+              <ul>  
+                <li>
+                  <img src="../img/logo/afip.png" alt="logo AFIP">
+                </li>
+                <li class=" ">
+                  <button type="button" class="btn ingresar-entidades">
+                    Ingresar
                   </button>
-                </div>
-              </form>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 ">
+              <ul>  
+                <li>
+                  <img src="../img/logo/anses.png" alt="logo ANSES">
+                </li>
+                <li class=" ">
+                  <button type="button" class="btn ingresar-entidades">
+                    Ingresar
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 ">
+              <ul>  
+                <li>
+                  <img src="../img/logo/renaper.png" alt="logo RENAPER">
+                </li>
+                <li class="">
+                  <button type="button" class="btn ingresar-entidades">
+                    Ingresar
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 ">
+              <ul>  
+                <li>
+                  <img src="../img/logo/gde.png" alt="logo G D E">
+                </li>
+                <li class=" ">
+                  <button type="button" class="btn ingresar-entidades">
+                    Ingresar
+                  </button>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -292,18 +336,18 @@
                 </h3>
                 <ul class="menu nav">
                   <li class="first leaf">
-                    <img src="./img/icon/calendar.svg" alt="año" /> 2021
+                    <img src="../img/icon/calendar.svg" alt="año" /> 2021
                   </li>
                   <li class="leaf">
-                    <img src="./img/icon/box.svg" alt="ministerio" /> Ministerio
+                    <img src="../img/icon/box.svg" alt="ministerio" /> Ministerio
                     de Obras Públicas
                   </li>
                   <li class="leaf">
-                    <img src="./img/icon/place.svg" alt="dirección" /> Hipólito
+                    <img src="../img/icon/place.svg" alt="dirección" /> Hipólito
                     Yrigoyen 250 | (C1002ABC) CABA
                   </li>
                   <li class="last leaf">
-                    <img src="./img/icon/phone.svg" alt="teléfono" /> Tel. +54
+                    <img src="../img/icon/phone.svg" alt="teléfono" /> Tel. +54
                     (011) 4349-7699
                   </li>
                 </ul>
@@ -318,7 +362,7 @@
       <div class="sub-footer col-sm-12 m-y-1 p-x-0">
         <div class="container">
           <div class="row sub-footer">
-            <img src="./img/logo/logo_argentina_unida-blanco.svg" alt="" />
+            <img src="../img/logo/logo_argentina_unida-blanco.svg" alt="" />
           </div>
         </div>
       </div>
