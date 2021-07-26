@@ -40,7 +40,7 @@
 
     <script src="./js/jscript.js"></script>
   </head>
-  <body>
+  <body class="grey">
     <header>
       <nav class="navbar fixed-top">
         <div class="container">
@@ -225,48 +225,286 @@
       </section>
     </header>
     <main role="main">
+       <section class="home-gestores">
       <!--Home gestores-->
-
-      <div class="home-gestores row">
+        <section class="home-gestores row"> 
+              
         <!--Menu gestor-->
-        <div class="menu-gestor col-lg-4 col-md-4 col-sm">
-          <div class="offcanvas-body">
-            <a href="#"> <i class="icono-arg-servicios"></i> Planes</a>
-            <a href="#"> <i class="icono-arg-firma-contrato"></i> Convenios</a>
-            <a href="#">
-              <i class="icono-arg-herramientas-colaborativas"></i>
-              Proyectos</a
+        <div
+          class=" menu-gestor-desplegado d-flex flex-column flex-shrink-0 col-3"
+          
+        >
+          
+            <a
+              href="home-gestores-logueado-menucontraido.html"
+              class="d-block p-3  text-decoration-none desplegar "
+              title="Desplegar menu"
+              data-bs-toggle="tooltip"
+              data-bs-placement="right"
+              
             >
-            <a href="#"> <i class="icono-arg-camion-construccion"></i> Obras</a>
-            <a href="#"> <i class="icono-arg-presupuesto"></i> Licitaciones</a>
-            <a href="#">
-              <i class="icono-arg-documento"></i> Estudios de preinversion</a
-            >
-            <a href="#">
-              <i class="icono-arg-mapa-argentina"></i> Unidades territoriales</a
-            >
-            <a href="#">
-              <i class="icono-arg-factor-pago"></i>Redeterminaciones</a
-            >
-            <a href="#">
-              <i class="icono-arg-empresas-e-industria"></i>Contratistas</a
-            >
-            <a href="#"> <i class="icono-arg-institucion"></i>Organismos</a>
-            <a href="#">
-              <i class="icono-arg-acceso-a-especialistas"></i>Monitoreo</a
-            >
-            <a href="#">
-              <i class="icono-arg-financiamiento"></i> Programas
-              presupuestarios</a
-            >
-            <a href="#"> <i class="icono-arg-comunidad"></i>Damnificados</a>
-            <a href="#">
-              <i class="icono-arg-computadora-videojuego"></i> SIMBIM</a
-            >
+            <div class="contraer">
+              <span>Contraer accesos</span>
+                <i class="fas fa-chevron-left"></i>
+              <i class="fas fa-chevron-left"></i> 
+              </div> 
+            </a>
+          
+
+          <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
+             <li class="nav-item">
+              <a
+                href="#"
+                class="nav-link active py-3 border-bottom align-items-center"
+                aria-current="page"
+                title="Home"
+                data-bs-toggle="tooltip"
+                data-bs-placement="right"
+              >
+                <i class="icono-arg-casa"></i>
+                <span>Home</span>
+                
+              </a>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown border-bottom">
+                <a
+                  href="#"
+                  class="
+                    d-flex
+                    p-3
+                    align-items-center
+                    text-decoration-none
+                  "
+                  id="dropdownUser3"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  title="Obras"
+                >
+                  <i class="icono-arg-camion-construccion"></i>
+                  <span>Obras</span>
+                  <i class="fas fa-chevron-right icono-desplegar"></i>
+                   
+                </a>
+                <ul
+                  class="dropdown-menu text-small shadow"
+                  aria-labelledby="dropdownUser3"
+                >
+                  <li><a class="dropdown-item border-bottom" href="#">Crear</a></li>
+                  <li><a class="dropdown-item border-bottom" href="#">Buscar</a></li>
+                  <li><a class="dropdown-item border-bottom" href="#">Auditoria</a></li>
+                </ul>
+              </div>    
+            </li>     
+
+            <li>
+              <a
+                href="#"
+                class="nav-link py-3 border-bottom align-items-center"
+                title="Certificados"
+                data-bs-toggle="tooltip"
+                data-bs-placement="right"
+              >
+                <i class="icono-arg-apostilla"></i> 
+                 <span>Certificados</span>
+                 
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="nav-link py-3 border-bottom align-items-center"
+                title="Desembolsos"
+                data-bs-toggle="tooltip"
+                data-bs-placement="right"
+              >
+                <i class="icono-arg-pago"> </i>
+                <span>Desembolsos</span>        
+              </a>
+            </li>
+              
+            <li class="nav-item">
+              <div class="dropdown border-bottom">
+                <a
+                  href="#"
+                  class="
+                    d-flex
+                    align-items-center
+                    p-3
+                    text-decoration-none
+                  "
+                  id="dropdownUser3"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  title="Redeterminaciones"
+                >
+                   <i class="icono-arg-factor-pago"></i>
+                   <span>Redeterminaciones</span>
+                  <i class="fas fa-chevron-right  icono-desplegar"></i>
+                </a>
+                <ul
+                  class="dropdown-menu text-small shadow"
+                  aria-labelledby="dropdownUser3"
+                >
+                  <li><a class="dropdown-item border-bottom" href="#">Crear</a></li>
+                  <li><a class="dropdown-item border-bottom" href="#">Buscar</a></li>
+                </ul>
+              </div>    
+            </li>  
+         
+            <li>
+              <a
+                href="#"
+                class="nav-link py-3 border-bottom align-items-center"
+                title="Información presupuestaria"
+                data-bs-toggle="tooltip"
+                data-bs-placement="right"
+              >
+               <i class="icono-arg-presupuesto"></i> 
+               <span>Información presupuestaria</span>                 
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#"
+                class="nav-link py-3 border-bottom align-items-center"
+                title="Últimas certificaciones"
+                data-bs-toggle="tooltip"
+                data-bs-placement="right"
+              >
+               <i class="icono-arg-apostilla"></i>  
+               <span>Últimas certificaciones</span> 
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#"
+                class="nav-link py-3 border-bottom align-items-center"
+                title="Reportes"
+                data-bs-toggle="tooltip"
+                data-bs-placement="right"
+              >
+               <i class="icono-arg-tramite"></i> 
+                <span>Reportes</span>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#"
+                class="nav-link py-3 border-bottom align-items-center"
+                title="Visor"
+                data-bs-toggle="tooltip"
+                data-bs-placement="right"
+              >
+               <i class="icono-arg-tablero-gestion"></i>
+               <span>Visor</span>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#"
+                class="nav-link py-3 align-items-center "
+                title="Gestión"
+                data-bs-toggle="tooltip"
+                data-bs-placement="right"
+              >
+               <i class="icono-arg-datos-abiertos-2"></i>
+               <span>Gestión</span>                            
+              </a>
+            </li>            
+          </ul> 
+        </div>        
+           
+        <div class="gestor container col-7">         
+          <div class="acceso-gestor row">
+             <h5>Accesos directos</h5>
+            <a href="" class="acceso-gestor-1 col-lg-4 col-md-4 d-grid gap-2">
+              <button class="btn">
+                <i class="icono-arg-lupa"></i>
+                <span>Buscar obra</span>
+              </button>
+            </a>
+            <a href=" " class="acceso-gestor-2 col-lg-4 col-md-4 d-grid gap-2">
+              <button class="btn">
+                <i class="fas fa-plus-circle"></i>
+                <span>Crear obra</span>
+              </button>
+            </a>
+            <a href="" class="acceso-gestor-3 col-lg-4 col-md-4 d-grid gap-2">
+              <button class="btn">
+                <i class="icono-arg-apostilla"></i>
+                <span>Certificados</span>
+              </button>
+            </a>
           </div>
+          <div class="listado-notificaciones col-12">
+            <h5>Notificaciones</h5>
+            <table class="card tabla-notificacion overflow-auto">
+              <tbody>
+                <tr class="notificaciones">
+                  <td>
+                   <div class="header-notificacion"> Ampliación de plazo de obra pendiente de análisis <img src="./img/icon/notificaciones-rosa.svg"></div>
+                    <div class="cuerpo-notificacion">
+                    <p> La ampliación de plazo EX-2018-27583514- -APN-SSCOPF#MI de la obra <a href="">Edificio de Investigaciones y Transferencia Etapa II-IIFP-Grupo Bosque Este</a> se encuentra lista para ser analizada</p>
+                  </div>
+                  </td>
+                  <td class="cerrar-notificacion">
+                     <div class=" btn-close col-1">  </div>
+                  </td>
+                </tr>
+                 <tr class="notificaciones">
+                  <td>
+                   <div class="header-notificacion"> Ampliación de plazo de obra pendiente de análisis <img src="./img/icon/notificaciones-rosa.svg"></div>
+                    <div class="cuerpo-notificacion">
+                    <p> La ampliación de plazo EX-2018-27583514- -APN-SSCOPF#MI de la obra <a href="">Edificio de Investigaciones y Transferencia Etapa II-IIFP-Grupo Bosque Este</a> se encuentra lista para ser analizada</p>
+                  </div>
+                  </td>
+                  <td class="cerrar-notificacion">
+                     <div class=" btn-close col-1">  </div>
+                  </td>
+                </tr>
+                 <tr class="notificaciones">
+                  <td>
+                   <div class="header-notificacion"> Ampliación de plazo de obra pendiente de análisis </div>
+                    <div class="cuerpo-notificacion">
+                    <p> La ampliación de plazo EX-2018-27583514- -APN-SSCOPF#MI de la obra <a href="">Edificio de Investigaciones y Transferencia Etapa II-IIFP-Grupo Bosque Este</a> se encuentra lista para ser analizada</p>
+                  </div>
+                  </td>
+                  <td class="cerrar-notificacion">
+                     <div class=" btn-close col-1">  </div>
+                  </td>
+                </tr>
+                 <tr class="notificaciones">
+                  <td>
+                   <div class="header-notificacion"> Ampliación de plazo de obra pendiente de análisis </div>
+                    <div class="cuerpo-notificacion">
+                    <p> La ampliación de plazo EX-2018-27583514- -APN-SSCOPF#MI de la obra <a href="">Edificio de Investigaciones y Transferencia Etapa II-IIFP-Grupo Bosque Este</a> se encuentra lista para ser analizada</p>
+                  </div>
+                  </td>
+                  <td class="cerrar-notificacion">
+                     <div class=" btn-close col-1">  </div>
+                  </td>
+                </tr>
+
+                
+               
+              </tbody>
+            </table>
+
+
+            
+                     
+            
+
+          </div>
+
         </div>
-        <div class="container"></div>
-      </div>
+        
+      </section>
     </main>
 
     <footer class="main-footer">
@@ -388,5 +626,6 @@
         </div>
       </div>
     </footer>
+   
   </body>
 </html>
