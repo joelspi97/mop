@@ -818,16 +818,11 @@ option {
 }
 
 /* home gestores*/
-.home-gestores {
-  margin-top: 4rem;
-}
-
 .grey {
   background-color: #fbfbfb;
 }
 
 .menu-gestor {
-  background-color: #f2f2f2;
   border-radius: 0 1rem 1rem 0;
   box-shadow: 0rem 0.188rem 0.375rem #00000029;
   text-align: center;
@@ -941,7 +936,7 @@ option {
 }
 
 .home-gestores h5 {
-  margin-bottom: 2rem;
+  margin: 2rem 0;
 }
 .cerrar-notificacion {
   border-left: 0.1rem solid #37bbed;
@@ -976,10 +971,16 @@ option {
 
 /* menu gestor desplegado*/
 
+.fondo-translucido {
+  background-color: rgba(51, 51, 51, 0.165);
+}
+
 .menu-gestor-desplegado {
-  background-color: #f2f2f2;
+  background-color: #fff;
   border-radius: 0 1rem 1rem 0;
   box-shadow: 0rem 0.188rem 0.375rem #00000029;
+  z-index: 1;
+  position: absolute;
 }
 
 .menu-gestor-desplegado .nav-pills .nav-link.active,
