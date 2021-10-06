@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SGO | Sistema de Gestión de Obras</title>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://argob.github.io/poncho/node_modules/argob-poncho/dist/icono-arg.css"
+    />
+
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <script src="../js/jscript.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="../img/logo/logoEntidad_head.svg"
+              class="d-inline-block align-top"
+              alt="Escudo Ministerio de Obras Públicas"
+            />
+          </a>
+          <a class="navbar-brand" href="index.html">
+            <h1>SGO | Sistema de Gestión de Obras</h1>
+          </a>
+
+          <!-- boton menu-->
+
+          <div class="menu-sgo">
+            <button
+              class="btn btn-primary menu"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasRight"
+              aria-controls="offcanvasRight"
+            >
+              <span>Menú</span> <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- menu-->
+
+            <div
+              class="offcanvas offcanvas-end"
+              tabindex="-1"
+              id="offcanvasRight"
+              aria-labelledby="offcanvasRightLabel"
+            >
+              <div class="offcanvas-header">
+                <h5 id="offcanvasRightLabel">Cerrar menú</h5>
+                <button
+                  type="button"
+                  class="btn-close text-reset"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <a href="#"> <i class="icono-arg-servicios"></i> Planes</a>
+                <a href="#">
+                  <i class="icono-arg-firma-contrato"></i> Convenios</a
+                >
+                <a href="#">
+                  <i class="icono-arg-herramientas-colaborativas"></i>
+                  Proyectos</a
+                >
+                <a href="#">
+                  <i class="icono-arg-camion-construccion"></i> Obras</a
+                >
+                <a href="#">
+                  <i class="icono-arg-presupuesto"></i> Licitaciones</a
+                >
+                <a href="#">
+                  <i class="icono-arg-documento"></i> Estudios de
+                  preinversion</a
+                >
+                <a href="#">
+                  <i class="icono-arg-mapa-argentina"></i> Unidades
+                  territoriales</a
+                >
+                <a href="#">
+                  <i class="icono-arg-factor-pago"></i>Redeterminaciones</a
+                >
+                <a href="#">
+                  <i class="icono-arg-empresas-e-industria"></i>Contratistas</a
+                >
+                <a href="#"> <i class="icono-arg-institucion"></i>Organismos</a>
+                <a href="#">
+                  <i class="icono-arg-acceso-a-especialistas"></i>Monitoreo</a
+                >
+                <a href="#">
+                  <i class="icono-arg-financiamiento"></i> Programas
+                  presupuestarios</a
+                >
+                <a href="#"> <i class="icono-arg-comunidad"></i>Damnificados</a>
+                <a href="#">
+                  <i class="icono-arg-computadora-videojuego"></i> SIMBIM</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main role="main">
+      <!-- Texto bienvenido-->
+
+      <section class="bienvenido-login">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 reestablecer">
+              <h1>Reestablecer mi contraseña</h1>
+              <h4>
+                Si olvidaste como era tu contraseña, ingresá tu correo
+                electrónico y te enviaremos los pasos a seguir para recuperarla.
+              </h4>
+              <p class="no-olvidar">
+                No te olvides de revisar la carpeta de SPAM.
+              </p>
+            </div>
+
+            <!-- login con usuario SGO -->
+
+            <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12 login">
+              <!-- form-->
+
+              <form class="login-usuario-sgo">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Correo electrónico</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    placeholder="Ingresá correo electrónico"
+                  />
+                </div>
+                <div class="d-grid gap-2">
+                  <button type="submit" class="btn ingresar">Enviar</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <!-- footer con links-->
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-6">
+            <div class="region region-footer1">
+              <section
+                id="block-menu-menu-footer-1"
+                class="block block-menu clearfix"
+              >
+                <h3 class="block-title h3 section-title h3 section-title">
+                  Gestores
+                </h3>
+                <ul class="menu nav">
+                  <li class="first leaf">
+                    <a href="/planes">Planes</a>
+                  </li>
+                  <li class="leaf">
+                    <a href="/convenios">Convenios</a>
+                  </li>
+                  <li class="leaf">
+                    <a href="/proyectos">Proyectos</a>
+                  </li>
+                  <li class="last leaf">
+                    <a href="/Obras">Obras</a>
+                  </li>
+                  <li class="leaf">
+                    <a href="/licitaciones">Licitaciones</a>
+                  </li>
+                  <li class="leaf">
+                    <a href="/estudiosDePreinversion"
+                      >Estudios de preinversion</a
+                    >
+                  </li>
+                  <li class="last leaf">
+                    <a href="/unidadesTerritoriales">Unidades territoriales</a>
+                  </li>
+                </ul>
+              </section>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="region region-footer1">
+              <section
+                id="block-menu-menu-footer-1"
+                class="block block-menu clearfix"
+              >
+                <h3 class="block-title h3 section-title h3 section-title">
+                  Acerca de SGO
+                </h3>
+                <ul class="menu nav">
+                  <li class="first leaf">
+                    <a
+                      href="https://sgo.obraspublicas.gob.ar/Library/Index"
+                      target="blanck"
+                      >Tutoriales</a
+                    >
+                  </li>
+                  <li class="leaf">
+                    <a
+                      href="https://www.argentina.gob.ar/terminos-y-condiciones"
+                      target="blanck"
+                      >Términos de datos abiertos y políticas de privacidad</a
+                    >
+                  </li>
+                  <li class="last leaf">
+                    <a
+                      href="mailto:sistemas@obraspublicas.gob.ar"
+                      target="blanck"
+                      >Contacto</a
+                    >
+                  </li>
+                </ul>
+              </section>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="region region-footer3">
+              <section
+                id="block-menu-menu-footer-3"
+                class="block block-menu clearfix"
+              >
+                <h3 class="block-title h3 section-title h3 section-title">
+                  Versión 1.1.0.1739
+                </h3>
+                <ul class="menu nav">
+                  <li class="first leaf">
+                    <img src="../img/icon/calendar.svg" alt="año" /> 2021
+                  </li>
+                  <li class="leaf">
+                    <img src="../img/icon/box.svg" alt="ministerio" />
+                    Ministerio de Obras Públicas
+                  </li>
+                  <li class="leaf">
+                    <img src="../img/icon/place.svg" alt="dirección" /> Hipólito
+                    Yrigoyen 250 | (C1002ABC) CABA
+                  </li>
+                  <li class="last leaf">
+                    <img src="../img/icon/phone.svg" alt="teléfono" /> Tel. +54
+                    (011) 4349-7699
+                  </li>
+                </ul>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer celeste-->
+
+      <div class="sub-footer col-sm-12 m-y-1 p-x-0">
+        <div class="container">
+          <div class="row sub-footer">
+            <img src="../img/logo/logo_argentina_unida-blanco.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
