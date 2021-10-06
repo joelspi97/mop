@@ -1117,6 +1117,24 @@ option {
   display: block;
 }
 
+/*Reestablecer contraseña*/
+
+.reestablecer h1 {
+  font-weight: 700;
+  color: #333;
+}
+
+.reestablecer h4 {
+  color: #333;
+  margin: 2rem 0;
+}
+
+.no-olvidar {
+  color: #ed3d8f;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
 /*responsive*/
 @media screen and (max-width: 990px) {
   .navbar-brand h1 {
