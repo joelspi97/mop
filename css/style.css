@@ -842,10 +842,6 @@ option {
   border-radius: 0 !important;
 }
 
-.menu-gestor .border-bottom {
-  border-bottom: 0.15rem solid #d5d9dd !important;
-}
-
 .menu-gestor i {
   color: #333;
   font-size: 1.25rem;
@@ -997,10 +993,6 @@ option {
 }
 .menu-gestor-desplegado .nav-link {
   border-radius: 0 !important;
-}
-
-.menu-gestor-desplegado .border-bottom {
-  border-bottom: 0.15rem solid #d5d9dd !important;
 }
 
 .menu-gestor-desplegado i {
