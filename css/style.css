@@ -392,7 +392,7 @@ header .menu:focus:hover {
   background-color: #f2f2f2;
   border: none;
   box-shadow: 0rem 0.125rem 0.375rem #00000029;
-  width: 100%;
+  min-width: none;
   position: absolute;
 }
 
@@ -1125,6 +1125,79 @@ option {
   color: #ed3d8f;
   font-weight: 700;
   font-size: 1.3rem;
+}
+
+/*Administracion SGO*/
+
+.acceso-usuarios {
+  flex-direction: row;
+  background-color: #37bbed;
+  color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  border-radius: 0.625rem 0.625rem 0rem 0rem;
+  text-align: right;
+}
+.cantidad h1 {
+  font-size: 5rem;
+}
+.cantidad p {
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+.acceso-mensajes {
+  flex-direction: row;
+  background-color: #9284be;
+  color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  border-radius: 0.625rem 0.625rem 0rem 0rem;
+  text-align: right;
+}
+
+/*Formulario administracion de usuarios*/
+.documentos {
+  margin-top: 3rem;
+}
+.carga-doc {
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+}
+
+.doc {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  align-items: center;
+  border-bottom: 0.15rem solid #37bbed;
+  padding: 0.5rem 0;
+}
+
+.doc p {
+  margin: 0 !important;
+}
+
+.doc:hover {
+  background-color: #d5d9dd;
+}
+
+.crear-usuario {
+  margin-top: 3rem;
+  color: #fff;
+  border: solid #ed3d8f;
+  border-radius: 2rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 0.02rem;
+  background-color: #ed3d8f;
+}
+
+.crear-usuario:hover {
+  background-color: #fff;
+  color: #ed3d8f;
 }
 
 /*responsive*/
