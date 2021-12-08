@@ -1,3 +1,16 @@
+:root {
+  --light-blue-color: #37bbed;
+  --accesible-blue-color: #0b72bb;
+
+  --accesible-pink-color: #e6056d;
+
+  --dark-nation-color: #333;
+  --accesible-grey-color: #727272;
+
+  --box-shadow-color: rgba(0, 0, 0, 0.5);
+  --accesible-small-fs: 1.157rem;
+}
+
 body {
   font-family: "Encode Sans", sans-serif;
 }
@@ -9,51 +22,55 @@ img {
 /* Header */
 header .navbar {
   background-color: #ffffff;
-  box-shadow: 0rem 0.125rem 0.375rem #00000029;
+  box-shadow: 0rem 0.125rem 0.375rem var(--box-shadow-color);
 }
 
 header h1 {
-  color: #333;
+  color: var(--dark-nation-color);
   font-size: 1.75rem;
   font-weight: 700;
   text-align: center;
 }
 
 header .menu {
-  color: #37bbed;
+  color: var(--accesible-blue-color);
   font-weight: 700;
   font-size: 1.25rem;
   background: #fff;
   border: none;
   border-radius: 2rem;
-  box-shadow: 0rem 0.125rem 0.375rem #00000029;
+  box-shadow: 0rem 0.125rem 0.375rem var(--box-shadow-color);
   padding: 0.5rem 1.8rem;
 }
 
 header button span {
-  color: #333;
+  color: var(--dark-nation-color);
+  transition: color .15s ease-in-out;
 }
 
 header .menu:hover {
+  background-color: var(--accesible-blue-color) !important;
+}
+
+header .menu:hover span {
   color: #fff;
-  background-color: #37bbed !important;
 }
 
 header .menu:active {
   background-color: #fff;
-  color: #37bbed;
+  color: var(--accesible-blue-color);
 }
 
 header .menu:focus {
   background-color: #fff;
-  color: #37bbed;
-  box-shadow: 0rem 0.125rem 0.375rem #00000029 !important;
+  color: var(--accesible-blue-color);
+  box-shadow: 0rem 0.125rem 0.375rem var(--box-shadow-color) !important;
 }
 
 header .menu:focus:hover {
   color: #fff;
-  background-color: #37bbed;
-  box-shadow: 0rem 0.125rem 0.375rem #00000029 !important;
+  background-color: var(--accesible-blue-color);
+  box-shadow: 0rem 0.125rem 0.375rem var(--box-shadow-color) !important;
 }
 
 /*menu*/
@@ -62,7 +79,7 @@ header .menu:focus:hover {
   padding: 0.7rem 0.5rem 0.7rem 0.5rem;
   text-decoration: none;
   font-size: 1rem;
-  color: #333;
+  color: var(--dark-nation-color);
   display: block;
   transition: 0.3s;
   border-bottom: solid 0.15rem #cccccc;
@@ -78,20 +95,20 @@ header .menu:focus:hover {
 }
 
 .offcanvas-body a:hover {
-  background-color: #37bbed;
+  background-color: var(--accesible-blue-color);
   color: #fff;
-  border-bottom: solid 0.15rem #37bbed;
+  border-bottom: solid 0.15rem var(--accesible-blue-color);
 }
 
 .offcanvas-header {
-  border-bottom: solid 0.15rem #37bbed;
+  border-bottom: solid 0.15rem var(--accesible-blue-color);
   margin: 0 1rem;
 }
 
 .offcanvas-header h5 {
   font-size: 1.25rem;
   font-weight: 700;
-  color: #333;
+  color: var(--dark-nation-color);
 }
 
 /*sub menu*/
@@ -119,7 +136,7 @@ header .menu:focus:hover {
 
 #notification_count {
   padding: 0.1rem 0.4rem;
-  background: #ed3d8f;
+  background: var(--accesible-pink-color);
   color: #ffffff;
   font-weight: bold;
   margin-left: -1rem;
@@ -136,7 +153,7 @@ header .menu:focus:hover {
 
 .bienvenido-login {
   background-image: url("../img/bg_bienvenido.png");
-  padding-top: 10rem;
+  padding-top: 5rem;
   padding-bottom: 5rem;
 }
 
@@ -150,14 +167,14 @@ header .menu:focus:hover {
 .bienvenido h1 {
   font-size: 3.125rem;
   font-weight: 700;
-  color: #333;
+  color: var(--dark-nation-color);
 }
 
 .bienvenido h2 {
   font-size: 1.875rem;
   font-weight: 600;
   margin-top: 1rem;
-  line-height: 2.3rem;
+  line-height: 2.813rem;
   letter-spacing: 0.02rem;
 }
 
@@ -167,7 +184,7 @@ header .menu:focus:hover {
 
 .login {
   background-color: #f2f2f2;
-  box-shadow: 0rem 0.188rem 0.375rem #00000029;
+  box-shadow: 0rem 0.188rem 0.375rem var(--box-shadow-color);
   border-radius: 0.938rem;
   padding: 2rem;
 }
@@ -182,12 +199,19 @@ header .menu:focus:hover {
 .select-login button:focus {
   box-shadow: none;
 }
+
+.selec-boton,
+.no-selec-boton {
+  border-radius: 2rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding: 0.625rem 0rem;
+}
+
 .selec-boton {
-  font-size: 1.2rem;
-  font-weight: 600;
   color: #fff;
-  background-color: #37bbed;
-  padding: 0.7rem 0rem;
+  background-color: var(--accesible-blue-color);
+  border: solid 0.15rem var(--accesible-blue-color);
   border-radius: 2rem;
 }
 
@@ -195,18 +219,29 @@ header .menu:focus:hover {
   color: #fff;
 }
 
+.selec-boton:focus {
+    border-color: #000;
+    outline: 0.05rem solid #000 !important;
+    position: relative;
+}
+
 .no-selec-boton {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #cccccc;
-  padding: 0.7rem 0rem;
-  border-radius: 2rem;
+  background-color: #fff;
+  border: solid 0.15rem #fff;
+  color: var(--accesible-grey-color);
   float: right;
 }
 
 .no-selec-boton:hover {
-  border: solid 0.15rem #37bbed;
-  color: #37bbed;
+  border: solid 0.15rem var(--accesible-blue-color);
+  color: var(--accesible-blue-color);
+}
+
+.no-selec-boton:focus {
+  border-color: var(--accesible-blue-color);
+  color: var(--accesible-blue-color);
+  outline: 0.05rem solid var(--accesible-blue-color) !important;
+  position: relative;
 }
 
 .login-usuario-sgo {
@@ -214,50 +249,76 @@ header .menu:focus:hover {
 }
 
 .login-usuario-sgo label {
-  font-size: 1.2rem;
-  color: #333;
+  font-size: var(--accesible-small-fs);
+  color: var(--dark-nation-color);
   font-weight: 600;
   margin-bottom: 0.5rem;
 }
 
 .login-usuario-sgo input {
   border-radius: 2rem;
-  border: solid #37bbed;
-  padding: 0.5rem;
+  border: solid var(--accesible-blue-color);
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
   margin-bottom: 1rem;
 }
 
-.ingresar {
+.login-usuario-sgo input:focus {
+  box-shadow: none;
+  border-color: var(--accesible-pink-color);
+} 
+
+.login-usuario-sgo input::placeholder {
+  color: #595959;
+  font-size: 1rem;
+}
+
+.olvidar-link {
+  color: var(--accesible-blue-color);
+  font-size: var(--accesible-small-fs);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.olvidar-link:hover {
+  text-decoration: underline;
+}
+
+.ingresar,
+.registrar {
   color: #fff;
-  background-color: #ed3d8f;
-  border: solid #ed3d8f;
   border-radius: 2rem;
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   letter-spacing: 0.02rem;
+}
+
+.ingresar {
+  background-color: var(--accesible-pink-color);
+  border: solid var(--accesible-pink-color);
+
   margin-top: 1rem;
 }
 
-.ingresar:hover {
-  color: #ed3d8f;
+.ingresar:hover,
+.ingresar:focus {
+  box-shadow: none;
+  color: var(--accesible-pink-color);
   background-color: #fff;
-  border: solid #ed3d8f;
+  border: solid var(--accesible-pink-color);
 }
 
 .registrar {
-  color: #fff;
-  background-color: #37bbed;
-  border: solid #37bbed;
-  border-radius: 2rem;
-  font-weight: 700;
-  font-size: 1.2rem;
-  letter-spacing: 0.02rem;
+  background-color: var(--accesible-blue-color);
+  border: solid var(--accesible-blue-color);
 }
 
-.registrar:hover {
-  color: #37bbed;
+.registrar:hover,
+.registrar:focus {
+  box-shadow: none;
+  color: var(--accesible-blue-color);
   background-color: #fff;
-  border: solid #37bbed;
+  border: solid var(--accesible-blue-color);
 }
 
 /*login otras opciones*/
@@ -267,32 +328,48 @@ header .menu:focus:hover {
   text-align: center;
 }
 
-.no-selec-boton-entidades {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #cccccc;
-  padding: 0.7rem 0rem;
+.no-selec-boton-entidades,
+.selec-boton-entidades {
   border-radius: 2rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding: 0.625rem 0rem;
+}
+
+.no-selec-boton-entidades {
+  border: solid 0.15rem #fff;
+  color: var(--accesible-grey-color);
 }
 
 .no-selec-boton-entidades:hover {
-  border: solid 0.15rem #37bbed;
-  color: #37bbed;
+  border-color: var(--accesible-blue-color);
+  color: var(--accesible-blue-color);
+}
+
+.no-selec-boton-entidades:focus {
+  border-color: var(--accesible-blue-color);
+  color: var(--accesible-blue-color);
+  outline: 0.05rem solid var(--accesible-blue-color) !important;
+  position: relative;
 }
 
 .selec-boton-entidades {
-  font-size: 1.2rem;
-  font-weight: 600;
+  border: solid 0.15rem var(--accesible-blue-color);
   color: #fff;
-  background-color: #37bbed;
-  padding: 0.7rem 0rem;
-  border-radius: 2rem;
+  background-color: var(--accesible-blue-color);
   float: right;
 }
 
 .selec-boton-entidades:hover {
   color: #fff;
 }
+
+.selec-boton-entidades:focus {
+  border-color: #000;
+  outline: 0.05rem solid #000 !important;
+  position: relative;
+}
+
 .entidades ul {
   margin-bottom: 2rem;
   padding-left: 0;
@@ -305,18 +382,20 @@ header .menu:focus:hover {
 
 .ingresar-entidades {
   background-color: #fff;
-  color: #37bbed;
+  color: var(--accesible-blue-color);
   font-weight: 700;
-  font-size: 1.2rem;
-  border: solid #37bbed;
+  font-size: var(--accesible-small-fs);
+  border: solid var(--accesible-blue-color);
   border-radius: 2rem;
   margin-left: 1.5rem;
 }
 
-.ingresar-entidades:hover {
-  background-color: #37bbed;
+.ingresar-entidades:hover,
+.ingresar-entidades:focus {
+  background-color: var(--accesible-blue-color);
+  border: solid var(--accesible-blue-color);
+  box-shadow: none;
   color: #fff;
-  border: solid #37bbed;
 }
 
 /*main*/
@@ -342,12 +421,12 @@ header .menu:focus:hover {
 .card {
   border-radius: 0.625rem;
   border: none;
-  box-shadow: 0rem 0.188rem 0.375rem #00000029;
+  box-shadow: 0rem 0.188rem 0.375rem var(--box-shadow-color);
 }
 
 .acceso a {
   text-decoration: none;
-  color: #333;
+  color: var(--dark-nation-color);
 }
 .acceso i {
   font-size: 5rem;
@@ -391,20 +470,20 @@ header .menu:focus:hover {
 .dropdown-menu {
   background-color: #f2f2f2;
   border: none;
-  box-shadow: 0rem 0.125rem 0.375rem #00000029;
+  box-shadow: 0rem 0.125rem 0.375rem var(--box-shadow-color);
   min-width: none;
   position: absolute;
 }
 
 .dropdown-item {
-  color: #333;
+  color: var(--dark-nation-color);
   font-weight: 600;
   padding: 0.8rem;
 }
 
 .dropdown-item:focus,
 .dropdown-item:hover {
-  color: #333;
+  color: var(--dark-nation-color);
   background-color: #d5d9dd;
 }
 #navbarNavDarkDropdown .dropdown-menu {
@@ -412,7 +491,7 @@ header .menu:focus:hover {
 }
 
 .notificacion {
-  border-bottom: solid #37bbed 0.15rem;
+  border-bottom: solid var(--accesible-blue-color) 0.15rem;
 }
 
 .notificacion img {
@@ -420,32 +499,32 @@ header .menu:focus:hover {
 }
 
 .acceso-1 i {
-  background-color: #37bbed;
-  border: solid #37bbed;
+  background-color: var(--accesible-blue-color);
+  border: solid var(--accesible-blue-color);
 }
 
 .acceso-1 p {
-  color: #37bbed;
+  color: var(--accesible-blue-color);
 }
 
 .acceso-1 i:hover {
   background-color: #fff;
-  border: solid #37bbed;
-  color: #37bbed;
+  border: solid var(--accesible-blue-color);
+  color: var(--accesible-blue-color);
 }
 
 .ar-1 button:hover {
-  background-color: #37bbed;
+  background-color: var(--accesible-blue-color);
   color: #fff;
 }
 
 .ar-1 button:focus {
-  background-color: #37bbed;
+  background-color: var(--accesible-blue-color);
   color: #fff;
 }
 
 .ar-1 .dropdown-item {
-  border-bottom: solid 0.15rem #37bbed;
+  border-bottom: solid 0.15rem var(--accesible-blue-color);
 }
 
 .acceso-2 i {
@@ -507,32 +586,32 @@ header .menu:focus:hover {
 }
 
 .acceso-4 i {
-  background-color: #ed3d8f;
-  border: solid #ed3d8f;
+  background-color: var(--accesible-pink-color);
+  border: solid var(--accesible-pink-color);
 }
 
 .acceso-4 p {
-  color: #ed3d8f;
+  color: var(--accesible-pink-color);
 }
 
 .acceso-4 i:hover {
   background-color: #fff;
-  border: solid #ed3d8f;
-  color: #ed3d8f;
+  border: solid var(--accesible-pink-color);
+  color: var(--accesible-pink-color);
 }
 
 .ar-4 button:hover {
-  background-color: #ed3d8f;
+  background-color: var(--accesible-pink-color);
   color: #fff;
 }
 
 .ar-4 button:focus {
-  background-color: #ed3d8f;
+  background-color: var(--accesible-pink-color);
   color: #fff;
 }
 
 .ar-4 .dropdown-item {
-  border-bottom: solid 0.15rem #ed3d8f;
+  border-bottom: solid 0.15rem var(--accesible-pink-color);
 }
 
 .quiero {
@@ -540,7 +619,7 @@ header .menu:focus:hover {
   padding: 1.5rem;
 }
 .quiero h4 {
-  color: #37bbed;
+  color: var(--accesible-blue-color);
   font-weight: 700;
   margin-bottom: 1rem;
 }
@@ -551,20 +630,20 @@ header .menu:focus:hover {
 }
 
 .quiero a {
-  color: #333;
+  color: var(--dark-nation-color);
   font-weight: 600;
   padding-bottom: 1rem;
 }
 
 .quiero li {
   list-style: none;
-  border-bottom: solid #37bbed;
+  border-bottom: solid var(--accesible-blue-color);
   padding: 0.8rem;
 }
 
 .quiero li:hover,
 .quiero a:hover {
-  background-color: #37bbed;
+  background-color: var(--accesible-blue-color);
   color: #fff;
 }
 
@@ -586,7 +665,7 @@ header .menu:focus:hover {
 }
 
 .utilidades i {
-  color: #37bbed;
+  color: var(--accesible-blue-color);
   font-size: 5rem;
 }
 
@@ -595,7 +674,7 @@ header .menu:focus:hover {
 }
 
 .utilidades h6 {
-  color: #333;
+  color: var(--dark-nation-color);
   font-weight: 600;
   margin-top: 1rem;
 }
@@ -610,13 +689,13 @@ header .menu:focus:hover {
 
 .solicitar h2 {
   font-weight: 700;
-  color: #333;
+  color: var(--dark-nation-color);
   margin-bottom: 3rem;
 }
 
 .solicitar h5 {
   line-height: 1.9rem;
-  color: #333;
+  color: var(--dark-nation-color);
   margin-bottom: 4rem;
 }
 
@@ -627,7 +706,7 @@ header .menu:focus:hover {
 }
 
 .paso-a-paso p {
-  color: #333;
+  color: var(--dark-nation-color);
   font-size: 1.25rem;
   font-weight: 600;
 }
@@ -637,7 +716,7 @@ header .menu:focus:hover {
 }
 
 .linea {
-  border-left: 0.3rem solid #37bbed;
+  border-left: 0.3rem solid var(--accesible-blue-color);
   height: 3rem;
 }
 
@@ -650,7 +729,7 @@ header .menu:focus:hover {
 
 .paso {
   color: #fff;
-  background-color: #37bbed;
+  background-color: var(--accesible-blue-color);
   font-weight: 700;
   font-size: 1.6rem;
   border-radius: 100%;
@@ -680,7 +759,7 @@ header .menu:focus:hover {
 
 .titulo h4 {
   font-weight: 700;
-  color: #333;
+  color: var(--dark-nation-color);
 }
 .primer-paso ul {
   padding: 0;
@@ -709,7 +788,7 @@ header .menu:focus:hover {
 
 .datos {
   background-color: #f2f2f2;
-  box-shadow: 0rem 0.125rem 0.375rem #00000029;
+  box-shadow: 0rem 0.125rem 0.375rem var(--box-shadow-color);
   border-radius: 0.938rem;
   padding: 1rem 2rem;
 }
@@ -719,7 +798,7 @@ header .menu:focus:hover {
 
 .titulo-form {
   display: flex;
-  color: #37bbed;
+  color: var(--accesible-blue-color);
   align-items: center;
 }
 
@@ -743,15 +822,15 @@ header .menu:focus:hover {
 
 .form-control,
 .form-select {
-  color: #333;
+  color: var(--dark-nation-color);
   font-weight: 500;
   border-radius: 3rem;
-  border: solid #37bbed;
+  border: solid var(--accesible-blue-color);
 }
 .form-label {
   font-size: 0.938rem;
   font-weight: 600;
-  color: #333;
+  color: var(--dark-nation-color);
 }
 
 .laborales {
@@ -768,13 +847,13 @@ header .menu:focus:hover {
   margin-bottom: 1rem;
 }
 .info {
-  color: #ed3d8f;
+  color: var(--accesible-pink-color);
   font-size: 1.1rem;
 }
 
 option {
   background-color: #f2f2f2;
-  color: #333;
+  color: var(--dark-nation-color);
   font-weight: 600;
 }
 
@@ -784,18 +863,18 @@ option {
 
 .declaracion-jurada label {
   font-weight: 700;
-  color: #333;
+  color: var(--dark-nation-color);
 }
 
 .declaracion-jurada p {
-  color: #333;
+  color: var(--dark-nation-color);
   font-size: 0.8rem;
 }
 
 /*modal*/
 .modal-header {
   padding: 1rem 2rem;
-  color: #37bbed;
+  color: var(--accesible-blue-color);
   font-weight: 600;
 }
 
@@ -804,12 +883,12 @@ option {
 }
 
 .importante i {
-  color: #37bbed;
+  color: var(--accesible-blue-color);
   font-size: 3rem;
 }
 
 .importante h3 {
-  color: #37bbed;
+  color: var(--accesible-blue-color);
   font-size: 1.6rem;
 }
 
@@ -825,7 +904,7 @@ option {
 .menu-gestor {
   background-color: #fff;
   border-radius: 0 1rem 1rem 0;
-  box-shadow: 0rem 0.188rem 0.375rem #00000029;
+  box-shadow: 0rem 0.188rem 0.375rem var(--box-shadow-color);
   text-align: center;
   width: 4.5rem;
   position: fixed;
@@ -834,7 +913,7 @@ option {
 
 .menu-gestor .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-  background-color: #37bbed;
+  background-color: var(--accesible-blue-color);
   border-radius: 0 !important;
 }
 
@@ -843,12 +922,12 @@ option {
 }
 
 .menu-gestor i {
-  color: #333;
+  color: var(--dark-nation-color);
   font-size: 1.25rem;
 }
 
 .menu-gestor li:hover {
-  background-color: #37bbed;
+  background-color: var(--accesible-blue-color);
   color: #fff;
 }
 
@@ -866,12 +945,12 @@ option {
 }
 
 .desplegar i {
-  color: #37bbed;
+  color: var(--accesible-blue-color);
   padding: 1rem 0;
 }
 
 .desplegar i:hover {
-  color: #ed3d8f;
+  color: var(--accesible-pink-color);
 }
 
 .acceso-gestor {
@@ -891,14 +970,14 @@ option {
 }
 
 .acceso-gestor-1 button {
-  background-color: #37bbed;
-  border: 0.25rem solid #37bbed;
+  background-color: var(--accesible-blue-color);
+  border: 0.25rem solid var(--accesible-blue-color);
 }
 
 .acceso-gestor-1 button:hover {
   background-color: #ffffff;
-  border: 0.25rem solid #37bbed;
-  color: #37bbed;
+  border: 0.25rem solid var(--accesible-blue-color);
+  color: var(--accesible-blue-color);
 }
 
 .acceso-gestor-2 button {
@@ -936,7 +1015,7 @@ option {
   margin: 2rem 0;
 }
 .cerrar-notificacion {
-  border-left: 0.1rem solid #37bbed;
+  border-left: 0.1rem solid var(--accesible-blue-color);
   border-radius: 0;
 }
 
@@ -959,11 +1038,11 @@ option {
 .cuerpo-notificacion a {
   text-decoration: none;
   font-weight: 600;
-  color: #37bbed;
+  color: var(--accesible-blue-color);
 }
 
 .cuerpo-notificacion a:hover {
-  color: #ed3d8f;
+  color: var(--accesible-pink-color);
 }
 
 /* menu gestor desplegado*/
@@ -975,19 +1054,19 @@ option {
 .menu-gestor-desplegado {
   background-color: #fff;
   border-radius: 0 1rem 1rem 0;
-  box-shadow: 0rem 0.188rem 0.375rem #00000029;
+  box-shadow: 0rem 0.188rem 0.375rem var(--box-shadow-color);
   z-index: 1;
   position: fixed;
 }
 
 .menu-gestor-desplegado .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-  background-color: #37bbed;
+  background-color: var(--accesible-blue-color);
   border-radius: 0 !important;
   text-align: left !important;
 }
 .menu-gestor-desplegado span {
-  color: #333;
+  color: var(--dark-nation-color);
   font-weight: 600;
   margin-left: 0.5rem;
 }
@@ -996,12 +1075,12 @@ option {
 }
 
 .menu-gestor-desplegado i {
-  color: #333;
+  color: var(--dark-nation-color);
   font-size: 1.25rem;
 }
 
 .menu-gestor-desplegado li:hover {
-  background-color: #37bbed;
+  background-color: var(--accesible-blue-color);
   color: #fff;
 }
 
@@ -1017,12 +1096,12 @@ option {
 
 .contraer span,
 .contraer i {
-  color: #37bbed;
+  color: var(--accesible-blue-color);
 }
 
 .contraer span:hover,
 .contraer i:hover {
-  color: #ed3d8f;
+  color: var(--accesible-pink-color);
 }
 
 .contraer {
@@ -1035,17 +1114,17 @@ option {
 
 .menu-responsive .btn {
   color: #fff;
-  background-color: #ed3d8f;
+  background-color: var(--accesible-pink-color);
   border-radius: 3rem;
   padding: 0.5rem 1rem;
   font-size: 1.2rem;
   margin: 2rem 0;
-  box-shadow: 0rem 0.188rem 0.375rem #00000029;
+  box-shadow: 0rem 0.188rem 0.375rem var(--box-shadow-color);
 }
 
 .menu-responsive a {
   text-decoration: none;
-  color: #333;
+  color: var(--dark-nation-color);
   font-weight: 500;
 }
 
@@ -1069,23 +1148,24 @@ option {
 
 .main-footer h3 {
   font-weight: 700;
-  font-size: 1.25rem;
-  color: #333;
+  font-size: 1.5rem;
+  color: var(--dark-nation-color);
 }
 
 .main-footer a {
   text-decoration: none;
-  color: #333;
-  font-weight: 500;
-  font-size: 0.938rem;
+  color: var(--accesible-grey-color);
+  font-weight: 700;
+  font-size: var(--accesible-small-fs);
 }
 
 .main-footer a:hover {
-  color: #37bbed;
+  color: var(--accesible-blue-color);
 }
 
 .leaf {
   margin: 0.3rem 0;
+  font-size: var(--accesible-small-fs);
 }
 
 .first {
@@ -1094,18 +1174,17 @@ option {
 
 .region-footer3 {
   font-weight: 500;
-  color: #333;
+  color: var(--dark-nation-color);
   font-size: 0.938rem;
 }
 
 .sub-footer {
-  background-color: #37bbed;
+  background-color: var(--light-blue-color);
   padding: 1.25rem 0 2.5rem 0;
 }
 
 .sub-footer img {
-  margin-bottom: 20px;
-  max-width: 300px;
+  max-width: 18.75rem;
   display: block;
 }
 
@@ -1113,16 +1192,16 @@ option {
 
 .reestablecer h1 {
   font-weight: 700;
-  color: #333;
+  color: var(--dark-nation-color);
 }
 
 .reestablecer h4 {
-  color: #333;
+  color: var(--dark-nation-color);
   margin: 2rem 0;
 }
 
 .no-olvidar {
-  color: #ed3d8f;
+  color: var(--accesible-pink-color);
   font-weight: 700;
   font-size: 1.3rem;
 }
@@ -1131,7 +1210,7 @@ option {
 
 .acceso-usuarios {
   flex-direction: row;
-  background-color: #37bbed;
+  background-color: var(--accesible-blue-color);
   color: #fff;
   justify-content: space-between;
   align-items: center;
@@ -1172,7 +1251,7 @@ option {
   justify-content: space-between;
   margin: 0;
   align-items: center;
-  border-bottom: 0.15rem solid #37bbed;
+  border-bottom: 0.15rem solid var(--accesible-blue-color);
   padding: 0.5rem 0;
 }
 
@@ -1187,17 +1266,17 @@ option {
 .crear-usuario {
   margin-top: 3rem;
   color: #fff;
-  border: solid #ed3d8f;
+  border: solid var(--accesible-pink-color);
   border-radius: 2rem;
   font-weight: 700;
   font-size: 1.2rem;
   letter-spacing: 0.02rem;
-  background-color: #ed3d8f;
+  background-color: var(--accesible-pink-color);
 }
 
 .crear-usuario:hover {
   background-color: #fff;
-  color: #ed3d8f;
+  color: var(--accesible-pink-color);
 }
 
 /*responsive*/
@@ -1242,9 +1321,9 @@ option {
   }
 }
 
-@media screen and (max-width: 415px) {
-  .opciones {
-    display: none;
+@media screen and (max-width: 439px) {
+  .selec-boton {
+    min-height: 5.313rem;
   }
 }
 
@@ -1255,9 +1334,6 @@ option {
 }
 
 @media screen and (max-width: 344px) {
-  .opciones {
-    display: inline-block;
-  }
   .bienvenido h1 {
     font-size: 2.5rem;
   }
