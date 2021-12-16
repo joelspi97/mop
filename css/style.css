@@ -26,6 +26,10 @@ header .navbar {
   box-shadow: 0rem 0.125rem 0.375rem var(--box-shadow-color);
 }
 
+header .navbar-brand {
+  margin-right: auto;
+}
+
 header h1 {
   color: var(--dark-nation-color);
   font-size: 1.75rem;
@@ -709,7 +713,9 @@ header .menu:focus:hover {
   margin-bottom: 3rem;
 }
 
-.solicitar h5 {
+.solicitar p {
+  font-size: 1.25rem;
+  font-weight: 500;
   line-height: 1.9rem;
   color: var(--dark-nation-color);
   margin-bottom: 4rem;
@@ -733,7 +739,7 @@ header .menu:focus:hover {
 
 .linea {
   border-left: 0.3rem solid var(--accesible-blue-color);
-  height: 3rem;
+  height: 4.5rem;
 }
 
 .linea-circulo {
@@ -756,10 +762,6 @@ header .menu:focus:hover {
   justify-content: center;
 }
 
-.linea-4 {
-  height: 4.1rem !important;
-}
-
 /*primer paso*/
 
 .primer-paso {
@@ -773,7 +775,8 @@ header .menu:focus:hover {
   margin-bottom: 3rem;
 }
 
-.titulo h4 {
+.titulo h2 {
+  font-size: 1.5rem;
   font-weight: 700;
   color: var(--dark-nation-color);
 }
@@ -841,12 +844,22 @@ header .menu:focus:hover {
   color: var(--dark-nation-color);
   font-weight: 500;
   border-radius: 3rem;
-  border: solid var(--accesible-blue-color);
+  border: solid #898989;
 }
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--accesible-blue-color);
+}
+
 .form-label {
   font-size: 0.938rem;
   font-weight: 600;
   color: var(--dark-nation-color);
+}
+
+.form-control::placeholder {
+  color: var(--accesible-grey-color);
 }
 
 .laborales {
@@ -1205,10 +1218,6 @@ option {
   padding: 1.875rem 1rem 1.875rem 0;
 }
 
-.main-footer row {
-  flex-wrap: nowrap;
-}
-
 .main-footer .nav {
   flex-direction: column;
 }
@@ -1226,7 +1235,8 @@ option {
   font-size: var(--accesible-small-fs);
 }
 
-.main-footer a:hover {
+.main-footer a:hover,
+.main-footer a:focus {
   color: var(--accesible-blue-color);
 }
 
@@ -1348,11 +1358,15 @@ option {
 
 /*responsive*/
 @media screen and (max-width: 990px) {
-  .navbar-brand h1 {
+  .navbar-brand-title {
     display: none;
   }
   .bienvenido-login h2 {
     margin-bottom: 3rem;
+  }
+
+  .linea {
+    height: 3rem;
   }
 }
 
@@ -1387,12 +1401,20 @@ option {
     max-width: 85%;
   }
 
+  .container-entidades {
+    max-width: 75%;
+  }
+
   .tabla-notificacion-desktop {
     display: none;
   }
 
   .tabla-notificacion-mobile {
     display: block;
+  }
+
+  .linea {
+    height: 4.5rem;
   }
 }
 
@@ -1410,11 +1432,23 @@ option {
     min-width: 18rem;
     max-width: 18rem;
   }
+
+  .linea-4 {
+    height: 6rem;
+  }
 }
 
 @media screen and (max-width: 390px) {
   .menu-sgo span {
     display: none;
+  }
+
+  .linea {
+    height: 6rem;
+  }
+
+  .linea-4 {
+    height: 8.5rem;
   }
 }
 
@@ -1422,6 +1456,7 @@ option {
   .bienvenido h1 {
     font-size: 2.5rem;
   }
+  
   .navbar-brand img {
     width: 80%;
   }
