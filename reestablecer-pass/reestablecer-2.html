@@ -75,10 +75,10 @@
           <div class="row">
             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 reestablecer">
               <h1>Reestablecer mi contraseña</h1>
-              <h4>
+              <p class="texto-reestablecer">
                 Si olvidaste como era tu contraseña, ingresá tu correo
                 electrónico y te enviaremos los pasos a seguir para recuperarla.
-              </h4>
+              </p>
               <p class="no-olvidar">
                 No te olvides de revisar la carpeta de SPAM.
               </p>
@@ -99,6 +99,7 @@
                 tabindex="-1"
                 aria-labelledby="exampleModalLabel"
                 aria-hidden="true"
+                data-bs-backdrop="static"
               >
                 <div class="modal-dialog modal-lg modal-dialog-centered">
                   <div class="modal-content">
@@ -121,8 +122,8 @@
                         ingresaste con los pasos a seguir.
                       </p>
                       <div class="importante row">
-                        <i class="fas fa-exclamation-triangle col-1"></i>
-                        <div class="col-11">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <div class="importante__texto">
                           <h3>Importante</h3>
                           <p>
                             No te olvides de revisar tu casilla de
@@ -138,18 +139,19 @@
 
             <!-- login con usuario SGO -->
 
-            <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12 login">
+            <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12 login reestablecer__container">
               <!-- form-->
 
-              <form class="login-usuario-sgo">
+              <form class="login-usuario-sgo reestablecer__form">
                 <div class="form-group">
                   <label for="exampleInputEmail1">Correo electrónico</label>
                   <input
                     type="email"
                     class="form-control"
-                    id="exampleInputEmail1"
-                    aria-describedby="emailHelp"
-                    placeholder="Ingresá correo electrónico"
+                    id="correo-electronico"
+                    placeholder="Ingresar correo electrónico"
+                    name="correo-electronico-recuperacion"
+                    required
                   />
                 </div>
                 <div class="d-grid gap-2">

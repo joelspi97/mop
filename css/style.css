@@ -3,6 +3,7 @@
   --accesible-blue-color: #0b72bb;
 
   --accesible-pink-color: #e6056d;
+  --accesible-red-error-color: #A80000;
 
   --dark-nation-color: #333;
   --accesible-grey-color: #727272;
@@ -224,29 +225,27 @@ header .menu:focus:hover {
 .selec-boton {
   color: #fff;
   background-color: var(--accesible-blue-color);
-  border: solid 0.15rem var(--accesible-blue-color);
+  border: 0.2rem solid var(--accesible-blue-color);
   border-radius: 2rem;
 }
 
-.selec-boton:hover {
-  color: #fff;
-}
-
+.selec-boton:hover, 
 .selec-boton:focus {
-    border-color: #000;
-    outline: 0.05rem solid #000 !important;
-    position: relative;
+  box-shadow: none;
+  color: var(--accesible-blue-color);
+  background-color: #fff;
+  border-color: var(--accesible-blue-color);
 }
 
 .no-selec-boton {
   background-color: #fff;
-  border: solid 0.15rem #fff;
+  border: solid 0.2rem #fff;
   color: var(--accesible-grey-color);
   float: right;
 }
 
 .no-selec-boton:hover {
-  border: solid 0.15rem var(--accesible-blue-color);
+  border-color: var(--accesible-blue-color);
   color: var(--accesible-blue-color);
 }
 
@@ -780,6 +779,12 @@ header .menu:focus:hover {
   font-weight: 700;
   color: var(--dark-nation-color);
 }
+
+.titulo h1 {
+  flex-shrink: 1;
+  font-size: 1.8rem;
+}
+
 .primer-paso ul {
   padding: 0;
   margin: 0;
@@ -826,8 +831,9 @@ header .menu:focus:hover {
   margin-right: 0.5rem;
 }
 
-.titulo-form h5 {
-  font-weight: 600;
+.titulo-form h2 {
+  font-weight: 700;
+  font-size: 1.5rem;
 }
 
 .mb-3 {
@@ -853,7 +859,7 @@ header .menu:focus:hover {
 }
 
 .form-label {
-  font-size: 0.938rem;
+  font-size: var(--accesible-small-fs);
   font-weight: 600;
   color: var(--dark-nation-color);
 }
@@ -869,11 +875,18 @@ header .menu:focus:hover {
   column-gap: 0;
 }
 
-.is-invalid {
-  margin-bottom: 0 !important;
+.form-control.is-invalid {
+  margin-bottom: 0;
 }
+
+/* Agregar form y type password */
+
 .invalid-feedback {
+  color: var(--accesible-red-error-color);
+  font-size: 1rem;
+  font-weight: 500;
   margin-bottom: 1rem;
+  text-align: center;
 }
 .info {
   color: var(--accesible-pink-color);
@@ -890,6 +903,19 @@ option {
   margin-bottom: 1rem;
 }
 
+#descripcion {
+  border-radius: 1.5rem;
+  padding: 0.25rem 1rem;
+}
+
+.declaracion-jurada {
+  padding-top: 1rem;
+}
+
+.declaracion-jurada .form-check {
+  margin-bottom: 0.5rem;
+}
+
 .declaracion-jurada label {
   font-weight: 700;
   color: var(--dark-nation-color);
@@ -897,14 +923,20 @@ option {
 
 .declaracion-jurada p {
   color: var(--dark-nation-color);
-  font-size: 0.8rem;
 }
 
 /*modal*/
 .modal-header {
-  padding: 1rem 2rem;
+  border-color: var(--accesible-grey-lightest-color);
+  border-width: 0.15rem;
   color: var(--accesible-blue-color);
   font-weight: 600;
+  margin: 0 2rem;
+  padding: 1rem 0;
+}
+
+.modal-title {
+  font-weight: 700;
 }
 
 .modal-body {
@@ -916,9 +948,16 @@ option {
   font-size: 3rem;
 }
 
+.importante i, 
+.importante .importante__texto {
+  display: inline-block;
+  width: fit-content;
+}
+
 .importante h3 {
   color: var(--accesible-blue-color);
-  font-size: 1.6rem;
+  font-size: 1.25rem;
+  font-weight: 700;
 }
 
 .importante p {
@@ -1272,8 +1311,9 @@ option {
   color: var(--dark-nation-color);
 }
 
-.reestablecer h4 {
+.reestablecer .texto-reestablecer {
   color: var(--dark-nation-color);
+  font-size: 1.5rem;
   margin: 2rem 0;
 }
 
@@ -1281,6 +1321,14 @@ option {
   color: var(--accesible-pink-color);
   font-weight: 700;
   font-size: 1.3rem;
+}
+
+.reestablecer__container {
+  margin-left: auto;
+}
+
+.reestablecer__form  {
+  margin-top: 0;
 }
 
 /*Administracion SGO*/
@@ -1357,16 +1405,21 @@ option {
 }
 
 /*responsive*/
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 991px) {
   .navbar-brand-title {
     display: none;
   }
+
   .bienvenido-login h2 {
     margin-bottom: 3rem;
   }
 
   .linea {
     height: 3rem;
+  }
+
+  .reestablecer {
+    margin-bottom: 3rem;
   }
 }
 
@@ -1417,6 +1470,17 @@ option {
     height: 4.5rem;
   }
 }
+
+@media screen and (max-width: 456px) {
+  .importante i,
+  .importante .importante__texto {
+    margin: 0 auto;
+  } 
+  .importante .importante__texto {
+    text-align: center;
+  }
+}
+
 
 @media screen and (max-width: 439px) {
   .selec-boton {
