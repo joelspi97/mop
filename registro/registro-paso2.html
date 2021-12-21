@@ -51,110 +51,225 @@
       <div class="container">
         <div class="row titulo ">
           <div class="paso">2</div>
-          <h4>
+          <h1>
             Completar el formulario con tus datos personales y laborales
-          </h4>
+          </h1>
         </div>
-        <div class="row formularios">
-          <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 datos">
+        <form class="row formularios" action="./registro-paso3-modal.html" method="post">
+          <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 datos mb-5">
             <div class="titulo-form">
               <i class="icono-arg-genero"></i>
-              <h5>Datos personales</h5>
+              <h2>Datos personales</h2>
             </div>
-            <form class="row">
+            <div class="row">
               <div class="mb-3">
                 <label for="nombre" class="form-label">Primer nombre<span>*</span></label>
-                <input id="nombre" class="form-control" type="text" placeholder="Maria" required />
+                <input 
+                  id="nombre" 
+                  class="form-control" 
+                  type="text" 
+                  placeholder="Maria" 
+                  name="primer-nombre" 
+                  required 
+                />
 
                 <label for="segundo-nombre" class="form-label">Segundo nombre</label>
-                <input id="segundo-nombre" class="form-control" type="text" placeholder="Florencia" />
+                <input 
+                  id="segundo-nombre" 
+                  class="form-control" 
+                  type="text" 
+                  placeholder="Florencia" 
+                  name="segundo-nombre" 
+                />
 
                 <label for="apellido" class="form-label">Apellido<span>*</span></label>
-                <input id="apellido" class="form-control" type="text" placeholder="Fernandez" required />
+                <input 
+                  id="apellido" 
+                  class="form-control" 
+                  type="text" 
+                  placeholder="Fernandez" 
+                  name="apellido" 
+                  required 
+                />
 
                 <label for="telefono" class="form-label">Teléfono<span>*</span></label>
-                <input id="telefono" type="text" class="form-control" id="formGroupExampleInput" placeholder="Ingresar número telefónico" required />
+                <input 
+                  id="telefono" 
+                  type="tel" 
+                  class="form-control" 
+                  placeholder="Ingresar número telefónico" 
+                  name="telefono" 
+                  required 
+                />
 
                 <label for="dni" class="form-label">N° documento de identidad<span>*</span></label>
-                <input id="dni" class="form-control" type="text" placeholder="00.000.000" required />
+                <input 
+                  id="dni" 
+                  class="form-control" 
+                  type="text" 
+                  placeholder="00.000.000" 
+                  name="dni" 
+                  pattern="[0-9]*" 
+                  inputmode="numeric"
+                  required 
+                />
 
                 <label for="cuit-cuil" class="form-label">N° de CUIT/CUIL<span>*</span></label>
-                <input id="cuit-cuil" class="form-control" type="text" placeholder="00-00000000-0" required />
+                <input 
+                  id="cuit-cuil" 
+                  class="form-control" 
+                  type="text" 
+                  placeholder="00-00000000-0" 
+                  name="cuit-cuil"                  
+                  pattern="[0-9]*" 
+                  inputmode="numeric" 
+                  required 
+                />
               </div>
-            </form>
+            </div>
           </div>
           <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 datos">
             <div class="titulo-form">
               <i class="icono-arg-maletin-check"></i>
-              <h5>Datos laborales</h5>
+              <h2>Datos laborales</h2>
             </div>
             <div class="row laborales">
               <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                <form class="">
-                  <label for="usuario-sgo" class="form-label">Usuario SGO</label>
-                  <input id="usuario-sgo" class="form-control" type="text" placeholder="00-00000000-0" />
+                <label for="usuario-sgo" class="form-label">Usuario SGO</label>
+                <input 
+                  id="usuario-sgo" 
+                  class="form-control" 
+                  type="text" 
+                  placeholder="00-00000000-0" 
+                  name="usuario-sgo" 
+                  pattern="[0-9]*" 
+                  inputmode="numeric" 
+                />
 
-                  <label for="correo-electronica" class="form-label">Correo electrónico*</label>
-                  <input id="correo-electronica" type="text" class="form-control" id="formGroupExampleInput" placeholder="Ingresar correo electrónico" required />
+                <label for="correo-electronica" class="form-label">Correo electrónico*</label>
+                <input 
+                  id="correo-electronica" 
+                  type="email" 
+                  class="form-control" 
+                  id="formGroupExampleInput"
+                  placeholder="Ingresar correo electrónico" 
+                  name="correo-electronico"
+                  required 
+                />
 
-                  <label for="contraseña" class="form-label">Contraseña*</label>
-                  <i class="fas fa-info-circle info" data-bs-toggle="tooltip" data-bs-placement="top" title="Requisitos para la contraseña
+                <label for="contraseña" class="form-label">Contraseña*</label>
+                <span class="fas fa-info-circle info" data-bs-toggle="tooltip" data-bs-placement="top" id="requisitos-contraseña" title="Requisitos para la contraseña
 La contraseña debe incluir:
 -Por lo menos 8 caracteres
 -Por lo menos un número
 -Por lo menos una letra minúscula
--Por lo menos una letra mayúscula"></i>
+-Por lo menos una letra mayúscula"></span>
 
-                  <input id="contraseña" type="text" class="form-control" id="formGroupExampleInput" placeholder="Ingresar contraseña" required />
+                <input 
+                  id="contraseña" 
+                  type="password" 
+                  class="form-control" 
+                  id="formGroupExampleInput"
+                  placeholder="Ingresar contraseña" 
+                  name="contraseña"
+                  aria-describedby="requisitos-contraseña"
+                  required 
+                />
 
-                  <div>
-                    <label for="validationServer05" class="form-label">Repetir contraseña*</label>
-                    <input id="validationServer05" type="text" class="form-control is-invalid" aria-describedby="validationServer05Feedback" required>
-                    <div id="validationServer05Feedback" class="invalid-feedback">
-                      Las contraseñas no son iguales
-                    </div>
+                <div>
+                  <label for="validationServer05" class="form-label">Repetir contraseña*</label>
+                  <input 
+                    id="validationServer05" 
+                    type="password" 
+                    class="form-control is-invalid"
+                    aria-describedby="validationServer05Feedback" 
+                    required
+                  />
+                  <div id="validationServer05Feedback" class="invalid-feedback">
+                    Las contraseñas no son iguales
                   </div>
+                </div>
 
-                  <label for="nivel" class="form-label">Nivel gubernamental*</label>
-                  <select id="nivel" class="form-select" required>
-                    <option value="">Seleccionar nivel gubernamental</option>
-                    <option value="1">Nacional</option>
-                    <option value="2">Provincial</option>
-                    <option value="3">Municipal</option>
-                    <option value="4">Otro</option>
-                  </select>
+                <label for="nivel" class="form-label">Nivel gubernamental*</label>
+                <select 
+                  id="nivel" 
+                  class="form-select" 
+                  name="nivel-gubernamental"
+                  required
+                >
+                  <option value="" disabled selected hidden>Seleccionar nivel gubernamental</option>
+                  <option value="1">Nacional</option>
+                  <option value="2">Provincial</option>
+                  <option value="3">Municipal</option>
+                  <option value="4">Otro</option>
+                </select>
 
-                  <label for="provincia" class="form-label">Provincia</label>
-                  <input id="provincia" class="form-control" type="text" />
+                <label for="provincia" class="form-label">Provincia</label>
+                <input 
+                  id="provincia" 
+                  class="form-control" 
+                  type="text" 
+                  name="provincia"
+                />
               </div>
               <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 
                 <label for="municipio" class="form-label">Municipio</label>
-                <input id="municipio" class="form-control" type="text" />
+                <input 
+                id="municipio" 
+                class="form-control" 
+                type="text" 
+                name="municipio"
+              />
 
                 <label for="organismo" class="form-label">Organismo*</label>
-                <input id="organismo" type="text" class="form-control" placeholder="Secretaria xxxxx" required />
+                <input 
+                  id="organismo" 
+                  type="text" 
+                  class="form-control" 
+                  placeholder="Secretaria xxxxx" 
+                  name="organismo"
+                  required 
+                />
 
                 <label for="cargo" class="form-label">Cargo*</label>
-                <select id="cargo" class="form-select" required>
-                  <option value="">Seleccionar cargo</option>
+                <select 
+                  id="cargo" 
+                  class="form-select" 
+                  name="cargo"
+                  required
+                >
+                  <option value="" disabled selected hidden>Seleccionar cargo</option>
                   <option value="1">Cargo 1</option>
                   <option value="2">Cargo 2</option>
                   <option value="3">Cargo 3</option>
                   <option value="4">Cargo 4</option>
                 </select>
 
-                <label for="descripcion" class="form-label">Descripción de cargo</label>
-                <input id="descripcion" type="text" class="form-control" />
+                <label for="descripcion" class="form-label">Descripción del cargo</label>
+                <textarea 
+                  id="descripcion" 
+                  type="text" 
+                  class="form-control" 
+                  name="descripcion-cargo"
+                  rows="2"
+                ></textarea>
 
                 <div class="declaracion-jurada">
                   <div class="form-check">
-                    <input id="declaracion-jurada" class="form-check-input" type="checkbox" name="flexRadioDefault" required>
+                    <input 
+                      id="declaracion-jurada" 
+                      class="form-check-input" 
+                      type="checkbox" 
+                      name="acepto-declaracion-jurada"
+                      aria-describedby="texto-declaracion-jurada"
+                      required
+                    >
                     <label for="declaracion-jurada" class="form-check-label">
                       Acepto la siguiente declaración Jurada:*
                     </label>
                   </div>
-                  <p>
+                  <p id="texto-declaracion-jurada">
                     Declaro bajo juramento que la información consignada precedentemente y la documentación presentada
                     revisten carácter de declaración jurada. Asimismo, me responsabilizo de su veracidad y me comprometo
                     a facilitar su verificación
@@ -168,7 +283,7 @@ La contraseña debe incluir:
               </div>
             </div>
           </div>
-        </div>
+        </form>
       </div>
       </div>
     </section>
