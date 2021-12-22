@@ -412,9 +412,19 @@ header .menu:focus:hover {
 
 /*main*/
 
+.main-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+.main-heading span {
+  color: var(--accesible-blue-color);
+}
+
 /*card gestores*/
 .card-gestores {
-  margin: 7rem 0 5rem 0;
+  margin: 3rem 0 5rem 0;
 }
 
 .tarjeta {
@@ -461,13 +471,15 @@ header .menu:focus:hover {
 }
 
 .ar-gestores {
-  flex-direction: row;
-  justify-content: space-between;
   border-radius: 0 0 0.625rem 0.625rem;
 }
 
-.ar-gestores h5 {
+.ar-gestores h2 {
+  color: var(--accesible-blue-color);
+  font-size: 1.5rem;
+  font-weight: 700;
   margin-top: 0.3rem;
+  margin-bottom: 1.2rem;
 }
 
 .ar-gestores ul {
@@ -517,120 +529,39 @@ header .menu:focus:hover {
   margin-right: 1rem;
 }
 
-.acceso-1 i {
+.acceso {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  height: 15rem;
   background-color: var(--accesible-blue-color);
-  border: solid var(--accesible-blue-color);
+  border: 0.2rem solid var(--accesible-blue-color);
+  border-radius: 0.625rem 0.625rem 0 0;
+  box-shadow: 0rem 0.188rem 0.375rem var(--box-shadow-color);
+  color: var(--accesible-blue-color);
+  font-weight: 700;
+  font-size: var(--accesible-small-fs);
+  text-align: center;
 }
 
-.acceso-1 p {
+.acceso img {
+  width: 100%;
+  max-width: 8rem;
+}
+
+.acceso:hover,
+.acceso:focus {
+  outline: none;
+  background-color: #fff;
+  border: solid var(--accesible-blue-color);
   color: var(--accesible-blue-color);
 }
 
-.acceso-1 i:hover {
-  background-color: #fff;
-  border: solid var(--accesible-blue-color);
-  color: var(--accesible-blue-color);
-}
-
-.ar-1 button:hover {
-  background-color: var(--accesible-blue-color);
-  color: #fff;
-}
-
-.ar-1 button:focus {
-  background-color: var(--accesible-blue-color);
-  color: #fff;
-}
-
-.ar-1 .dropdown-item {
-  border-bottom: solid 0.15rem var(--accesible-blue-color);
-}
-
-.acceso-2 i {
-  background-color: #9284be;
-  border: solid #9284be;
-}
-
-.acceso-2 p {
-  color: #9284be;
-}
-
-.acceso-2 i:hover {
-  background-color: #fff;
-  border: solid #9284be;
-  color: #9284be;
-}
-
-.ar-2 button:hover {
-  background-color: #9284be;
-  color: #fff;
-}
-
-.ar-2 button:focus {
-  background-color: #9284be;
-  color: #fff;
-}
-
-.ar-2 .dropdown-item {
-  border-bottom: solid 0.15rem #9284be;
-}
-
-.acceso-3 i {
-  background-color: #50b7b2;
-  border: solid #50b7b2;
-}
-
-.acceso-3 p {
-  color: #50b7b2;
-}
-
-.acceso-3 i:hover {
-  background-color: #fff;
-  border: solid #50b7b2;
-  color: #50b7b2;
-}
-
-.ar-3 button:hover {
-  background-color: #50b7b2;
-  color: #fff;
-}
-
-.ar-3 button:focus {
-  background-color: #50b7b2;
-  color: #fff;
-}
-
-.ar-3 .dropdown-item {
-  border-bottom: solid 0.15rem #50b7b2;
-}
-
-.acceso-4 i {
-  background-color: var(--accesible-pink-color);
-  border: solid var(--accesible-pink-color);
-}
-
-.acceso-4 p {
-  color: var(--accesible-pink-color);
-}
-
-.acceso-4 i:hover {
-  background-color: #fff;
-  border: solid var(--accesible-pink-color);
-  color: var(--accesible-pink-color);
-}
-
-.ar-4 button:hover {
-  background-color: var(--accesible-pink-color);
-  color: #fff;
-}
-
-.ar-4 button:focus {
-  background-color: var(--accesible-pink-color);
-  color: #fff;
-}
-
-.ar-4 .dropdown-item {
-  border-bottom: solid 0.15rem var(--accesible-pink-color);
+.acceso:hover img,
+.acceso:focus img {
+  filter: invert(52%) sepia(93%) saturate(6893%) hue-rotate(189deg) brightness(91%) contrast(91%);
 }
 
 .quiero {
