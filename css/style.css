@@ -544,6 +544,7 @@ header .menu:focus:hover {
   font-weight: 700;
   font-size: var(--accesible-small-fs);
   text-align: center;
+  transition: all 0.15s ease-in-out;
 }
 
 .acceso img {
