@@ -485,9 +485,52 @@ header .menu:focus:hover {
   margin: 1rem 0 0 0 !important;
 }
 
+.btn-group-admin {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card .admin-img {
+  max-width: 6rem;
+}
+
+.crear-usuario-admin {
+  width: 40%;
+  justify-self: end;
+}
+
+.ar-gestores button {
+  border-radius: 0.25rem !important;
+  flex: unset !important;
+}
+
+.ar-gestores button i {
+  transition: color 0.15s ease-in-out;
+}
+
 .ar-gestores span {
   color: #fff;
+  font-size: var(--accesible-small-fs);
+  font-weight: 700;
   margin-right: 0.3rem;
+  transition: color 0.15s ease-in-out;
+}
+
+.ar-gestores button:hover span, 
+.ar-gestores button:focus span,
+.ar-gestores button:hover i, 
+.ar-gestores button:focus i {
+  color: #ffffff;
+}
+
+.ar-gestores button:hover {
+  background-color: var(--accesible-blue-color);
+}
+
+.ar-gestores button:focus {
+  background-color: var(--accesible-blue-color);
+  box-shadow: none;
+  outline: 0.15rem solid var(--dark-nation-color);
 }
 
 .dropdown-menu {
@@ -528,7 +571,8 @@ header .menu:focus:hover {
   margin-right: 1rem;
 }
 
-.acceso {
+.acceso,
+.acceso-admin {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -763,9 +807,10 @@ header .menu:focus:hover {
   align-items: center;
 }
 
-.titulo-form i {
-  font-size: 1.5rem;
+.icono-form {
   margin-right: 0.5rem;
+  height: 2rem;
+  width: 2rem;
 }
 
 .titulo-form h2 {
@@ -1270,35 +1315,24 @@ option {
 
 /*Administracion SGO*/
 
-.acceso-usuarios {
-  flex-direction: row;
-  background-color: var(--accesible-blue-color);
+.acceso-admin {
   color: #fff;
+  flex-direction: row;
   justify-content: space-between;
-  align-items: center;
   padding: 0 2rem;
-  border-radius: 0.625rem 0.625rem 0rem 0rem;
   text-align: right;
 }
 .cantidad h1 {
   font-size: 5rem;
 }
+
 .cantidad p {
   font-weight: 400;
   font-size: 1.25rem;
 }
-.acceso-mensajes {
-  flex-direction: row;
-  background-color: #9284be;
-  color: #fff;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 2rem;
-  border-radius: 0.625rem 0.625rem 0rem 0rem;
-  text-align: right;
-}
 
 /*Formulario administracion de usuarios*/
+
 .carga-doc {
   text-decoration: none;
   list-style: none;
@@ -1309,6 +1343,7 @@ option {
   margin: 0;
   padding: 0.5rem;
   border: none;
+  min-height: 4rem;
   width: 100%;
   display: flex;
   align-items: center;
@@ -1366,6 +1401,11 @@ option {
 
   .reestablecer {
     margin-bottom: 3rem;
+  }
+
+  .crear-usuario-admin {
+    width: 90%;
+    justify-self: center;
   }
 }
 
@@ -1425,6 +1465,12 @@ option {
   .importante .importante__texto {
     text-align: center;
   }
+
+  .card .admin-img {
+    opacity: 0;
+    height: 0;
+    width: 0;
+  }
 }
 
 
@@ -1445,6 +1491,11 @@ option {
 
   .linea-4 {
     height: 6rem;
+  }
+
+  .main-heading-admin {
+    font-size: 2rem;
+    text-align: center;
   }
 }
 
