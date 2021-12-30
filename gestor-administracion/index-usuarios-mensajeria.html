@@ -90,7 +90,6 @@
       </div>
     </nav>
 
-    <!-- sub menu -->
     <section class="sub-menu">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
@@ -104,21 +103,21 @@
                 <a class="nav-link" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown"
                   aria-expanded="false">
                   <span id="notification_count">3</span>
-                  <img src="../img/icon/notificaciones.svg" alt="notificaciones" />
+                  <img src="../img/icon/notificaciones.svg" alt="Abrir menú de notificaciones - 3 notificaciones nuevas" />
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDarkDropdownMenuLink">
                   <li>
                     <a class="dropdown-item notificacion" href="#">
-                      <img src="../img/icon/actualizacion.svg" alt="icono importante" />Notificación actualización 1
+                      <img src="../img/icon/actualizacion.svg" alt="Notificación de actualización" />Notificación actualización 1
                     </a>
                   </li>
                   <li>
                     <a class="dropdown-item notificacion" href="#">
-                      <img src="../img/icon/importante.svg" alt="icono importante" />Notificación importante 2</a>
+                      <img src="../img/icon/importante.svg" alt="Notificación importante" />Notificación importante 2</a>
                   </li>
                   <li>
                     <a class="dropdown-item notificacion" href="#">
-                      <img src="../img/icon/importante.svg" alt="icono importante" />Notificación importante 3</a>
+                      <img src="../img/icon/importante.svg" alt="Notificación importante" />Notificación importante 3</a>
                   </li>
                 </ul>
               </li>
@@ -145,19 +144,19 @@
 
     <section class="card-gestores">
       <div class="container">
-        <h1>Administración SGO</h1>
+        <h1 class="main-heading main-heading-admin">Administración SGO</h1>
         <div class="row gestores">
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 tarjeta">
-            <div class="card acceso acceso-usuarios">
-              <i class="icono-arg-genero" alt="icono usuarios"> </i>
+            <div class="card acceso-admin">
+              <img class="admin-img" src="../img/icon/icono-usuarios.svg" alt="" />
               <div class="cantidad">
                 <h1>1193</h1>
                 <p>Total</p>
               </div>
             </div>
             <div class="card card-body ar-gestores">
-              <h5 class="">Usuarios</h5>
-              <div class="btn-group ar-1">
+              <div class="btn-group ar-1 btn-group-admin">
+                <h2 class="m-0">Usuarios</h2>
                 <button class="btn ar" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
                   aria-expanded="false">
                   <span>Quiero</span> <i class="fas fa-ellipsis-v"></i>
@@ -190,18 +189,16 @@
           </div>
 
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 tarjeta">
-            <a href="">
-              <div class="card acceso acceso-mensajes">
-                <i class="icono-arg-mail-1" alt="icono Mensajes"> </i>
-                <div class="cantidad">
-                  <h1>205</h1>
-                  <p>Total</p>
-                </div>
+            <div class="card acceso-admin">
+              <img class="admin-img" src="../img/icon/icono-mensajes.svg" alt="" />
+              <div class="cantidad">
+                <h1>205</h1>
+                <p>Total</p>
               </div>
-            </a>
+            </div>
             <div class="card card-body ar-gestores">
-              <h5 class="">Mensajes</h5>
-              <div class="btn-group ar-2">
+              <div class="btn-group ar-2 btn-group-admin">
+                <h2 class="m-0">Mensajes</h2>
                 <button class="btn ar" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
                   aria-expanded="false">
                   <span>Quiero</span> <i class="fas fa-ellipsis-v"></i>
@@ -282,19 +279,18 @@
               </h3>
               <ul class="menu nav">
                 <li class="first leaf">
-                  <img src="../img/icon/calendar.svg" alt="Fecha: año 2021" /> 2021
+                  <img src="../img/icon/calendar.svg" alt="Año" /> 2021
                 </li>
                 <li class="leaf">
-                  <img src="../img/icon/box.svg" alt="Ministerio: Ministerio de obras públicas" /> Ministerio
+                  <img src="../img/icon/box.svg" alt="" /> Ministerio
                   de Obras Públicas
                 </li>
                 <li class="leaf">
-                  <img src="../img/icon/place.svg" alt="Dirección: Hipólito
-                    Yrigoyen 250 | (C1002ABC) CABA" /> Hipólito
+                  <img src="../img/icon/place.svg" alt="Dirección" /> Hipólito
                   Yrigoyen 250 | (C1002ABC) CABA
                 </li>
                 <li class="last leaf">
-                  <img src="../img/icon/phone.svg" alt="Teléfono: +54 (011) 4349-7699" /> Tel. +54
+                  <img src="../img/icon/phone.svg" alt="Teléfono" /> <span aria-hidden="true">Tel.</span> +54
                   (011) 4349-7699
                 </li>
               </ul>
@@ -309,7 +305,7 @@
     <div class="sub-footer col-sm-12 m-y-1 p-x-0">
       <div class="container">
         <div class="row sub-footer">
-          <img src="../img/logo/logo_argentina_unida-blanco.svg" alt="" />
+          <img src="../img/logo/logo_argentina_unida-blanco.svg" alt="Logo de Argentina Unida" />
         </div>
       </div>
     </div>
