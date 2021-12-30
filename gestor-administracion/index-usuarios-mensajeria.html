@@ -1,496 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SGO | Sistema de Gestión de Obras</title>
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
-      crossorigin="anonymous"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="../favicon.png" type="image/x-icon">
+  <title>SGO | Sistema de Gestión de Obras</title>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-      crossorigin="anonymous"
-    ></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
 
-    <link
-      rel="stylesheet"
-      href="https://argob.github.io/poncho/node_modules/argob-poncho/dist/icono-arg.css"
-    />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
 
-    <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="https://argob.github.io/poncho/node_modules/argob-poncho/dist/icono-arg.css" />
 
-    <script src="../js/jscript.js"></script>
-  </head>
-  <body>
-    <header>
-      <nav class="navbar fixed-top">
-        <div class="container">
-          <a class="navbar-brand" href="index.html">
-            <img
-              src="../img/logo/logoEntidad_head.svg"
-              class="d-inline-block align-top"
-              alt="Escudo Ministerio de Obras Públicas"
-            />
-          </a>
-         <a class="navbar-brand navbar-brand-title" href="index.html">
-            <h1>Administración SGO</h1>
-          </a>
+  <link rel="stylesheet" href="../css/style.css" />
 
-          <!-- boton menu-->
+  <script src="../js/jscript.js"></script>
+</head>
 
-          <div class="menu-sgo">
-            <button
-              class="btn btn-primary menu"
-              type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasRight"
-              aria-controls="offcanvasRight"
-            >
-              <span>Menú</span> <i class="fas fa-bars"></i>
-            </button>
+<body>
+  <header>
+    <nav class="navbar fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html" title="Regresar al inicio">
+          <img src="../img/logo/logoEntidad_head.svg" class="d-inline-block align-top"
+            alt="Escudo Ministerio de Obras Públicas - Enlace para volver a la página de inicio" />
+        </a>
 
-            <!-- menu-->
+        <!-- boton menu-->
 
-            <div
-              class="offcanvas offcanvas-end"
-              tabindex="-1"
-              id="offcanvasRight"
-              aria-labelledby="offcanvasRightLabel"
-            >
-              <div class="offcanvas-header">
-                <h5 id="offcanvasRightLabel">Cerrar menú</h5>
-                <button
-                  type="button"
-                  class="btn-close text-reset"
-                  data-bs-dismiss="offcanvas"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="offcanvas-body">
-                <a href="#"> <i class="icono-arg-servicios"></i> Planes</a>
-                <a href="#">
-                  <i class="icono-arg-firma-contrato"></i> Convenios</a
-                >
-                <a href="#">
-                  <i class="icono-arg-herramientas-colaborativas"></i>
-                  Proyectos</a
-                >
-                <a href="#">
-                  <i class="icono-arg-camion-construccion"></i> Obras</a
-                >
-                <a href="#">
-                  <i class="icono-arg-presupuesto"></i> Licitaciones</a
-                >
-                <a href="#">
-                  <i class="icono-arg-documento"></i> Estudios de
-                  preinversion</a
-                >
-                <a href="#">
-                  <i class="icono-arg-mapa-argentina"></i> Unidades
-                  territoriales</a
-                >
-                <a href="#">
-                  <i class="icono-arg-factor-pago"></i>Redeterminaciones</a
-                >
-                <a href="#">
-                  <i class="icono-arg-empresas-e-industria"></i>Contratistas</a
-                >
-                <a href="#"> <i class="icono-arg-institucion"></i>Organismos</a>
-                <a href="#">
-                  <i class="icono-arg-acceso-a-especialistas"></i>Monitoreo</a
-                >
-                <a href="#">
-                  <i class="icono-arg-financiamiento"></i> Programas
-                  presupuestarios</a
-                >
-                <a href="#"> <i class="icono-arg-comunidad"></i>Damnificados</a>
-                <a href="#">
-                  <i class="icono-arg-computadora-videojuego"></i> SIMBIM</a
-                >
-              </div>
+        <div class="menu-sgo">
+          <button class="btn btn-primary menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight">
+            <span>Menú</span> <i class="fas fa-bars"></i>
+          </button>
+
+          <!-- menu-->
+
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+              <h5 id="offcanvasRightLabel">Cerrar menú</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
             </div>
+            <div class="offcanvas-body">
+              <a href="#"> <i class="icono-arg-servicios"></i> Planes</a>
+              <a href="#">
+                <i class="icono-arg-firma-contrato"></i> Convenios</a>
+              <a href="#">
+                <i class="icono-arg-herramientas-colaborativas"></i>
+                Proyectos</a>
+              <a href="#">
+                <i class="icono-arg-camion-construccion"></i> Obras</a>
+              <a href="#">
+                <i class="icono-arg-presupuesto"></i> Licitaciones</a>
+              <a href="#">
+                <i class="icono-arg-documento"></i> Estudios de
+                preinversion</a>
+              <a href="#">
+                <i class="icono-arg-mapa-argentina"></i> Unidades
+                territoriales</a>
+              <a href="#">
+                <i class="icono-arg-factor-pago"></i>Redeterminaciones</a>
+              <a href="#">
+                <i class="icono-arg-empresas-e-industria"></i>Contratistas</a>
+              <a href="#"> <i class="icono-arg-institucion"></i>Organismos</a>
+              <a href="#">
+                <i class="icono-arg-acceso-a-especialistas"></i>Monitoreo</a>
+              <a href="#">
+                <i class="icono-arg-financiamiento"></i> Programas
+                presupuestarios</a>
+              <a href="#"> <i class="icono-arg-comunidad"></i>Damnificados</a>
+              <a href="#">
+                <i class="icono-arg-computadora-videojuego"></i> SIMBIM</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- sub menu -->
+    <section class="sub-menu">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown"
+            aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <span id="notification_count">3</span>
+                  <img src="../img/icon/notificaciones.svg" alt="notificaciones" />
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDarkDropdownMenuLink">
+                  <li>
+                    <a class="dropdown-item notificacion" href="#">
+                      <img src="../img/icon/actualizacion.svg" alt="icono importante" />Notificación actualización 1
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item notificacion" href="#">
+                      <img src="../img/icon/importante.svg" alt="icono importante" />Notificación importante 2</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item notificacion" href="#">
+                      <img src="../img/icon/importante.svg" alt="icono importante" />Notificación importante 3</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Mi perfil"
+                  aria-current="page" href="#">
+                  <img src="../img/icon/usuario.svg" alt="mi perfil" />
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Cerrar sesión"
+                  aria-current="page" href="#">
+                  <img src="../img/icon/logout.svg" alt="cerrar sesión" />
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </nav>
+    </section>
+  </header>
+  <main role="main">
+    <!-- cards gestores-->
 
-      <!-- sub menu -->
-      <section class="sub-menu">
-        <nav class="navbar navbar-expand-lg">
-          <div class="container">
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNavDarkDropdown"
-              aria-controls="navbarNavDarkDropdown"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-              <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link"
-                    href="#"
-                    id="navbarDarkDropdownMenuLink"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    <span id="notification_count">3</span>
-                    <img
-                      src="../img/icon/notificaciones.svg"
-                      alt="notificaciones"
-                    />
-                  </a>
-                  <ul
-                    class="dropdown-menu dropdown-menu-end"
-                    aria-labelledby="navbarDarkDropdownMenuLink"
-                  >
-                    <li>
-                      <a class="dropdown-item notificacion" href="#">
-                        <img
-                          src="../img/icon/actualizacion.svg"
-                          alt="icono importante"
-                        />Notificación actualización 1
-                      </a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item notificacion" href="#">
-                        <img
-                          src="../img/icon/importante.svg"
-                          alt="icono importante"
-                        />Notificación importante 2</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item notificacion" href="#">
-                        <img
-                          src="../img/icon/importante.svg"
-                          alt="icono importante"
-                        />Notificación importante 3</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link active"
-                    data-bs-toggle="tooltip"
-                    data-bs-placement="bottom"
-                    title="Mi perfil"
-                    aria-current="page"
-                    href="#"
-                  >
-                    <img src="../img/icon/usuario.svg" alt="mi perfil" />
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link"
-                    data-bs-toggle="tooltip"
-                    data-bs-placement="bottom"
-                    title="Cerrar sesión"
-                    aria-current="page"
-                    href="#"
-                  >
-                    <img src="../img/icon/logout.svg" alt="cerrar sesión" />
-                  </a>
-                </li>
-              </ul>
+    <section class="card-gestores">
+      <div class="container">
+        <h1>Administración SGO</h1>
+        <div class="row gestores">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 tarjeta">
+            <div class="card acceso acceso-usuarios">
+              <i class="icono-arg-genero" alt="icono usuarios"> </i>
+              <div class="cantidad">
+                <h1>1193</h1>
+                <p>Total</p>
+              </div>
+            </div>
+            <div class="card card-body ar-gestores">
+              <h5 class="">Usuarios</h5>
+              <div class="btn-group ar-1">
+                <button class="btn ar" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <span>Quiero</span> <i class="fas fa-ellipsis-v"></i>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton" ;>
+                  <li>
+                    <a class="dropdown-item" href="#">Crear un nuevo usuario</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Buscar un usuario</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Aprobar un usuario</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Rechazar un usuario</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Desactivar un usuario</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Ver todos los usuarios</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Exportar todos los usuarios</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-        </nav>
-      </section>
-    </header>
-    <main role="main">
-      <!-- cards gestores-->
 
-      <section class="card-gestores">
-        <div class="container">
-          <div class="row gestores">
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 tarjeta">
-              <div class="card acceso acceso-usuarios">
-                <i class="icono-arg-genero" alt="icono usuarios"> </i>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 tarjeta">
+            <a href="">
+              <div class="card acceso acceso-mensajes">
+                <i class="icono-arg-mail-1" alt="icono Mensajes"> </i>
                 <div class="cantidad">
-                  <h1>1193</h1>
+                  <h1>205</h1>
                   <p>Total</p>
                 </div>
               </div>
-              <div class="card card-body ar-gestores">
-                <h5 class="">Usuarios</h5>
-                <div class="btn-group ar-1">
-                  <button
-                    class="btn ar"
-                    type="button"
-                    id="dropdownMenuButton"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    <span>Quiero</span> <i class="fas fa-ellipsis-v"></i>
-                  </button>
-                  <ul
-                    class="dropdown-menu dropdown-menu-end"
-                    aria-labelledby="dropdownMenuButton"
-                    ;
-                  >
-                    <li>
-                      <a class="dropdown-item" href="#"
-                        >Crear un nuevo usuario</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Buscar un usuario</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Aprobar un usuario</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Rechazar un usuario</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#"
-                        >Desactivar un usuario</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#"
-                        >Ver todos los usuarios</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#"
-                        >Exportar todos los usuarios</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 tarjeta">
-              <a href="">
-                <div class="card acceso acceso-mensajes">
-                  <i class="icono-arg-mail-1" alt="icono Mensajes"> </i>
-                  <div class="cantidad">
-                    <h1>205</h1>
-                    <p>Total</p>
-                  </div>
-                </div>
-              </a>
-              <div class="card card-body ar-gestores">
-                <h5 class="">Mensajes</h5>
-                <div class="btn-group ar-2">
-                  <button
-                    class="btn ar"
-                    type="button"
-                    id="dropdownMenuButton"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    <span>Quiero</span> <i class="fas fa-ellipsis-v"></i>
-                  </button>
-                  <ul
-                    class="dropdown-menu dropdown-menu-end"
-                    aria-labelledby="dropdownMenuButton"
-                    ;
-                  >
-                    <li>
-                      <a class="dropdown-item" href="#"
-                        >Crear un nuevo mensaje</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Buscar un mensajes</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#"
-                        >Ver todos los mensajes</a
-                      >
-                    </li>
-                  </ul>
-                </div>
+            </a>
+            <div class="card card-body ar-gestores">
+              <h5 class="">Mensajes</h5>
+              <div class="btn-group ar-2">
+                <button class="btn ar" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <span>Quiero</span> <i class="fas fa-ellipsis-v"></i>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton" ;>
+                  <li>
+                    <a class="dropdown-item" href="#">Crear un nuevo mensaje</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Buscar un mensajes</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Ver todos los mensajes</a>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
+  </main>
 
-      <!-- utilidades-->
-      <section class="utilidades">
-        <div class="container">
-          <h4>Utilidades</h4>
-          <div class="iconos">
-            <div class="row link-utilidades">
-              <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-                <a href="" class="">
-                  <i class="icono-arg-educacion" alt="icono manuales"></i>
-                </a>
-                <h6 class="">Manuales</h6>
-              </div>
-              <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-                <a href="">
-                  <i class="icono-arg-youtube" alt="icono tutoriales"></i>
-                </a>
-                <h6 class="">Tutoriales</h6>
-              </div>
-              <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-                <a href="">
-                  <i class="icono-arg-chat" alt="icono asistente virtual"></i>
-                </a>
-                <h6 class="">Asistente virtual</h6>
-              </div>
-              <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-                <a href="">
-                  <i class="icono-arg-mail-1" alt="icono contacto"></i>
-                </a>
-                <h6 class="">Contacto</h6>
-              </div>
-            </div>
+  <footer class="main-footer">
+    <!-- footer con links-->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-6">
+          <div class="region region-footer1">
+            <section id="block-menu-menu-footer-1" class="block block-menu clearfix">
+              <h3 class="block-title h3 section-title h3 section-title">
+                Acerca de SGO
+              </h3>
+              <ul class="menu nav">
+                <li class="first leaf">
+                  <a href="https://sgo.obraspublicas.gob.ar/Library/Index" target="blanck">Tutoriales</a>
+                </li>
+                <li class="leaf">
+                  <a href="https://www.argentina.gob.ar/terminos-y-condiciones" target="blanck">Términos de datos
+                    abiertos y políticas de privacidad</a>
+                </li>
+                <li class="last leaf">
+                  <a href="mailto:sistemas@obraspublicas.gob.ar" target="blanck">Contacto</a>
+                </li>
+              </ul>
+            </section>
           </div>
         </div>
-      </section>
-    </main>
+        <div class="col-md-4 col-sm-6">
+          <div class="region region-footer1">
+            <section id="block-menu-menu-footer-1" class="block block-menu clearfix">
+              <h3 class="block-title h3 section-title h3 section-title">
+                Otros sitios de interés
+              </h3>
+              <ul class="menu nav">
+                <li class="first leaf">
+                  <a href="#">SIBIM</a>
+                </li>
+                <li class="leaf">
+                  <a href="#">Atlas ID</a>
+                </li>
+                <li class="leaf">
+                  <a href="#">Diagnóstico Municipal</a>
+                </li>
+                <li class="last leaf">
+                  <a href="#">Publicaciones</a>
+                </li>
+              </ul>
+            </section>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="region region-footer3">
+            <section id="block-menu-menu-footer-3" class="block block-menu clearfix">
+              <h3 class="block-title h3 section-title h3 section-title">
+                Versión 1.1.0.1739
+              </h3>
+              <ul class="menu nav">
+                <li class="first leaf">
+                  <img src="../img/icon/calendar.svg" alt="Fecha: año 2021" /> 2021
+                </li>
+                <li class="leaf">
+                  <img src="../img/icon/box.svg" alt="Ministerio: Ministerio de obras públicas" /> Ministerio
+                  de Obras Públicas
+                </li>
+                <li class="leaf">
+                  <img src="../img/icon/place.svg" alt="Dirección: Hipólito
+                    Yrigoyen 250 | (C1002ABC) CABA" /> Hipólito
+                  Yrigoyen 250 | (C1002ABC) CABA
+                </li>
+                <li class="last leaf">
+                  <img src="../img/icon/phone.svg" alt="Teléfono: +54 (011) 4349-7699" /> Tel. +54
+                  (011) 4349-7699
+                </li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <footer class="main-footer">
-      <!-- footer con links-->
+    <!-- footer celeste-->
 
+    <div class="sub-footer col-sm-12 m-y-1 p-x-0">
       <div class="container">
-        <div class="row">
-          <div class="col-md-4 col-sm-6">
-            <div class="region region-footer1">
-              <section
-                id="block-menu-menu-footer-1"
-                class="block block-menu clearfix"
-              >
-                <h3 class="block-title h3 section-title h3 section-title">
-                  Gestores
-                </h3>
-                <ul class="menu nav">
-                  <li class="first leaf">
-                    <a href="/planes">Planes</a>
-                  </li>
-                  <li class="leaf">
-                    <a href="/convenios">Convenios</a>
-                  </li>
-                  <li class="leaf">
-                    <a href="/proyectos">Proyectos</a>
-                  </li>
-                  <li class="last leaf">
-                    <a href="/Obras">Obras</a>
-                  </li>
-                  <li class="leaf">
-                    <a href="/licitaciones">Licitaciones</a>
-                  </li>
-                  <li class="leaf">
-                    <a href="/estudiosDePreinversion"
-                      >Estudios de preinversion</a
-                    >
-                  </li>
-                  <li class="last leaf">
-                    <a href="/unidadesTerritoriales">Unidades territoriales</a>
-                  </li>
-                </ul>
-              </section>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6">
-            <div class="region region-footer1">
-              <section
-                id="block-menu-menu-footer-1"
-                class="block block-menu clearfix"
-              >
-                <h3 class="block-title h3 section-title h3 section-title">
-                  Acerca de SGO
-                </h3>
-                <ul class="menu nav">
-                  <li class="first leaf">
-                    <a
-                      href="https://sgo.obraspublicas.gob.ar/Library/Index"
-                      target="blanck"
-                      >Tutoriales</a
-                    >
-                  </li>
-                  <li class="leaf">
-                    <a
-                      href="https://www.argentina.gob.ar/terminos-y-condiciones"
-                      target="blanck"
-                      >Términos de datos abiertos y políticas de privacidad</a
-                    >
-                  </li>
-                  <li class="last leaf">
-                    <a
-                      href="mailto:sistemas@obraspublicas.gob.ar"
-                      target="blanck"
-                      >Contacto</a
-                    >
-                  </li>
-                </ul>
-              </section>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6">
-            <div class="region region-footer3">
-              <section
-                id="block-menu-menu-footer-3"
-                class="block block-menu clearfix"
-              >
-                <h3 class="block-title h3 section-title h3 section-title">
-                  Versión 1.1.0.1739
-                </h3>
-                <ul class="menu nav">
-                  <li class="first leaf">
-                    <img src="../img/icon/calendar.svg" alt="año" /> 2021
-                  </li>
-                  <li class="leaf">
-                    <img src="../img/icon/box.svg" alt="ministerio" />
-                    Ministerio de Obras Públicas
-                  </li>
-                  <li class="leaf">
-                    <img src="../img/icon/place.svg" alt="dirección" /> Hipólito
-                    Yrigoyen 250 | (C1002ABC) CABA
-                  </li>
-                  <li class="last leaf">
-                    <img src="../img/icon/phone.svg" alt="teléfono" /> Tel. +54
-                    (011) 4349-7699
-                  </li>
-                </ul>
-              </section>
-            </div>
-          </div>
+        <div class="row sub-footer">
+          <img src="../img/logo/logo_argentina_unida-blanco.svg" alt="" />
         </div>
       </div>
+    </div>
+  </footer>
+</body>
 
-      <!-- footer celeste-->
-
-      <div class="sub-footer col-sm-12 m-y-1 p-x-0">
-        <div class="container">
-          <div class="row sub-footer">
-            <img src="../img/logo/logo_argentina_unida-blanco.svg" alt="" />
-          </div>
-        </div>
-      </div>
-    </footer>
-  </body>
 </html>
