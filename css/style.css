@@ -31,7 +31,7 @@ header .navbar-brand {
   margin-right: auto;
 }
 
-header h1 {
+header .navbar-brand-title {
   color: var(--dark-nation-color);
   font-size: 1.75rem;
   font-weight: 700;
@@ -276,7 +276,6 @@ header .menu:focus:hover {
 }
 
 .login-usuario-sgo input:focus {
-  box-shadow: none;
   border-color: var(--accesible-pink-color);
 } 
 
@@ -544,6 +543,7 @@ header .menu:focus:hover {
   font-weight: 700;
   font-size: var(--accesible-small-fs);
   text-align: center;
+  transition: all 0.15s ease-in-out;
 }
 
 .acceso img {
@@ -637,7 +637,8 @@ header .menu:focus:hover {
   margin-right: 5rem;
 }
 
-.solicitar h2 {
+.solicitar h1 {
+  font-size: 1.8rem;
   font-weight: 700;
   color: var(--dark-nation-color);
   margin-bottom: 3rem;
@@ -747,8 +748,13 @@ header .menu:focus:hover {
   border-radius: 0.938rem;
   padding: 1rem 2rem;
 }
+
 .datos input {
   margin-bottom: 1rem;
+}
+
+.datos-laborales input {
+  margin-bottom: 2rem;
 }
 
 .titulo-form {
@@ -1293,9 +1299,6 @@ option {
 }
 
 /*Formulario administracion de usuarios*/
-.documentos {
-  margin-top: 3rem;
-}
 .carga-doc {
   text-decoration: none;
   list-style: none;
@@ -1303,19 +1306,23 @@ option {
 }
 
 .doc {
-  display: flex;
-  justify-content: space-between;
   margin: 0;
+  padding: 0.5rem;
+  border: none;
+  width: 100%;
+  display: flex;
   align-items: center;
+  justify-content: space-between;
+  text-align: start;
   border-bottom: 0.15rem solid var(--accesible-blue-color);
-  padding: 0.5rem 0;
 }
 
-.doc p {
-  margin: 0 !important;
+.doc i {
+  margin-left:1rem;
 }
 
-.doc:hover {
+.doc:hover,
+.doc:focus {
   background-color: #d5d9dd;
 }
 
@@ -1333,6 +1340,14 @@ option {
 .crear-usuario:hover {
   background-color: #fff;
   color: var(--accesible-pink-color);
+}
+
+.textarea-form-usuarios {
+  margin-bottom: 1rem;
+}
+
+.secciones-abajo {
+  align-self: flex-start;
 }
 
 /*responsive*/

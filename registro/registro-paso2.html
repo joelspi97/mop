@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="../favicon.png" type="image/x-icon">
   <title>SGO | Sistema de Gestión de Obras</title>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
     integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
@@ -34,12 +35,12 @@
   <header>
     <nav class="navbar">
       <div class="container">
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand" href="index.html" title="Regresar al inicio">
           <img src="../img/logo/logoEntidad_head.svg" class="d-inline-block align-top"
-            alt="Escudo Ministerio de Obras Públicas" />
+            alt="Escudo Ministerio de Obras Públicas - Enlace para volver a la página de inicio" />
         </a>
         <a class="navbar-brand navbar-brand-title" href="index.html">
-          <h1>SGO | Sistema de Gestión de Obras</h1>
+          SGO | Sistema de Gestión de Obras
         </a>
       </div>
     </nav>
@@ -56,7 +57,7 @@
           </h1>
         </div>
         <form class="row formularios" action="./registro-paso3-modal.html" method="post">
-          <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 datos mb-5">
+          <div class="col-lg-3 col-sm-12 col-xs-12 datos mb-5">
             <div class="titulo-form">
               <i class="icono-arg-genero"></i>
               <h2>Datos personales</h2>
@@ -128,13 +129,13 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 datos">
+          <div class="col-lg-8 col-sm-12 col-xs-12 datos">
             <div class="titulo-form">
               <i class="icono-arg-maletin-check"></i>
               <h2>Datos laborales</h2>
             </div>
             <div class="row laborales">
-              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+              <div class="col-lg-6 col-sm-12 col-xs-12">
                 <label for="usuario-sgo" class="form-label">Usuario SGO</label>
                 <input 
                   id="usuario-sgo" 
@@ -212,15 +213,15 @@ La contraseña debe incluir:
                   name="provincia"
                 />
               </div>
-              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 
+              <div class="col-lg-6 col-sm-12 col-xs-12">
                 <label for="municipio" class="form-label">Municipio</label>
                 <input 
                 id="municipio" 
                 class="form-control" 
                 type="text" 
                 name="municipio"
-              />
+                />
 
                 <label for="organismo" class="form-label">Organismo*</label>
                 <input 
@@ -296,31 +297,34 @@ La contraseña debe incluir:
       <div class="row">
         <div class="col-md-4 col-sm-6">
           <div class="region region-footer1">
-            <section class="block block-menu clearfix">
+            <section
+              id="block-menu-menu-footer-1"
+              class="block block-menu clearfix"
+            >
               <h3 class="block-title h3 section-title h3 section-title">
-                Gestores
+                Acerca de SGO
               </h3>
               <ul class="menu nav">
                 <li class="first leaf">
-                  <a href="/planes">Planes</a>
+                  <a
+                    href="https://sgo.obraspublicas.gob.ar/Library/Index"
+                    target="blanck"
+                    >Tutoriales</a
+                  >
                 </li>
                 <li class="leaf">
-                  <a href="/convenios">Convenios</a>
-                </li>
-                <li class="leaf">
-                  <a href="/proyectos">Proyectos</a>
+                  <a
+                    href="https://www.argentina.gob.ar/terminos-y-condiciones"
+                    target="blanck"
+                    >Términos de datos abiertos y políticas de privacidad</a
+                  >
                 </li>
                 <li class="last leaf">
-                  <a href="/Obras">Obras</a>
-                </li>
-                <li class="leaf">
-                  <a href="/licitaciones">Licitaciones</a>
-                </li>
-                <li class="leaf">
-                  <a href="/estudiosDePreinversion">Estudios de preinversion</a>
-                </li>
-                <li class="last leaf">
-                  <a href="/unidadesTerritoriales">Unidades territoriales</a>
+                  <a
+                    href="mailto:sistemas@obraspublicas.gob.ar"
+                    target="blanck"
+                    >Contacto</a
+                  >
                 </li>
               </ul>
             </section>
@@ -328,20 +332,25 @@ La contraseña debe incluir:
         </div>
         <div class="col-md-4 col-sm-6">
           <div class="region region-footer1">
-            <section class="block block-menu clearfix">
+            <section
+              id="block-menu-menu-footer-1"
+              class="block block-menu clearfix"
+            >
               <h3 class="block-title h3 section-title h3 section-title">
-                Acerca de SGO
+                Otros sitios de interés
               </h3>
               <ul class="menu nav">
                 <li class="first leaf">
-                  <a href="https://sgo.obraspublicas.gob.ar/Library/Index" target="blanck">Tutoriales</a>
+                  <a href="#">SIBIM</a>
                 </li>
                 <li class="leaf">
-                  <a href="https://www.argentina.gob.ar/terminos-y-condiciones" target="blanck">Términos de datos
-                    abiertos y políticas de privacidad</a>
+                  <a href="#">Atlas ID</a>
+                </li>
+                <li class="leaf">
+                  <a href="#">Diagnóstico Municipal</a>
                 </li>
                 <li class="last leaf">
-                  <a href="mailto:sistemas@obraspublicas.gob.ar" target="blanck">Contacto</a>
+                  <a href="#">Publicaciones</a>
                 </li>
               </ul>
             </section>
@@ -349,24 +358,27 @@ La contraseña debe incluir:
         </div>
         <div class="col-md-4 col-sm-6">
           <div class="region region-footer3">
-            <section class="block block-menu clearfix">
+            <section
+              id="block-menu-menu-footer-3"
+              class="block block-menu clearfix"
+            >
               <h3 class="block-title h3 section-title h3 section-title">
                 Versión 1.1.0.1739
               </h3>
               <ul class="menu nav">
                 <li class="first leaf">
-                  <img src="../img/icon/calendar.svg" alt="año" /> 2021
+                  <img src="../img/icon/calendar.svg" alt="Año" /> 2021
                 </li>
                 <li class="leaf">
-                  <img src="../img/icon/box.svg" alt="ministerio" /> Ministerio
+                  <img src="../img/icon/box.svg" alt="" /> Ministerio
                   de Obras Públicas
                 </li>
                 <li class="leaf">
-                  <img src="../img/icon/place.svg" alt="dirección" /> Hipólito
+                  <img src="../img/icon/place.svg" alt="Dirección" /> Hipólito
                   Yrigoyen 250 | (C1002ABC) CABA
                 </li>
                 <li class="last leaf">
-                  <img src="../img/icon/phone.svg" alt="teléfono" /> Tel. +54
+                  <img src="../img/icon/phone.svg" alt="Teléfono" /> <span aria-hidden="true">Tel.</span> +54
                   (011) 4349-7699
                 </li>
               </ul>
