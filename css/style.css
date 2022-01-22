@@ -7,6 +7,7 @@
 
   --dark-nation-color: #333;
   --accesible-grey-color: #727272;
+  --accesible-placeholder-grey: #595959;
   --accesible-grey-lightest-color: #949494;
 
   --box-shadow-color: rgba(0, 0, 0, 0.5);
@@ -280,7 +281,7 @@ header .menu:focus:hover {
 } 
 
 .login-usuario-sgo input::placeholder {
-  color: #595959;
+  color: var(--accesible-placeholder-grey);
   font-size: 1rem;
 }
 
@@ -847,7 +848,7 @@ header .menu:focus:hover {
 }
 
 .form-control::placeholder {
-  color: var(--accesible-grey-color);
+  color: var(--accesible-placeholder-grey);
 }
 
 .laborales {
@@ -1011,7 +1012,7 @@ option {
   text-decoration: none;
 }
 
-.acceso-gestor button {
+.acceso-gestor .btn {
   text-align: center;
   border-radius: 0.6rem;
   color: #fff;
@@ -1022,13 +1023,14 @@ option {
   border: 0.25rem solid var(--accesible-blue-color);
 }
 
-.acceso-gestor button:hover,
-.acceso-gestor button:focus {
+.acceso-gestor .btn:hover,
+.acceso-gestor .btn:focus {
   background-color: #ffffff;
   border: 0.25rem solid var(--accesible-blue-color);
   box-shadow: none;
   color: var(--accesible-blue-color);
 }
+
 
 /*Notificaciones home*/
 
@@ -1074,7 +1076,7 @@ option {
   border: none;
 }
 
-.home-gestores h5 {
+.home-gestores h2 {
   font-size: 1.5rem;
   font-weight: 700;
   margin: 2rem 0;
@@ -1144,6 +1146,74 @@ option {
 
 .cuerpo-notificacion a:hover {
   color: var(--accesible-pink-color);
+}
+
+
+/* Buscador Gestores */
+.buscador-form {
+  background-color: #ffffff;
+  border-radius: 0.625rem;
+  box-shadow: 0rem 0.188rem 0.375rem var(--box-shadow-color);
+  padding: 2rem 2.5rem;
+}
+
+.buscador-input-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+} 
+
+.buscador-input-wrapper input::placeholder {
+  color: var(--accesible-placeholder-grey);
+  font-size: 1rem;
+}
+
+.buscador-button {
+  border: solid var(--accesible-blue-color);
+  border-radius: 2rem;
+  color: var(--accesible-blue-color);
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: 0.02rem;
+  width: 14.5rem;
+}
+
+.buscador-button:hover,
+.buscador-button:focus {
+  background-color: #ffffff;
+  box-shadow: none;
+  color: var(--accesible-pink-color);
+  border: solid var(--accesible-pink-color);
+}
+
+.buscador-button-submit {
+  background-color: var(--accesible-blue-color);
+  color: #fff;
+}
+
+.tabla-notificacion-buscador {
+  padding-bottom: 1rem;
+}
+
+.tabla-notificacion-buscador th {
+  color: var(--accesible-blue-color);
+  font-weight: 800;
+  font-size: var(--accesible-small-fs);
+  padding: 1rem;
+}
+
+.tabla-notificacion-buscador tr {
+  border: none;
+  cursor: pointer;
+}
+
+.tabla-notificacion-buscador tr:first-of-type {
+  cursor: default;
+  border-bottom: 0.1rem solid var(--accesible-blue-color);
+}
+
+.tabla-notificacion-buscador .item-buscador:nth-child(2n + 1) td {
+  background-color: #F2F2F2;
 }
 
 /* menu gestor desplegado*/
@@ -1438,6 +1508,10 @@ option {
 @media screen and (max-width: 575px) {
   .container {
     max-width: 85%;
+  }
+
+  .buscador-gestor.container {
+    max-width: 100%;
   }
 
   .container-entidades {
