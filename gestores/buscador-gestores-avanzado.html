@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="../favicon.png" type="image/x-icon">
+  <title>SGO | Sistema de Gestión de Obras</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="https://argob.github.io/poncho/node_modules/argob-poncho/dist/icono-arg.css" />
+
+  <link rel="stylesheet" href="../css/style.css" />
+
+  <script src="../js/jscript.js"></script>
+</head>
+
+<body class="grey">
+  <header>
+    <nav class="navbar fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html" title="Volver al inicio">
+          <img src="../img/logo/logoEntidad_head.svg" class="d-inline-block align-top"
+            alt="Escudo Ministerio de Obras Públicas - Enlace para volver a la página de inicio" />
+        </a>
+        <a class="navbar-brand navbar-brand-title" href="#">
+          SGO | Sistema de Gestión de Obras
+        </a>
+
+        <!-- boton menu-->
+
+        <div class="menu-sgo">
+          <button class="btn btn-primary menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight">
+            <span>Menú</span> <i class="fas fa-bars"></i>
+          </button>
+
+          <!-- menu-->
+
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+              <h5 id="offcanvasRightLabel">Cerrar menú</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                aria-label="Cerrar menú"></button>
+            </div>
+            <div class="offcanvas-body">
+              <a href="#"> <i class="icono-arg-servicios"></i> Planes</a>
+              <a href="#">
+                <i class="icono-arg-firma-contrato"></i> Convenios</a>
+              <a href="#">
+                <i class="icono-arg-herramientas-colaborativas"></i>
+                Proyectos</a>
+              <a href="#">
+                <i class="icono-arg-camion-construccion"></i> Obras</a>
+              <a href="#">
+                <i class="icono-arg-presupuesto"></i> Licitaciones</a>
+              <a href="#">
+                <i class="icono-arg-documento"></i> Estudios de
+                preinversion</a>
+              <a href="#">
+                <i class="icono-arg-mapa-argentina"></i> Unidades
+                territoriales</a>
+              <a href="#">
+                <i class="icono-arg-factor-pago"></i>Redeterminaciones</a>
+              <a href="#">
+                <i class="icono-arg-empresas-e-industria"></i>Contratistas</a>
+              <a href="#"> <i class="icono-arg-institucion"></i>Organismos</a>
+              <a href="#">
+                <i class="icono-arg-acceso-a-especialistas"></i>Monitoreo</a>
+              <a href="#">
+                <i class="icono-arg-financiamiento"></i> Programas
+                presupuestarios</a>
+              <a href="#"> <i class="icono-arg-comunidad"></i>Damnificados</a>
+              <a href="#">
+                <i class="icono-arg-computadora-videojuego"></i> SIMBIM</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- sub menu -->
+    <section class="sub-menu">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown"
+            aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <span id="notification_count">3</span>
+                  <img src="../img/icon/notificaciones.svg" alt="Abrir menú de notificaciones - 3 notificaciones nuevas" />
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDarkDropdownMenuLink">
+                  <li>
+                    <a class="dropdown-item notificacion" href="#">
+                      <img src="../img/icon/actualizacion.svg" alt="Notificación de actualización" />Notificación actualización 1
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item notificacion" href="#">
+                      <img src="../img/icon/importante.svg" alt="Notificación importante" />Notificación importante 2</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item notificacion" href="#">
+                      <img src="../img/icon/importante.svg" alt="Notificación importante" />Notificación importante 3</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Mi perfil"
+                  aria-current="page" href="#">
+                  <img src="../img/icon/usuario.svg" alt="mi perfil" />
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Cerrar sesión"
+                  aria-current="page" href="#">
+                  <img src="../img/icon/logout.svg" alt="cerrar sesión" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+  </header>
+  <main role="main">
+    <!--Home gestores-->
+    <section class="home-gestores">
+      <div class="gestor buscador-gestor container">
+        <div class="buscador-wrapper my-5 col-12">
+          <h2>Buscar Obra</h2>
+          <form class="buscador-form container-fluid" method="GET" action="./buscador-gestores.html">
+
+            <!-- -->
+            
+            <div class="buscador-inputs-grid">
+              <div class="buscador-input-wrapper">
+                <label class="form-label" for="codigo-obra">Código de obra</label>
+                <input 
+                  id="codigo-obra" 
+                  class="form-control"
+                  type="text"
+                  name="codigo-de-obra"
+                />
+              </div>
+
+              <div class="buscador-input-wrapper">
+                <label class="form-label" for="codigo-sippe">Código SIPPE</label>
+                <input 
+                  id="codigo-sippe"
+                  class="form-control"
+                  type="text"
+                  name="codigo-sippe"
+                />
+              </div>
+              
+              <div class="buscador-input-wrapper">
+                <label class="form-label" for="codigo-interno">Código de id. interna</label>
+                <input 
+                  id="codigo-interno"
+                  class="form-control"
+                  type="text"
+                  name="codigo-de-id-interna"
+                />
+              </div>
+              
+              <div class="buscador-input-wrapper">
+                <label class="form-label" for="nombre-obra">Nombre de obra</label>
+                <input 
+                  id="nombre-obra"
+                  class="form-control"
+                  type="text"
+                  name="nombre-de-obra"
+                />
+              </div>
+              
+              <div class="buscador-input-wrapper">
+                <label class="form-label" for="plan">Plan</label>
+                <input 
+                  id="plan" 
+                  class="form-control"
+                  name="plan" 
+                  list="plan-select"
+                  placeholder="Buscar..."
+                />
+                <datalist id="plan-select">
+                  <option value="Item 1">
+                  <option value="Item 2">
+                  <option value="Item 3">
+                  <option value="Item 4">  
+                </datalist>
+              </div>
+              
+              <!-- -->
+              
+              <div class="buscador-input-wrapper">
+                <label class="form-label" for="provincia">Provincia</label>
+                <input 
+                  id="provincia" 
+                  class="form-control"
+                  name="provincia" 
+                  list="provincia-select"
+                  placeholder="Buscar..."
+                />
+                <datalist id="provincia-select">
+                  <option value="Item 1">
+                  <option value="Item 2">
+                  <option value="Item 3">
+                  <option value="Item 4">  
+                </datalist>
+              </div>
+
+              <div class="buscador-input-wrapper">
+                <label class="form-label" for="municipio">Municipio</label>
+                <input 
+                  id="municipio" 
+                  class="form-control"
+                  name="municipio" 
+                  list="municipio-select"
+                  placeholder="Buscar..."
+                />
+                <datalist id="municipio-select">
+                  <option value="Item 1">
+                  <option value="Item 2">
+                  <option value="Item 3">
+                  <option value="Item 4">  
+                </datalist>
+              </div>
+              
+              <div class="buscador-input-wrapper">
+                <label class="form-label" for="contratista">Contratista</label>
+                <input 
+                  id="contratista"
+                  class="form-control"
+                  type="text"
+                  name="contratista"
+                />
+              </div>
+              
+              <div class="buscador-input-wrapper">
+                <label class="form-label" for="exp-obra">N° exp. de obra</label>
+                <input 
+                  id="exp-obra"
+                  class="form-control"
+                  type="text"
+                  name="numero-exp-obra"
+                />
+              </div>
+              
+              <div class="buscador-input-wrapper">
+                <label class="form-label" for="tipo-contrato">Tipo de contrato</label>
+                <input 
+                  id="tipo-contrato" 
+                  class="form-control"
+                  name="tipo-de-contrato" 
+                  list="tipo-contrato-select"
+                  placeholder="Buscar..."
+                />
+                <datalist id="tipo-contrato-select">
+                  <option value="Item 1">
+                  <option value="Item 2">
+                  <option value="Item 3">
+                  <option value="Item 4">  
+                </datalist>
+              </div>
+
+              <!-- -->
+
+              <div class="buscador-input-wrapper">
+                <label class="form-label" for="grupo">Grupo</label>
+                <input 
+                  id="grupo" 
+                  class="form-control"
+                  name="grupo" 
+                  list="grupo-select"
+                  placeholder="Buscar..."
+                />
+                <datalist id="grupo-select">
+                  <option value="Item 1">
+                  <option value="Item 2">
+                  <option value="Item 3">
+                  <option value="Item 4">  
+                </datalist>
+              </div>
+
+              <div class="buscador-input-wrapper">
+                <label class="form-label" for="subgrupo">Subgrupo</label>
+                <input 
+                  id="subgrupo" 
+                  class="form-control"
+                  name="subgrupo" 
+                  list="subgrupo-select"
+                  placeholder="Buscar..."
+                />
+                <datalist id="subgrupo-select">
+                  <option value="Item 1">
+                  <option value="Item 2">
+                  <option value="Item 3">
+                  <option value="Item 4">  
+                </datalist>
+              </div>
+              
+              <div class="buscador-input-wrapper">
+                <label class="form-label" for="tipo-obra">Tipo de obra</label>
+                <input 
+                  id="tipo-obra" 
+                  class="form-control"
+                  name="tipo-de-obra" 
+                  list="tipo-obra-select"
+                  placeholder="Buscar..."
+                />
+                <datalist id="tipo-obra-select">
+                  <option value="Item 1">
+                  <option value="Item 2">
+                  <option value="Item 3">
+                  <option value="Item 4">  
+                </datalist>
+              </div>
+              
+              <div class="buscador-input-wrapper">
+                <label class="form-label" for="programa-presupuestario">Programa presupuestario</label>
+                <input 
+                  id="programa-presupuestario" 
+                  class="form-control"
+                  name="programa-presupuestario" 
+                  list="programa-presupuestario-select"
+                  placeholder="Buscar..."
+                />
+                <datalist id="programa-presupuestario-select">
+                  <option value="Item 1">
+                  <option value="Item 2">
+                  <option value="Item 3">
+                  <option value="Item 4">  
+                </datalist>
+              </div>
+              
+              <div class="buscador-input-wrapper">
+                <label class="form-label" for="apertura">Apertura programática</label>
+                <input 
+                  id="apertura" 
+                  class="form-control"
+                  name="apertura-programatica" 
+                  list="apertura-select"
+                  placeholder="Buscar apertura..."
+                />
+                <datalist id="apertura-select">
+                  <option value="Item 1">
+                  <option value="Item 2">
+                  <option value="Item 3">
+                  <option value="Item 4">  
+                </datalist>
+              </div>
+
+              <!-- -->
+              
+              <div class="buscador-input-wrapper">
+                <label class="form-label" for="responsable-tecnico">Responsable técnico</label>
+                <input 
+                  id="responsable-tecnico" 
+                  class="form-control"
+                  name="responsable-tecnico" 
+                  list="responsable-tecnico-select"
+                  placeholder="Buscar..."
+                />
+                <datalist id="responsable-tecnico-select">
+                  <option value="Item 1">
+                  <option value="Item 2">
+                  <option value="Item 3">
+                  <option value="Item 4">  
+                </datalist>
+              </div>
+
+              <div class="buscador-input-wrapper">
+                <label class="form-label" for="organismo-responsable">Organismo responsable</label>
+                <input 
+                  id="organismo-responsable" 
+                  class="form-control"
+                  name="organismo-responsable" 
+                  list="organismo-responsable-select"
+                  placeholder="Buscar..."
+                />
+                <datalist id="organismo-responsable-select">
+                  <option value="Item 1">
+                  <option value="Item 2">
+                  <option value="Item 3">
+                  <option value="Item 4">  
+                </datalist>
+              </div>
+              
+              <div class="buscador-input-wrapper">
+                <label class="form-label" for="organismo-ejecutor">Organismo ejecutor</label>
+                <input 
+                  id="organismo-ejecutor" 
+                  class="form-control"
+                  name="organismo-ejecutor" 
+                  list="organismo-ejecutor-select"
+                  placeholder="Buscar..."
+                />
+                <datalist id="organismo-ejecutor-select">
+                  <option value="Item 1">
+                  <option value="Item 2">
+                  <option value="Item 3">
+                  <option value="Item 4">  
+                </datalist>
+              </div>
+              
+              <div class="buscador-input-wrapper">
+                <label class="form-label" for="comitente">Comitente</label>
+                <input 
+                  id="comitente" 
+                  class="form-control"
+                  name="comitente" 
+                  list="comitente-select"
+                  placeholder="Buscar..."
+                />
+                <datalist id="comitente-select">
+                  <option value="Item 1">
+                  <option value="Item 2">
+                  <option value="Item 3">
+                  <option value="Item 4">  
+                </datalist>
+              </div>
+              
+              <div class="buscador-input-wrapper">
+                <label class="form-label" for="numero-exp-certificado">N° exp. de certificado</label>
+                <input 
+                  id="numero-exp-certificado" 
+                  class="form-control"
+                  type="text"
+                  name="numero-expediente-certificado" 
+                />
+              </div>
+
+              <!-- -->
+
+              <div class="buscador-input-wrapper">
+                <label class="form-label" for="area">Área</label>
+                <input 
+                  id="area" 
+                  class="form-control"
+                  name="area" 
+                  list="area-select"
+                  placeholder="Buscar..."
+                />
+                <datalist id="area-select">
+                  <option value="Item 1">
+                  <option value="Item 2">
+                  <option value="Item 3">
+                  <option value="Item 4">  
+                </datalist>
+              </div>
+
+              <div class="buscador-input-wrapper">
+                <label class="form-label" for="etapa">Etapa</label>
+                <input 
+                  id="etapa" 
+                  class="form-control"
+                  name="etapa" 
+                  list="etapa-select"
+                  placeholder="Buscar..."
+                />
+                <datalist id="etapa-select">
+                  <option value="Item 1">
+                  <option value="Item 2">
+                  <option value="Item 3">
+                  <option value="Item 4">  
+                </datalist>
+              </div>
+              
+              <div class="buscador-input-wrapper">
+                <label class="form-label" for="estado">Estado</label>
+                <input 
+                  id="estado" 
+                  class="form-control"
+                  name="estado" 
+                  list="estado-select"
+                  placeholder="Buscar..."
+                />
+                <datalist id="estado-select">
+                  <option value="Item 1">
+                  <option value="Item 2">
+                  <option value="Item 3">
+                  <option value="Item 4">  
+                </datalist>
+              </div>
+              
+              <div class="buscador-input-wrapper">
+                <label class="form-label" for="organismo-financiador">Organismo financiador</label>
+                <input 
+                  id="organismo-financiador" 
+                  class="form-control"
+                  name="organismo-financiador" 
+                  list="organismo-financiador-select"
+                  placeholder="Buscar..."
+                />
+                <datalist id="organismo-financiador-select">
+                  <option value="Item 1">
+                  <option value="Item 2">
+                  <option value="Item 3">
+                  <option value="Item 4">  
+                </datalist>
+              </div>
+              
+              <div class="buscador-input-wrapper">
+                <label class="form-label" for="numero-prestamo">N° de préstamo</label>
+                <input 
+                  id="numero-prestamo" 
+                  class="form-control"
+                  type="text"
+                  name="numero-de-prestamo" 
+                />
+              </div>
+            </div>
+
+            <!-- -->
+
+            <div class="row mt-5">
+              <div class="col-12 mb-2 mb-lg-0 text-center d-md-none">
+                <button class="btn buscador-button buscador-button-submit" type="submit">Buscar obra</button>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg mb-2 mb-lg-0 text-center text-md-start">
+                <button 
+                  class="btn buscador-button" 
+                  type="button" 
+                  onclick="window.location='./buscador-gestores.html'"
+                >
+                  Búsqueda simple
+                </button>
+              </div>
+
+              <div class="col mb-2 mb-lg-0 text-center d-none d-md-block">
+                <button class="btn buscador-button buscador-button-submit" type="submit">Buscar obra</button>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg mb-2 mb-lg-0 text-center text-md-end">
+                <button class="btn buscador-button" type="reset">Limpiar filtros</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!-- 
+          En los elementos <tr> agregué el atributo data-url porque en conjunto con el script asociado
+          a este archivo permite usar los elementos de la tabla como links.
+          Hacer esto es más directo usando un framework como React o Angular, pero por las 
+          dudas lo agregué por JavaScript.
+          No es posible agregar el elemento <a> y envolver el contenido de una fila dentro de un 
+          elemento <table>.  
+
+          Para mejorar la accesibilidad de la página, el aria-label de cada fila debería cambiar 
+          dinámicamente para decir: 
+          `Ir a la pagina del proyecto ${nombreDelItem}`
+        -->
+        <div class="listado-notificaciones col-12">
+          <h2>Búsquedas recientes</h2>
+          <table class="card tabla-notificacion tabla-notificacion-buscador overflow-auto">
+            <tbody>
+              <tr class="notificaciones">
+                <th>Código id. interna</th>
+                <th>Nombre</th>
+                <th>Provincia</th>
+                <th>Municipio</th>
+                <th>Etapa</th>
+                <th>Estado</th>
+                <th>Acta de inicio</th>
+                <th>Finalización prevista</th>
+              </tr>
+              <tr 
+                class="notificaciones item-buscador" 
+                tabindex="0"
+                data-url="#"
+                aria-label="Ir a la pagina del proyecto item"
+              >
+                <td>12345</td>
+                <td>Bacheo Ruta 11 - La Costa</td>
+                <td>Buenos Aires</td>
+                <td>La Costa</td>
+                <td>En ejecución</td>
+                <td>Vigente</td>
+                <td>14/07/2015</td>
+                <td>16/08/2017</td>
+              </tr>
+              <tr 
+                class="notificaciones item-buscador" 
+                tabindex="0"
+                data-url="#"
+                aria-label="Ir a la pagina del proyecto item"
+              >
+                <td>12345</td>
+                <td>BACHEO Y REHABILITACION CON CONCRETO ASFALTICO - F.M.O.P.N. - 2020 - EXP MUNICIPAL 30291/2020</td>
+                <td>Buenos Aires</td>
+                <td>Carmen de Areco</td>
+                <td>En ejecución</td>
+                <td>En proceso de cierre</td>
+                <td>14/07/2015</td>
+                <td>16/08/2017</td>
+              </tr>
+              <tr 
+                class="notificaciones item-buscador" 
+                tabindex="0"
+                data-url="#"
+                aria-label="Ir a la pagina del proyecto item"
+              >
+                <td>12345</td>
+                <td>Bacheo Ruta 11 - La Costa</td>
+                <td>Buenos Aires</td>
+                <td>La Costa</td>
+                <td>En ejecución</td>
+                <td>Vigente</td>
+                <td>14/07/2015</td>
+                <td>16/08/2017</td>
+              </tr>
+              <tr 
+                class="notificaciones item-buscador" 
+                tabindex="0"
+                data-url="#"
+                aria-label="Ir a la pagina del proyecto item"
+              >
+                <td>12345</td>
+                <td>BACHEO Y REHABILITACION CON CONCRETO ASFALTICO - F.M.O.P.N. - 2020 - EXP MUNICIPAL 30291/2020</td>
+                <td>Buenos Aires</td>
+                <td>Carmen de Areco</td>
+                <td>En ejecución</td>
+                <td>En proceso de cierre</td>
+                <td>14/07/2015</td>
+                <td>16/08/2017</td>
+              </tr>
+              <tr 
+                class="notificaciones item-buscador" 
+                tabindex="0"
+                data-url="#"
+                aria-label="Ir a la pagina del proyecto item"
+              >
+                <td>12345</td>
+                <td>Bacheo Ruta 11 - La Costa</td>
+                <td>Buenos Aires</td>
+                <td>La Costa</td>
+                <td>En ejecución</td>
+                <td>Vigente</td>
+                <td>14/07/2015</td>
+                <td>16/08/2017</td>
+              </tr>
+              <tr 
+                class="notificaciones item-buscador" 
+                tabindex="0"
+                data-url="#"
+                aria-label="Ir a la pagina del proyecto item"
+              >
+                <td>12345</td>
+                <td>BACHEO Y REHABILITACION CON CONCRETO ASFALTICO - F.M.O.P.N. - 2020 - EXP MUNICIPAL 30291/2020</td>
+                <td>Buenos Aires</td>
+                <td>Carmen de Areco</td>
+                <td>En ejecución</td>
+                <td>En proceso de cierre</td>
+                <td>14/07/2015</td>
+                <td>16/08/2017</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <!-- footer con links-->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-6">
+          <div class="region region-footer1">
+            <section id="block-menu-menu-footer-1" class="block block-menu clearfix">
+              <h3 class="block-title h3 section-title h3 section-title">
+                Acerca de SGO
+              </h3>
+              <ul class="menu nav">
+                <li class="first leaf">
+                  <a href="https://sgo.obraspublicas.gob.ar/Library/Index" target="blanck">Tutoriales</a>
+                </li>
+                <li class="leaf">
+                  <a href="https://www.argentina.gob.ar/terminos-y-condiciones" target="blanck">Términos de datos
+                    abiertos y políticas de privacidad</a>
+                </li>
+                <li class="last leaf">
+                  <a href="mailto:sistemas@obraspublicas.gob.ar" target="blanck">Contacto</a>
+                </li>
+              </ul>
+            </section>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="region region-footer1">
+            <section id="block-menu-menu-footer-1" class="block block-menu clearfix">
+              <h3 class="block-title h3 section-title h3 section-title">
+                Otros sitios de interés
+              </h3>
+              <ul class="menu nav">
+                <li class="first leaf">
+                  <a href="#">SIBIM</a>
+                </li>
+                <li class="leaf">
+                  <a href="#">Atlas ID</a>
+                </li>
+                <li class="leaf">
+                  <a href="#">Diagnóstico Municipal</a>
+                </li>
+                <li class="last leaf">
+                  <a href="#">Publicaciones</a>
+                </li>
+              </ul>
+            </section>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="region region-footer3">
+            <section id="block-menu-menu-footer-3" class="block block-menu clearfix">
+              <h3 class="block-title h3 section-title h3 section-title">
+                Versión 1.1.0.1739
+              </h3>
+              <ul class="menu nav">
+                <li class="first leaf">
+                  <img src="../img/icon/calendar.svg" alt="Fecha: año 2021" /> 2021
+                </li>
+                <li class="leaf">
+                  <img src="../img/icon/box.svg" alt="Ministerio: Ministerio de obras públicas" /> Ministerio
+                  de Obras Públicas
+                </li>
+                <li class="leaf">
+                  <img src="../img/icon/place.svg" alt="Dirección: Hipólito
+                    Yrigoyen 250 | (C1002ABC) CABA" /> Hipólito
+                  Yrigoyen 250 | (C1002ABC) CABA
+                </li>
+                <li class="last leaf">
+                  <img src="../img/icon/phone.svg" alt="Teléfono" /> <span aria-hidden="true">Tel.</span> +54
+                  (011) 4349-7699
+                </li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer celeste-->
+
+    <div class="sub-footer col-sm-12 m-y-1 p-x-0">
+      <div class="container">
+        <div class="row sub-footer">
+          <img src="../img/logo/logo_argentina_unida-blanco.svg" alt="" />
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../script/buscador-gestores.js"></script>
+</body>
+
+</html>
