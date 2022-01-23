@@ -1,3 +1,4 @@
+// Items lista de obras
 const items = Array.from(document.querySelectorAll('.item-buscador'));
 items.forEach(i => {
     const itemUrl = i.dataset.url;

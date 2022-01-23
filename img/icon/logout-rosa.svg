@@ -1,0 +1,8 @@
+<svg id="Icon_logout" data-name="Icon logout" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+  <rect id="Area" width="26" height="26" fill="#fcfcfc" opacity="0"/>
+  <g id="Icon" transform="translate(2.844 3.308)">
+    <path id="Path" d="M9.116,22.348H4.706A2.205,2.205,0,0,1,2.5,20.142V4.706A2.205,2.205,0,0,1,4.706,2.5h4.41" transform="translate(-2.5 -2.5)" fill="none" stroke="#e6056D" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+    <path id="Path-2" data-name="Path" d="M13.333,16.861l5.514-5.514L13.333,5.833" transform="translate(1.001 -1.423)" fill="none" stroke="#e6056D" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+    <line id="Line" x1="13.232" transform="translate(6.616 9.924)" fill="none" stroke="#e6056D" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+  </g>
+</svg>
