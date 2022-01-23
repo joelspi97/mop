@@ -151,8 +151,21 @@
                 <h2>Resultados de la búsqueda | 20 obras</h2>
             </div>
             <div class="d-flex">
-                <button class="btn resultado-button resultado-button-busqueda me-4" type="button"><span class="icono-lupa"></span> Nueva búsqueda</button>
-                <button class="btn resultado-button resultado-button-filtro" type="button"><span class="icono-filtro"></span> Filtros</button>
+                <button 
+                  class="btn resultado-button resultado-button-busqueda me-4" 
+                  type="button"
+                  data-bs-toggle="modal" data-bs-target="#buscador-modal"
+                >
+                  <span class="icono-lupa"></span>
+                  <span id="texto-button"> Nueva búsqueda</span>
+                </button>
+                <button 
+                  class="btn resultado-button resultado-button-filtro" 
+                  type="button"
+                >
+                  <span class="icono-filtro"></span>
+                   Filtros
+                </button>
             </div>
           </form>
         </div>
@@ -170,110 +183,119 @@
           `Ir a la pagina del proyecto ${nombreDelItem}`
         -->
         <div class="listado-notificaciones col-12">
-          <table class="card tabla-notificacion tabla-notificacion-buscador overflow-auto">
-            <tbody>
-              <tr class="notificaciones">
-                <th>Código id. interna</th>
-                <th>Nombre</th>
-                <th>Provincia</th>
-                <th>Municipio</th>
-                <th>Etapa</th>
-                <th>Estado</th>
-                <th>Acta de inicio</th>
-                <th>Finalización prevista</th>
-              </tr>
-              <tr 
-                class="notificaciones item-buscador" 
-                tabindex="0"
-                data-url="#"
-                aria-label="Ir a la pagina del proyecto item"
-              >
-                <td>12345</td>
-                <td>Bacheo Ruta 11 - La Costa</td>
-                <td>Buenos Aires</td>
-                <td>La Costa</td>
-                <td>En ejecución</td>
-                <td>Vigente</td>
-                <td>14/07/2015</td>
-                <td>16/08/2017</td>
-              </tr>
-              <tr 
-                class="notificaciones item-buscador" 
-                tabindex="0"
-                data-url="#"
-                aria-label="Ir a la pagina del proyecto item"
-              >
-                <td>12345</td>
-                <td>BACHEO Y REHABILITACION CON CONCRETO ASFALTICO - F.M.O.P.N. - 2020 - EXP MUNICIPAL 30291/2020</td>
-                <td>Buenos Aires</td>
-                <td>Carmen de Areco</td>
-                <td>En ejecución</td>
-                <td>En proceso de cierre</td>
-                <td>14/07/2015</td>
-                <td>16/08/2017</td>
-              </tr>
-              <tr 
-                class="notificaciones item-buscador" 
-                tabindex="0"
-                data-url="#"
-                aria-label="Ir a la pagina del proyecto item"
-              >
-                <td>12345</td>
-                <td>Bacheo Ruta 11 - La Costa</td>
-                <td>Buenos Aires</td>
-                <td>La Costa</td>
-                <td>En ejecución</td>
-                <td>Vigente</td>
-                <td>14/07/2015</td>
-                <td>16/08/2017</td>
-              </tr>
-              <tr 
-                class="notificaciones item-buscador" 
-                tabindex="0"
-                data-url="#"
-                aria-label="Ir a la pagina del proyecto item"
-              >
-                <td>12345</td>
-                <td>BACHEO Y REHABILITACION CON CONCRETO ASFALTICO - F.M.O.P.N. - 2020 - EXP MUNICIPAL 30291/2020</td>
-                <td>Buenos Aires</td>
-                <td>Carmen de Areco</td>
-                <td>En ejecución</td>
-                <td>En proceso de cierre</td>
-                <td>14/07/2015</td>
-                <td>16/08/2017</td>
-              </tr>
-              <tr 
-                class="notificaciones item-buscador" 
-                tabindex="0"
-                data-url="#"
-                aria-label="Ir a la pagina del proyecto item"
-              >
-                <td>12345</td>
-                <td>Bacheo Ruta 11 - La Costa</td>
-                <td>Buenos Aires</td>
-                <td>La Costa</td>
-                <td>En ejecución</td>
-                <td>Vigente</td>
-                <td>14/07/2015</td>
-                <td>16/08/2017</td>
-              </tr>
-              <tr 
-                class="notificaciones item-buscador" 
-                tabindex="0"
-                data-url="#"
-                aria-label="Ir a la pagina del proyecto item"
-              >
-                <td>12345</td>
-                <td>BACHEO Y REHABILITACION CON CONCRETO ASFALTICO - F.M.O.P.N. - 2020 - EXP MUNICIPAL 30291/2020</td>
-                <td>Buenos Aires</td>
-                <td>Carmen de Areco</td>
-                <td>En ejecución</td>
-                <td>En proceso de cierre</td>
-                <td>14/07/2015</td>
-                <td>16/08/2017</td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="card tabla-notificacion tabla-notificacion-buscador tabla-notificacion-resultados">
+            <table class="overflow-auto">
+              <tbody>
+                <tr class="notificaciones">
+                  <th>Código id. interna</th>
+                  <th>Nombre</th>
+                  <th>Provincia</th>
+                  <th>Municipio</th>
+                  <th>Etapa</th>
+                  <th>Estado</th>
+                  <th>Acta de inicio</th>
+                  <th>Finalización prevista</th>
+                </tr>
+                <tr 
+                  class="notificaciones item-buscador" 
+                  tabindex="0"
+                  data-url="#"
+                  aria-label="Ir a la pagina del proyecto item"
+                >
+                  <td>12345</td>
+                  <td>Bacheo Ruta 11 - La Costa</td>
+                  <td>Buenos Aires</td>
+                  <td>La Costa</td>
+                  <td>En ejecución</td>
+                  <td>Vigente</td>
+                  <td>14/07/2015</td>
+                  <td>16/08/2017</td>
+                </tr>
+                <tr 
+                  class="notificaciones item-buscador" 
+                  tabindex="0"
+                  data-url="#"
+                  aria-label="Ir a la pagina del proyecto item"
+                >
+                  <td>12345</td>
+                  <td>BACHEO Y REHABILITACION CON CONCRETO ASFALTICO - F.M.O.P.N. - 2020 - EXP MUNICIPAL 30291/2020</td>
+                  <td>Buenos Aires</td>
+                  <td>Carmen de Areco</td>
+                  <td>En ejecución</td>
+                  <td>En proceso de cierre</td>
+                  <td>14/07/2015</td>
+                  <td>16/08/2017</td>
+                </tr>
+                <tr 
+                  class="notificaciones item-buscador" 
+                  tabindex="0"
+                  data-url="#"
+                  aria-label="Ir a la pagina del proyecto item"
+                >
+                  <td>12345</td>
+                  <td>Bacheo Ruta 11 - La Costa</td>
+                  <td>Buenos Aires</td>
+                  <td>La Costa</td>
+                  <td>En ejecución</td>
+                  <td>Vigente</td>
+                  <td>14/07/2015</td>
+                  <td>16/08/2017</td>
+                </tr>
+                <tr 
+                  class="notificaciones item-buscador" 
+                  tabindex="0"
+                  data-url="#"
+                  aria-label="Ir a la pagina del proyecto item"
+                >
+                  <td>12345</td>
+                  <td>BACHEO Y REHABILITACION CON CONCRETO ASFALTICO - F.M.O.P.N. - 2020 - EXP MUNICIPAL 30291/2020</td>
+                  <td>Buenos Aires</td>
+                  <td>Carmen de Areco</td>
+                  <td>En ejecución</td>
+                  <td>En proceso de cierre</td>
+                  <td>14/07/2015</td>
+                  <td>16/08/2017</td>
+                </tr>
+                <tr 
+                  class="notificaciones item-buscador" 
+                  tabindex="0"
+                  data-url="#"
+                  aria-label="Ir a la pagina del proyecto item"
+                >
+                  <td>12345</td>
+                  <td>Bacheo Ruta 11 - La Costa</td>
+                  <td>Buenos Aires</td>
+                  <td>La Costa</td>
+                  <td>En ejecución</td>
+                  <td>Vigente</td>
+                  <td>14/07/2015</td>
+                  <td>16/08/2017</td>
+                </tr>
+                <tr 
+                  class="notificaciones item-buscador" 
+                  tabindex="0"
+                  data-url="#"
+                  aria-label="Ir a la pagina del proyecto item"
+                >
+                  <td>12345</td>
+                  <td>BACHEO Y REHABILITACION CON CONCRETO ASFALTICO - F.M.O.P.N. - 2020 - EXP MUNICIPAL 30291/2020</td>
+                  <td>Buenos Aires</td>
+                  <td>Carmen de Areco</td>
+                  <td>En ejecución</td>
+                  <td>En proceso de cierre</td>
+                  <td>14/07/2015</td>
+                  <td>16/08/2017</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="mt-3 d-flex justify-content-center">
+              <button type="button" class="icono-flecha-izquierda"></button>
+              <button type="button" class="btn numero-pagina pagina-actual">1</button>
+              <button type="button" class="btn numero-pagina">2</button>
+              <button type="button" class="btn numero-pagina">3</button>
+              <button type="button" class="icono-flecha-izquierda"></button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -368,6 +390,103 @@
       </div>
     </div>
   </footer>
+
+  <!-- Bootstrap modal -->
+  <form class="modal fade container" id="buscador-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4>Nueva búsqueda</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cancelar búsqueda"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid px-0" method="GET" action="./buscador-gestores-resultado.html">
+            <div class="buscador-inputs-grid">
+              <div class="buscador-input-wrapper">
+                <label class="form-label" for="codigo-obra">Código de obra</label>
+                <input 
+                  id="codigo-obra" 
+                  class="form-control"
+                  type="text"
+                  name="codigo-de-obra"
+                />
+              </div>
+
+              <div class="buscador-input-wrapper">
+                <label class="form-label" for="codigo-sippe">Código SIPPE</label>
+                <input 
+                  id="codigo-sippe"
+                  class="form-control"
+                  type="text"
+                  name="codigo-sippe"
+                />
+              </div>
+              
+              <div class="buscador-input-wrapper">
+                <label class="form-label" for="codigo-interno">Código de id. interna</label>
+                <input 
+                  id="codigo-interno"
+                  class="form-control"
+                  type="text"
+                  name="codigo-de-id-interna"
+                />
+              </div>
+              
+              <div class="buscador-input-wrapper">
+                <label class="form-label" for="nombre-obra">Nombre de obra</label>
+                <input 
+                  id="nombre-obra"
+                  class="form-control"
+                  type="text"
+                  name="nombre-de-obra"
+                />
+              </div>
+              
+              <div class="buscador-input-wrapper">
+                <label class="form-label" for="plan">Plan</label>
+                <input 
+                  id="plan" 
+                  class="form-control"
+                  name="plan" 
+                  list="plan-select"
+                  placeholder="Buscar..."
+                />
+                <datalist id="plan-select">
+                  <option value="Item 1">
+                  <option value="Item 2">
+                  <option value="Item 3">
+                  <option value="Item 4">  
+                </datalist>
+              </div>
+            </div>
+            <div class="row mt-5">
+              <div class="col-12 mb-2 mb-lg-0 text-center d-md-none">
+                <button class="btn buscador-button buscador-button-submit" type="submit">Buscar obra</button>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg mb-2 mb-lg-0 text-center text-md-start">
+                <button 
+                  class="btn buscador-button" 
+                  type="button" 
+                  onclick="window.location='./buscador-gestores-avanzado.html'"
+                >
+                  Búsqueda avanzada
+                </button>
+              </div>
+
+              <div class="col mb-2 mb-lg-0 text-center d-none d-md-block">
+                <button class="btn buscador-button buscador-button-submit" type="submit">Buscar obra</button>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg mb-2 mb-lg-0 text-center text-md-end">
+                <button class="btn buscador-button" type="reset">Limpiar filtros</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
 
   <script src="../script/buscador-gestores.js"></script>
 </body>
