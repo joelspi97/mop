@@ -1157,10 +1157,17 @@ option {
   padding: 2rem 2.5rem;
 }
 
+.buscador-inputs-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 1rem;
+}
+
 .buscador-input-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-end;
 } 
 
 .buscador-input-wrapper input::placeholder {
@@ -1477,6 +1484,19 @@ option {
     width: 90%;
     justify-self: center;
   }
+
+  .buscador-gestor.container {
+    max-width: 100%;
+  }
+    
+  .buscador-button {
+    max-width: none;
+    width: 100%;
+  }
+
+  .buscador-inputs-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
 @media screen and (max-width: 860px) {
@@ -1488,6 +1508,10 @@ option {
   }
   .home-gestores {
     margin-top: 2rem;
+  }
+
+  .buscador-inputs-grid {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -1503,15 +1527,21 @@ option {
   .acceso-gestor .btn {
     margin-bottom: 2rem;
   }
+
+  .buscador-inputs-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 642px) {
+  .buscador-button {
+    height: 4.875rem;
+  }
 }
 
 @media screen and (max-width: 575px) {
   .container {
     max-width: 85%;
-  }
-
-  .buscador-gestor.container {
-    max-width: 100%;
   }
 
   .container-entidades {
@@ -1524,6 +1554,14 @@ option {
 
   .tabla-notificacion-mobile {
     display: block;
+  }
+
+  .buscador-inputs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .buscador-button {
+    max-width: 14.5rem;
   }
 
   .linea {

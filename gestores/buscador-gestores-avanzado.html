@@ -143,13 +143,16 @@
       </nav>
     </section>
   </header>
-
   <main role="main">
+    <!--Home gestores-->
     <section class="home-gestores">
       <div class="gestor buscador-gestor container">
         <div class="buscador-wrapper my-5 col-12">
           <h2>Buscar Obra</h2>
           <form class="buscador-form container-fluid" method="GET" action="./buscador-gestores.html">
+
+            <!-- -->
+            
             <div class="buscador-inputs-grid">
               <div class="buscador-input-wrapper">
                 <label class="form-label" for="codigo-obra">Código de obra</label>
@@ -207,7 +210,330 @@
                   <option value="Item 4">  
                 </datalist>
               </div>
+              
+              <!-- -->
+              
+              <div class="buscador-input-wrapper">
+                <label class="form-label" for="provincia">Provincia</label>
+                <input 
+                  id="provincia" 
+                  class="form-control"
+                  name="provincia" 
+                  list="provincia-select"
+                  placeholder="Buscar..."
+                />
+                <datalist id="provincia-select">
+                  <option value="Item 1">
+                  <option value="Item 2">
+                  <option value="Item 3">
+                  <option value="Item 4">  
+                </datalist>
+              </div>
+
+              <div class="buscador-input-wrapper">
+                <label class="form-label" for="municipio">Municipio</label>
+                <input 
+                  id="municipio" 
+                  class="form-control"
+                  name="municipio" 
+                  list="municipio-select"
+                  placeholder="Buscar..."
+                />
+                <datalist id="municipio-select">
+                  <option value="Item 1">
+                  <option value="Item 2">
+                  <option value="Item 3">
+                  <option value="Item 4">  
+                </datalist>
+              </div>
+              
+              <div class="buscador-input-wrapper">
+                <label class="form-label" for="contratista">Contratista</label>
+                <input 
+                  id="contratista"
+                  class="form-control"
+                  type="text"
+                  name="contratista"
+                />
+              </div>
+              
+              <div class="buscador-input-wrapper">
+                <label class="form-label" for="exp-obra">N° exp. de obra</label>
+                <input 
+                  id="exp-obra"
+                  class="form-control"
+                  type="text"
+                  name="numero-exp-obra"
+                />
+              </div>
+              
+              <div class="buscador-input-wrapper">
+                <label class="form-label" for="tipo-contrato">Tipo de contrato</label>
+                <input 
+                  id="tipo-contrato" 
+                  class="form-control"
+                  name="tipo-de-contrato" 
+                  list="tipo-contrato-select"
+                  placeholder="Buscar..."
+                />
+                <datalist id="tipo-contrato-select">
+                  <option value="Item 1">
+                  <option value="Item 2">
+                  <option value="Item 3">
+                  <option value="Item 4">  
+                </datalist>
+              </div>
+
+              <!-- -->
+
+              <div class="buscador-input-wrapper">
+                <label class="form-label" for="grupo">Grupo</label>
+                <input 
+                  id="grupo" 
+                  class="form-control"
+                  name="grupo" 
+                  list="grupo-select"
+                  placeholder="Buscar..."
+                />
+                <datalist id="grupo-select">
+                  <option value="Item 1">
+                  <option value="Item 2">
+                  <option value="Item 3">
+                  <option value="Item 4">  
+                </datalist>
+              </div>
+
+              <div class="buscador-input-wrapper">
+                <label class="form-label" for="subgrupo">Subgrupo</label>
+                <input 
+                  id="subgrupo" 
+                  class="form-control"
+                  name="subgrupo" 
+                  list="subgrupo-select"
+                  placeholder="Buscar..."
+                />
+                <datalist id="subgrupo-select">
+                  <option value="Item 1">
+                  <option value="Item 2">
+                  <option value="Item 3">
+                  <option value="Item 4">  
+                </datalist>
+              </div>
+              
+              <div class="buscador-input-wrapper">
+                <label class="form-label" for="tipo-obra">Tipo de obra</label>
+                <input 
+                  id="tipo-obra" 
+                  class="form-control"
+                  name="tipo-de-obra" 
+                  list="tipo-obra-select"
+                  placeholder="Buscar..."
+                />
+                <datalist id="tipo-obra-select">
+                  <option value="Item 1">
+                  <option value="Item 2">
+                  <option value="Item 3">
+                  <option value="Item 4">  
+                </datalist>
+              </div>
+              
+              <div class="buscador-input-wrapper">
+                <label class="form-label" for="programa-presupuestario">Programa presupuestario</label>
+                <input 
+                  id="programa-presupuestario" 
+                  class="form-control"
+                  name="programa-presupuestario" 
+                  list="programa-presupuestario-select"
+                  placeholder="Buscar..."
+                />
+                <datalist id="programa-presupuestario-select">
+                  <option value="Item 1">
+                  <option value="Item 2">
+                  <option value="Item 3">
+                  <option value="Item 4">  
+                </datalist>
+              </div>
+              
+              <div class="buscador-input-wrapper">
+                <label class="form-label" for="apertura">Apertura programática</label>
+                <input 
+                  id="apertura" 
+                  class="form-control"
+                  name="apertura-programatica" 
+                  list="apertura-select"
+                  placeholder="Buscar apertura..."
+                />
+                <datalist id="apertura-select">
+                  <option value="Item 1">
+                  <option value="Item 2">
+                  <option value="Item 3">
+                  <option value="Item 4">  
+                </datalist>
+              </div>
+
+              <!-- -->
+              
+              <div class="buscador-input-wrapper">
+                <label class="form-label" for="responsable-tecnico">Responsable técnico</label>
+                <input 
+                  id="responsable-tecnico" 
+                  class="form-control"
+                  name="responsable-tecnico" 
+                  list="responsable-tecnico-select"
+                  placeholder="Buscar..."
+                />
+                <datalist id="responsable-tecnico-select">
+                  <option value="Item 1">
+                  <option value="Item 2">
+                  <option value="Item 3">
+                  <option value="Item 4">  
+                </datalist>
+              </div>
+
+              <div class="buscador-input-wrapper">
+                <label class="form-label" for="organismo-responsable">Organismo responsable</label>
+                <input 
+                  id="organismo-responsable" 
+                  class="form-control"
+                  name="organismo-responsable" 
+                  list="organismo-responsable-select"
+                  placeholder="Buscar..."
+                />
+                <datalist id="organismo-responsable-select">
+                  <option value="Item 1">
+                  <option value="Item 2">
+                  <option value="Item 3">
+                  <option value="Item 4">  
+                </datalist>
+              </div>
+              
+              <div class="buscador-input-wrapper">
+                <label class="form-label" for="organismo-ejecutor">Organismo ejecutor</label>
+                <input 
+                  id="organismo-ejecutor" 
+                  class="form-control"
+                  name="organismo-ejecutor" 
+                  list="organismo-ejecutor-select"
+                  placeholder="Buscar..."
+                />
+                <datalist id="organismo-ejecutor-select">
+                  <option value="Item 1">
+                  <option value="Item 2">
+                  <option value="Item 3">
+                  <option value="Item 4">  
+                </datalist>
+              </div>
+              
+              <div class="buscador-input-wrapper">
+                <label class="form-label" for="comitente">Comitente</label>
+                <input 
+                  id="comitente" 
+                  class="form-control"
+                  name="comitente" 
+                  list="comitente-select"
+                  placeholder="Buscar..."
+                />
+                <datalist id="comitente-select">
+                  <option value="Item 1">
+                  <option value="Item 2">
+                  <option value="Item 3">
+                  <option value="Item 4">  
+                </datalist>
+              </div>
+              
+              <div class="buscador-input-wrapper">
+                <label class="form-label" for="numero-exp-certificado">N° exp. de certificado</label>
+                <input 
+                  id="numero-exp-certificado" 
+                  class="form-control"
+                  type="text"
+                  name="numero-expediente-certificado" 
+                />
+              </div>
+
+              <!-- -->
+
+              <div class="buscador-input-wrapper">
+                <label class="form-label" for="area">Área</label>
+                <input 
+                  id="area" 
+                  class="form-control"
+                  name="area" 
+                  list="area-select"
+                  placeholder="Buscar..."
+                />
+                <datalist id="area-select">
+                  <option value="Item 1">
+                  <option value="Item 2">
+                  <option value="Item 3">
+                  <option value="Item 4">  
+                </datalist>
+              </div>
+
+              <div class="buscador-input-wrapper">
+                <label class="form-label" for="etapa">Etapa</label>
+                <input 
+                  id="etapa" 
+                  class="form-control"
+                  name="etapa" 
+                  list="etapa-select"
+                  placeholder="Buscar..."
+                />
+                <datalist id="etapa-select">
+                  <option value="Item 1">
+                  <option value="Item 2">
+                  <option value="Item 3">
+                  <option value="Item 4">  
+                </datalist>
+              </div>
+              
+              <div class="buscador-input-wrapper">
+                <label class="form-label" for="estado">Estado</label>
+                <input 
+                  id="estado" 
+                  class="form-control"
+                  name="estado" 
+                  list="estado-select"
+                  placeholder="Buscar..."
+                />
+                <datalist id="estado-select">
+                  <option value="Item 1">
+                  <option value="Item 2">
+                  <option value="Item 3">
+                  <option value="Item 4">  
+                </datalist>
+              </div>
+              
+              <div class="buscador-input-wrapper">
+                <label class="form-label" for="organismo-financiador">Organismo financiador</label>
+                <input 
+                  id="organismo-financiador" 
+                  class="form-control"
+                  name="organismo-financiador" 
+                  list="organismo-financiador-select"
+                  placeholder="Buscar..."
+                />
+                <datalist id="organismo-financiador-select">
+                  <option value="Item 1">
+                  <option value="Item 2">
+                  <option value="Item 3">
+                  <option value="Item 4">  
+                </datalist>
+              </div>
+              
+              <div class="buscador-input-wrapper">
+                <label class="form-label" for="numero-prestamo">N° de préstamo</label>
+                <input 
+                  id="numero-prestamo" 
+                  class="form-control"
+                  type="text"
+                  name="numero-de-prestamo" 
+                />
+              </div>
             </div>
+
+            <!-- -->
+
             <div class="row mt-5">
               <div class="col-12 mb-2 mb-lg-0 text-center d-md-none">
                 <button class="btn buscador-button buscador-button-submit" type="submit">Buscar obra</button>
@@ -217,9 +543,9 @@
                 <button 
                   class="btn buscador-button" 
                   type="button" 
-                  onclick="window.location='./buscador-gestores-avanzado.html'"
+                  onclick="window.location='./buscador-gestores.html'"
                 >
-                  Búsqueda avanzada
+                  Búsqueda simple
                 </button>
               </div>
 
