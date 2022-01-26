@@ -1238,27 +1238,16 @@ option {
   align-items: center;
 }
 
-.resultado-button .icono-lupa,
-.resultado-button .icono-filtro {
+.resultado-button .icono-lupa {
   display: inline-block;
-
+  width: 1.5rem;
+  height: 1.41rem;
+  background-image: url('../img/icon/icono-lupa-azul.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   margin-right: 0.4rem;
   transition: all 0.15s ease-in-out;
-}
-
-.resultado-button .icono-lupa {
-  width: 1.5rem;
-  height: 1.41rem;
-  background-image: url('../img/icon/icono-lupa-azul.png');
-}
-
-.resultado-button .icono-filtro {
-  width: 1.4rem;
-  height: 1.4rem;
-  background-image: url('../img/icon/icono-filtro-azul.svg');
 }
 
 .resultado-button:hover,
@@ -1268,14 +1257,9 @@ option {
   color: #ffffff;
 }
 
-.resultado-button-busqueda:hover .icono-lupa,
-.resultado-button-busqueda:focus .icono-lupa {
-  background-image: url('../img/icon/icono-lupa-blanco.png');
-}
-
-.resultado-button-filtro:hover .icono-filtro,
-.resultado-button-filtro:focus .icono-filtro {
-  background-image: url('../img/icon/icono-filtro-blanco.svg');
+.resultado-button:hover .icono-lupa,
+.resultado-button:focus .icono-lupa {
+  background-image: url('../img/icon/icono-lupa-blanco.svg');
 }
 
 #buscador-modal {
@@ -1303,17 +1287,46 @@ option {
   height: auto;
 }
 
+.tabla-notificacion-resultados-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 0.15rem solid var(--accesible-ui-grey-color);
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+
 .numero-pagina {
   color: var(--accesible-grey);
   font-size: var(--accesible-small-fs);
   font-weight: 800;
+  margin: 0 0.5rem;
 }
 
 .numero-pagina.pagina-actual {
   color: var(--accesible-blue-color);
 }
 
-.numero-pagina:focus {
+.boton-flecha {
+  width: 1rem;
+  height: 1.5rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 0.5rem;
+  transition: all 0.15s ease-in-out;
+}
+
+.boton-flecha-izquierda {
+  background-image: url('../img/icon/icono-flecha-izquierda-gris.svg');
+}
+
+.boton-flecha-derecha {
+  background-image: url('../img/icon/icono-flecha-derecha-azul.svg');
+}
+
+.numero-pagina:focus,
+.boton-flecha:focus {
   box-shadow: none;
   outline: 0.15rem solid var(--dark-nation-color);
 }
@@ -1610,7 +1623,7 @@ option {
   }
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 768px) {
   .home-gestores {
     margin: 0 auto;
     width: 90%;
@@ -1625,6 +1638,10 @@ option {
 
   .buscador-inputs-grid {
     grid-template-columns: 1fr 1fr;
+  }
+  
+  .resultado-button {
+    height: 5rem;
   }
 }
 
@@ -1661,6 +1678,10 @@ option {
 
   .linea {
     height: 4.5rem;
+  }
+
+  .tabla-notificacion-resultados-footer {
+    justify-content: space-evenly;
   }
 }
 
