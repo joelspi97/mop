@@ -158,66 +158,27 @@
                 <label class="form-label" for="codigo-obra">Código de obra</label>
                 <input 
                   id="codigo-obra" 
-                  class="form-control"
+                  class="form-control form-control-resultado"
                   type="text"
                   name="codigo-de-obra"
                 />
               </div>
-
-              <div class="buscador-input-wrapper">
-                <label class="form-label" for="codigo-sippe">Código SIPPE</label>
-                <input 
-                  id="codigo-sippe"
-                  class="form-control"
-                  type="text"
-                  name="codigo-sippe"
-                />
-              </div>
-              
-              <div class="buscador-input-wrapper">
-                <label class="form-label" for="codigo-interno">Código de id. interna</label>
-                <input 
-                  id="codigo-interno"
-                  class="form-control"
-                  type="text"
-                  name="codigo-de-id-interna"
-                />
-              </div>
-              
+        
               <div class="buscador-input-wrapper">
                 <label class="form-label" for="nombre-obra">Nombre de obra</label>
                 <input 
                   id="nombre-obra"
-                  class="form-control"
+                  class="form-control form-control-resultado"
                   type="text"
                   name="nombre-de-obra"
                 />
               </div>
-              
-              <div class="buscador-input-wrapper">
-                <label class="form-label" for="plan">Plan</label>
-                <input 
-                  id="plan" 
-                  class="form-control"
-                  name="plan" 
-                  list="plan-select"
-                  placeholder="Buscar..."
-                />
-                <datalist id="plan-select">
-                  <option value="Item 1">
-                  <option value="Item 2">
-                  <option value="Item 3">
-                  <option value="Item 4">  
-                </datalist>
-              </div>
-              
-              <!-- -->
-              
+
               <div class="buscador-input-wrapper">
                 <label class="form-label" for="provincia">Provincia</label>
                 <input 
                   id="provincia" 
-                  class="form-control"
+                  class="form-control form-control-resultado"
                   name="provincia" 
                   list="provincia-select"
                   placeholder="Buscar..."
@@ -234,7 +195,7 @@
                 <label class="form-label" for="municipio">Municipio</label>
                 <input 
                   id="municipio" 
-                  class="form-control"
+                  class="form-control form-control-resultado"
                   name="municipio" 
                   list="municipio-select"
                   placeholder="Buscar..."
@@ -248,10 +209,49 @@
               </div>
               
               <div class="buscador-input-wrapper">
+                <label class="form-label" for="plan">Plan</label>
+                <input 
+                  id="plan" 
+                  class="form-control form-control-resultado"
+                  name="plan" 
+                  list="plan-select"
+                  placeholder="Buscar..."
+                />
+                <datalist id="plan-select">
+                  <option value="Item 1">
+                  <option value="Item 2">
+                  <option value="Item 3">
+                  <option value="Item 4">  
+                </datalist>
+              </div>
+              
+              <!-- -->
+              
+              <div class="buscador-input-wrapper">
+                <label class="form-label" for="codigo-interno">Código de id. interna</label>
+                <input 
+                  id="codigo-interno"
+                  class="form-control form-control-resultado"
+                  type="text"
+                  name="codigo-de-id-interna"
+                />
+              </div>
+
+              <div class="buscador-input-wrapper">
+                <label class="form-label" for="codigo-sippe">Código SIPPE</label>
+                <input 
+                  id="codigo-sippe"
+                  class="form-control form-control-resultado"
+                  type="text"
+                  name="codigo-sippe"
+                />
+              </div>
+
+              <div class="buscador-input-wrapper">
                 <label class="form-label" for="contratista">Contratista</label>
                 <input 
                   id="contratista"
-                  class="form-control"
+                  class="form-control form-control-resultado"
                   type="text"
                   name="contratista"
                 />
@@ -261,7 +261,7 @@
                 <label class="form-label" for="exp-obra">N° exp. de obra</label>
                 <input 
                   id="exp-obra"
-                  class="form-control"
+                  class="form-control form-control-resultado"
                   type="text"
                   name="numero-exp-obra"
                 />
@@ -271,7 +271,7 @@
                 <label class="form-label" for="tipo-contrato">Tipo de contrato</label>
                 <input 
                   id="tipo-contrato" 
-                  class="form-control"
+                  class="form-control form-control-resultado"
                   name="tipo-de-contrato" 
                   list="tipo-contrato-select"
                   placeholder="Buscar..."
@@ -290,7 +290,7 @@
                 <label class="form-label" for="grupo">Grupo</label>
                 <input 
                   id="grupo" 
-                  class="form-control"
+                  class="form-control form-control-resultado"
                   name="grupo" 
                   list="grupo-select"
                   placeholder="Buscar..."
@@ -307,7 +307,7 @@
                 <label class="form-label" for="subgrupo">Subgrupo</label>
                 <input 
                   id="subgrupo" 
-                  class="form-control"
+                  class="form-control form-control-resultado"
                   name="subgrupo" 
                   list="subgrupo-select"
                   placeholder="Buscar..."
@@ -324,7 +324,7 @@
                 <label class="form-label" for="tipo-obra">Tipo de obra</label>
                 <input 
                   id="tipo-obra" 
-                  class="form-control"
+                  class="form-control form-control-resultado"
                   name="tipo-de-obra" 
                   list="tipo-obra-select"
                   placeholder="Buscar..."
@@ -341,7 +341,7 @@
                 <label class="form-label" for="programa-presupuestario">Programa presupuestario</label>
                 <input 
                   id="programa-presupuestario" 
-                  class="form-control"
+                  class="form-control form-control-resultado"
                   name="programa-presupuestario" 
                   list="programa-presupuestario-select"
                   placeholder="Buscar..."
@@ -358,7 +358,7 @@
                 <label class="form-label" for="apertura">Apertura programática</label>
                 <input 
                   id="apertura" 
-                  class="form-control"
+                  class="form-control form-control-resultado"
                   name="apertura-programatica" 
                   list="apertura-select"
                   placeholder="Buscar apertura..."
@@ -377,7 +377,7 @@
                 <label class="form-label" for="responsable-tecnico">Responsable técnico</label>
                 <input 
                   id="responsable-tecnico" 
-                  class="form-control"
+                  class="form-control form-control-resultado"
                   name="responsable-tecnico" 
                   list="responsable-tecnico-select"
                   placeholder="Buscar..."
@@ -394,7 +394,7 @@
                 <label class="form-label" for="organismo-responsable">Organismo responsable</label>
                 <input 
                   id="organismo-responsable" 
-                  class="form-control"
+                  class="form-control form-control-resultado"
                   name="organismo-responsable" 
                   list="organismo-responsable-select"
                   placeholder="Buscar..."
@@ -411,7 +411,7 @@
                 <label class="form-label" for="organismo-ejecutor">Organismo ejecutor</label>
                 <input 
                   id="organismo-ejecutor" 
-                  class="form-control"
+                  class="form-control form-control-resultado"
                   name="organismo-ejecutor" 
                   list="organismo-ejecutor-select"
                   placeholder="Buscar..."
@@ -428,7 +428,7 @@
                 <label class="form-label" for="comitente">Comitente</label>
                 <input 
                   id="comitente" 
-                  class="form-control"
+                  class="form-control form-control-resultado"
                   name="comitente" 
                   list="comitente-select"
                   placeholder="Buscar..."
@@ -445,7 +445,7 @@
                 <label class="form-label" for="numero-exp-certificado">N° exp. de certificado</label>
                 <input 
                   id="numero-exp-certificado" 
-                  class="form-control"
+                  class="form-control form-control-resultado"
                   type="text"
                   name="numero-expediente-certificado" 
                 />
@@ -457,7 +457,7 @@
                 <label class="form-label" for="area">Área</label>
                 <input 
                   id="area" 
-                  class="form-control"
+                  class="form-control form-control-resultado"
                   name="area" 
                   list="area-select"
                   placeholder="Buscar..."
@@ -474,7 +474,7 @@
                 <label class="form-label" for="etapa">Etapa</label>
                 <input 
                   id="etapa" 
-                  class="form-control"
+                  class="form-control form-control-resultado"
                   name="etapa" 
                   list="etapa-select"
                   placeholder="Buscar..."
@@ -491,7 +491,7 @@
                 <label class="form-label" for="estado">Estado</label>
                 <input 
                   id="estado" 
-                  class="form-control"
+                  class="form-control form-control-resultado"
                   name="estado" 
                   list="estado-select"
                   placeholder="Buscar..."
@@ -508,7 +508,7 @@
                 <label class="form-label" for="organismo-financiador">Organismo financiador</label>
                 <input 
                   id="organismo-financiador" 
-                  class="form-control"
+                  class="form-control form-control-resultado"
                   name="organismo-financiador" 
                   list="organismo-financiador-select"
                   placeholder="Buscar..."
@@ -525,7 +525,7 @@
                 <label class="form-label" for="numero-prestamo">N° de préstamo</label>
                 <input 
                   id="numero-prestamo" 
-                  class="form-control"
+                  class="form-control form-control-resultado"
                   type="text"
                   name="numero-de-prestamo" 
                 />
