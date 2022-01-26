@@ -1224,6 +1224,10 @@ option {
 }
 
 /* Resultados de la busqueda */
+.form-control-resultado {
+  padding: 0.5rem 0.75rem;
+  line-height: 1rem;
+}
 
 .resultado-button {
   background-color: #ffffff;
@@ -1642,6 +1646,10 @@ option {
   
   .resultado-button {
     height: 5rem;
+  }
+
+  .notificaciones-item-responsive {
+    display: none;
   }
 }
 
