@@ -1157,6 +1157,11 @@ option {
   padding: 2rem 2.5rem;
 }
 
+.buscador-form .form-label,
+#buscador-modal .form-label {
+  font-size: 1rem;
+}
+
 .buscador-inputs-grid {
   width: 100%;
   display: grid;
