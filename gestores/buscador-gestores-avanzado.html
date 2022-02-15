@@ -152,38 +152,38 @@
           <form class="buscador-form container-fluid" method="GET" action="./buscador-gestores-resultado.html">
 
             <!-- -->
-            
             <div class="buscador-inputs-grid">
+
               <div class="buscador-input-wrapper">
-                <label class="form-label" for="codigo-obra">Código de obra</label>
+                <label class="form-label" for="codigo-interno">Código de id. interna</label>
                 <input 
-                  id="codigo-obra" 
+                  id="codigo-interno"
                   class="form-control form-control-resultado"
                   type="text"
-                  name="codigo-de-obra"
-                />
-              </div>
-        
-              <div class="buscador-input-wrapper">
-                <label class="form-label" for="nombre-obra">Nombre de obra</label>
-                <input 
-                  id="nombre-obra"
-                  class="form-control form-control-resultado"
-                  type="text"
-                  name="nombre-de-obra"
+                  name="codigo-de-id-interna"
                 />
               </div>
 
               <div class="buscador-input-wrapper">
-                <label class="form-label" for="provincia">Provincia</label>
+                <label class="form-label" for="codigo-sippe">Código SIPPE</label>
                 <input 
-                  id="provincia" 
+                  id="codigo-sippe"
                   class="form-control form-control-resultado"
-                  name="provincia" 
-                  list="provincia-select"
+                  type="text"
+                  name="codigo-sippe"
+                />
+              </div>
+                            
+              <div class="buscador-input-wrapper">
+                <label class="form-label" for="organismo-responsable">Organismo responsable</label>
+                <input 
+                  id="organismo-responsable" 
+                  class="form-control form-control-resultado"
+                  name="organismo-responsable" 
+                  list="organismo-responsable-select"
                   placeholder="Buscar..."
                 />
-                <datalist id="provincia-select">
+                <datalist id="organismo-responsable-select">
                   <option value="Item 1">
                   <option value="Item 2">
                   <option value="Item 3">
@@ -207,17 +207,17 @@
                   <option value="Item 4">  
                 </datalist>
               </div>
-              
+
               <div class="buscador-input-wrapper">
-                <label class="form-label" for="plan">Plan</label>
+                <label class="form-label" for="provincia">Provincia</label>
                 <input 
-                  id="plan" 
+                  id="provincia" 
                   class="form-control form-control-resultado"
-                  name="plan" 
-                  list="plan-select"
+                  name="provincia" 
+                  list="provincia-select"
                   placeholder="Buscar..."
                 />
-                <datalist id="plan-select">
+                <datalist id="provincia-select">
                   <option value="Item 1">
                   <option value="Item 2">
                   <option value="Item 3">
@@ -228,22 +228,22 @@
               <!-- -->
               
               <div class="buscador-input-wrapper">
-                <label class="form-label" for="codigo-interno">Código de id. interna</label>
+                <label class="form-label" for="codigo-obra">Código de obra</label>
                 <input 
-                  id="codigo-interno"
+                  id="codigo-obra" 
                   class="form-control form-control-resultado"
                   type="text"
-                  name="codigo-de-id-interna"
+                  name="codigo-de-obra"
                 />
               </div>
-
+                      
               <div class="buscador-input-wrapper">
-                <label class="form-label" for="codigo-sippe">Código SIPPE</label>
+                <label class="form-label" for="nombre-obra">Nombre de obra</label>
                 <input 
-                  id="codigo-sippe"
+                  id="nombre-obra"
                   class="form-control form-control-resultado"
                   type="text"
-                  name="codigo-sippe"
+                  name="nombre-de-obra"
                 />
               </div>
 
@@ -391,22 +391,22 @@
               </div>
 
               <div class="buscador-input-wrapper">
-                <label class="form-label" for="organismo-responsable">Organismo responsable</label>
+                <label class="form-label" for="plan">Plan</label>
                 <input 
-                  id="organismo-responsable" 
+                  id="plan" 
                   class="form-control form-control-resultado"
-                  name="organismo-responsable" 
-                  list="organismo-responsable-select"
+                  name="plan" 
+                  list="plan-select"
                   placeholder="Buscar..."
                 />
-                <datalist id="organismo-responsable-select">
+                <datalist id="plan-select">
                   <option value="Item 1">
                   <option value="Item 2">
                   <option value="Item 3">
                   <option value="Item 4">  
                 </datalist>
               </div>
-              
+
               <div class="buscador-input-wrapper">
                 <label class="form-label" for="organismo-ejecutor">Organismo ejecutor</label>
                 <input 
